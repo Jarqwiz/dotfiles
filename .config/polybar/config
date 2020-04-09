@@ -1,0 +1,85 @@
+[colors]
+background = #282828
+foreground = #ebdbb2
+inactive = #a89984
+alert = #cc241d
+note = #b8bb26
+
+[bar/top]
+font-0 = "Hack:size=10;0"
+font-1 = "Hack Nerd Font:size=10;0"
+width = 100%:-40
+height = 30
+offset-x = 20
+offset-y = 10
+underline-size = 2
+border-size = 2
+border-color = #3c3836
+background = ${colors.background}
+foreground = ${colors.foreground}
+modules-left = bspwm title
+modules-center = date
+modules-right = memory cpu
+module-margin = 1
+separator = |
+padding-right = 1
+tray-position = right
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+wm-restack = bspwm
+
+[module/bspwm]
+type = internal/bspwm
+label-focused = ﳐ
+label-focused-padding = 1
+label-focused-foreground = ${colors.foreground}
+label-focused-underline = ${colors.foreground}
+label-occupied = 
+label-occupied-padding = 1
+label-occupied-foreground = ${colors.foreground}
+label-urgent = 
+label-urgent-padding = 1
+label-urgent-foreground = ${colors.alert}
+label-urgent-underline = ${colors.alert}
+label-empty = 
+label-empty-padding = 1
+label-empty-foreground = ${colors.foreground}
+
+[module/date]
+type = internal/date
+date = %F
+time = %T
+label = " %time% | %{F#a89984} %date%%{F-}"
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format = <label> <ramp-coreload>
+label =  %percentage%%
+ramp-coreload-spacing = 0
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label> <bar-used>
+label =  %percentage_used%%
+bar-used-width = 20
+bar-used-fill = ▌
+bar-used-empty = ▍
+bar-used-empty-foreground = ${colors.inactive}
+bar-used-indicator = ▋
+bar-used-indicator-foreground = ${colors.note}
+
+[module/title]
+type = internal/xwindow
+label-maxlen = 60
+label-empty = None
+label-empty-foreground = ${colors.inactive}
