@@ -8,9 +8,9 @@ note = #b8bb26
 [bar/top]
 font-0 = "Hack:size=10;0"
 font-1 = "Hack Nerd Font:size=10;0"
-width = 100%:-40
+width = 100%:-20
 height = 30
-offset-x = 20
+offset-x = 10
 offset-y = 10
 underline-size = 2
 border-size = 2
@@ -71,11 +71,11 @@ type = internal/memory
 interval = 3
 format = <label> <bar-used>
 label =  %percentage_used%%
-bar-used-width = 20
-bar-used-fill = ▌
-bar-used-empty = ▍
+bar-used-width = 16
+bar-used-fill = ═
+bar-used-empty = ╌
 bar-used-empty-foreground = ${colors.inactive}
-bar-used-indicator = ▋
+bar-used-indicator = ┃
 bar-used-indicator-foreground = ${colors.note}
 
 [module/title]

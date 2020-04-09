@@ -28,6 +28,9 @@ super + {_,shift + }q
 super + g
     bspc node -s biggest
 
+super + y
+    bspc node -n newest.!automatic.local
+
 super + {t,shift + t,s,f}
     bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 

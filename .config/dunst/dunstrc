@@ -1,6 +1,6 @@
 [global]
     geometry = "600x20-20+50"
-    font = Hack 10
+    font = Hack Nerd Font 10
     format = "<b>%s</b>\n%b"
     shrink = yes
     word_wrap = yes
