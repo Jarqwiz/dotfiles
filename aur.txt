@@ -33,3 +33,4 @@ gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 network-manager-applet
 volumeicon
+redshift
