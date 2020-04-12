@@ -11,7 +11,8 @@ broot
 vim-dein
 ttf-hack
 nerd-fonts-hack
-polybar
+polybar-git
+pavucontrol
 xorg
 sxlock-git
 dunst
@@ -32,5 +33,4 @@ zsh-syntax-highlighting
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 network-manager-applet
-volumeicon
 redshift

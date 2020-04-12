@@ -1,9 +1,20 @@
+#              _       _
+#             | |     | |
+#  _ __   ___ | |_   _| |__   __ _ _ __
+# | '_ \ / _ \| | | | | '_ \ / _` | '__|
+# | |_) | (_) | | |_| | |_) | (_| | |
+# | .__/ \___/|_|\__, |_.__/ \__,_|_|
+# | |             __/ |
+# |_|            |___/
+
 [colors]
 background = #282828
 foreground = #ebdbb2
 inactive = #a89984
 alert = #cc241d
-note = #b8bb26
+warn = #d65d0e
+note = #d79921
+ok = #98971a
 
 [bar/top]
 font-0 = "Hack:size=10;0"
@@ -17,12 +28,11 @@ border-size = 2
 border-color = #3c3836
 background = ${colors.background}
 foreground = ${colors.foreground}
-modules-left = bspwm title
-modules-center = date
-modules-right = memory cpu
+modules-left = powermenu bspwm title
+modules-right = memory cpu volume time date
 module-margin = 1
 separator = |
-padding-right = 1
+padding = 1
 tray-position = right
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
@@ -45,41 +55,91 @@ label-empty = 
 label-empty-padding = 1
 label-empty-foreground = ${colors.foreground}
 
+[module/time]
+type = internal/date
+time = %T
+label =  %time%
+label-underline = ${colors.inactive}
+
 [module/date]
 type = internal/date
 date = %F
-time = %T
-label = " %time% | %{F#a89984} %date%%{F-}"
+label =  %date%
+label-foreground = ${colors.inactive}
 
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format = <label> <ramp-coreload>
+format = <label> <ramp-load>
 label =  %percentage%%
-ramp-coreload-spacing = 0
-ramp-coreload-0 = ▁
-ramp-coreload-1 = ▂
-ramp-coreload-2 = ▃
-ramp-coreload-3 = ▄
-ramp-coreload-4 = ▅
-ramp-coreload-5 = ▆
-ramp-coreload-6 = ▇
-ramp-coreload-7 = █
+ramp-load-0 = ▁
+ramp-load-0-foreground = ${colors.ok}
+ramp-load-1 = ▂
+ramp-load-1-foreground = ${colors.ok}
+ramp-load-2 = ▃
+ramp-load-2-foreground = ${colors.note}
+ramp-load-3 = ▄
+ramp-load-3-foreground = ${colors.note}
+ramp-load-4 = ▅
+ramp-load-4-foreground = ${colors.warn}
+ramp-load-5 = ▆
+ramp-load-5-foreground = ${colors.warn}
+ramp-load-6 = ▇
+ramp-load-6-foreground = ${colors.alert}
+ramp-load-7 = █
+ramp-load-7-foreground = ${colors.alert}
 
 [module/memory]
 type = internal/memory
 interval = 3
-format = <label> <bar-used>
+format = <label> <ramp-used>
 label =  %percentage_used%%
-bar-used-width = 16
-bar-used-fill = ═
-bar-used-empty = ╌
-bar-used-empty-foreground = ${colors.inactive}
-bar-used-indicator = ┃
-bar-used-indicator-foreground = ${colors.note}
+ramp-used-0 = ▁
+ramp-used-0-foreground = ${colors.ok}
+ramp-used-1 = ▂
+ramp-used-1-foreground = ${colors.ok}
+ramp-used-2 = ▃
+ramp-used-2-foreground = ${colors.note}
+ramp-used-3 = ▄
+ramp-used-3-foreground = ${colors.note}
+ramp-used-4 = ▅
+ramp-used-4-foreground = ${colors.warn}
+ramp-used-5 = ▆
+ramp-used-5-foreground = ${colors.warn}
+ramp-used-6 = ▇
+ramp-used-6-foreground = ${colors.alert}
+ramp-used-7 = █
+ramp-used-7-foreground = ${colors.alert}
+
+[module/volume]
+type = internal/pulseaudio
+use-ui-max = false
+format-volume = <ramp-volume> <label-volume>
+label-muted = ﱝ muted
+label-muted-foreground = ${colors.inactive}
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+click-right = pavucontrol &
 
 [module/title]
 type = internal/xwindow
-label-maxlen = 60
-label-empty = None
-label-empty-foreground = ${colors.inactive}
+label = %title:0:60:…%
+
+[module/powermenu]
+type = custom/menu
+expand-right = true
+label-open = 
+label-close = 
+label-separator = |
+format-spacing = 1
+menu-0-0 = " lock"
+menu-0-0-exec = sxlock &
+menu-0-1 = " logout"
+menu-0-1-exec = bspc quit &
+menu-0-2 = "⏼ suspend"
+menu-0-2-exec = systemctl suspend &
+menu-0-3 = " reboot"
+menu-0-3-exec = reboot &
+menu-0-4 = " shutdown"
+menu-0-4-exec = poweroff &
