@@ -18,8 +18,7 @@ sxlock-git
 dunst
 udiskie
 blueman
-cbatticon
-light
+light-git
 mpv
 feh
 firefox

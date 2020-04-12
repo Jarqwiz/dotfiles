@@ -33,6 +33,5 @@ xsetroot -cursor_name left_ptr &
 (killall -qe dunst ; dunst) &
 (killall -qe udiskie ; udiskie -ansF) &
 (killall -qe blueman-applet ; blueman-applet) &
-(killall -qe cbatticon ; cbatticon) &
 (killall -qe nm-applet ; nm-applet) &
 (killall -qe redshift-gtk ; redshift-gtk) &
