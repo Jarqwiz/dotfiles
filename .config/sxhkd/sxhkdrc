@@ -104,7 +104,7 @@ XF86AudioPrev
     playerctl previous
 
 XF86MonBrightnessDown
-    light -U 10
+    light -U 5
 
 XF86MonBrightnessUp
-    light -A 10
+    light -A 5
