@@ -17,6 +17,7 @@ note = #d79921
 ok = #98971a
 
 [bar/top]
+monitor = ${env:MONITOR:}
 font-0 = "Hack:size=10;0"
 font-1 = "Hack Nerd Font:size=10;0"
 width = 100%:-20

@@ -9,7 +9,7 @@
 #           | |
 #           |_|
 
-~/.screenlayout/default.sh
+$HOME/.screenlayout/default.sh
 
 bspc config border_width 2
 bspc config window_gap 10
@@ -29,7 +29,7 @@ feh --bg-fill $HOME/.config/bspwm/wallpaper.jpg &
 xsetroot -cursor_name left_ptr &
 
 (killall -qe sxhkd ; sxhkd) &
-(killall -qe polybar ; polybar top) &
+$HOME/.config/bspwm/launch_polybar.sh &
 (killall -qe dunst ; dunst) &
 (killall -qe udiskie ; udiskie -ansF) &
 (killall -qe blueman-applet ; blueman-applet) &
