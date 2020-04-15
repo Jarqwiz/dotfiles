@@ -8,8 +8,6 @@
 {
   "coc.preferences.colorSupport": true,
   "coc.preferences.snippetStatusText": "Ⓢ ",
-  "coc.preferences.formatOnInsertLeave": true,
-  "coc.preferences.formatOnType": true,
   "coc.preferences.formatOnSaveFiletypes": ["*"],
   "git.enableGutters": true,
   "explorer.icon.enableNerdfont": true,
