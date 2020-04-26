@@ -41,7 +41,6 @@ wm-restack = bspwm
 
 [module/bspwm]
 type = internal/bspwm
-pin-workspaces = false
 label-focused = ﳐ
 label-focused-padding = 1
 label-focused-foreground = ${colors.foreground}
