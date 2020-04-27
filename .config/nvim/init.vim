@@ -145,7 +145,6 @@ set tabstop=4 shiftwidth=4 softtabstop=4 smarttab autoindent expandtab
 set listchars=space:·,eol:¬,tab:▸\ ,extends:»,precedes:«,trail:•,nbsp:␣ list
 set colorcolumn=80,100,120 cursorline cursorcolumn
 set undofile undodir=/tmp
-let g:loaded_netrw = 0
 let g:netrw_dirhistmax = 0
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 noremap <plug>(slash-after) zz
