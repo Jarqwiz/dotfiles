@@ -29,6 +29,7 @@ xdo
 oh-my-zsh-git
 zsh-autosuggestions
 zsh-syntax-highlighting
+zsh-theme-powerlevel10k
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 network-manager-applet
