@@ -53,21 +53,35 @@ syntax enable
 
 " Coc
 let g:coc_global_extensions = [
-            \ 'coc-yank',
-            \ 'coc-snippets',
-            \ 'coc-pairs',
-            \ 'coc-lists',
-            \ 'coc-diagnostic',
-            \ 'coc-git',
-            \ 'coc-explorer',
+            \ 'coc-actions',
+            \ 'coc-bookmark',
             \ 'coc-calc',
-            \ 'coc-yaml',
-            \ 'coc-vimlsp',
-            \ 'coc-json',
-            \ 'coc-html',
-            \ 'coc-markdownlint',
+            \ 'coc-clangd',
+            \ 'coc-cmake',
             \ 'coc-css',
+            \ 'coc-cssmodules',
+            \ 'coc-diagnostic',
+            \ 'coc-emmet',
+            \ 'coc-explorer',
+            \ 'coc-git',
+            \ 'coc-github',
+            \ 'coc-gitignore',
+            \ 'coc-godot',
+            \ 'coc-html',
+            \ 'coc-json',
+            \ 'coc-lists',
+            \ 'coc-markdownlint',
+            \ 'coc-pairs',
             \ 'coc-prettier',
+            \ 'coc-python',
+            \ 'coc-rls',
+            \ 'coc-snippets',
+            \ 'coc-svg',
+            \ 'coc-texlab',
+            \ 'coc-tsserver',
+            \ 'coc-vimlsp',
+            \ 'coc-yaml',
+            \ 'coc-yank',
             \]
 
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -92,20 +106,26 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-noremap <C-c> :CocList<CR>
+nmap <silent> <C-M-j> <Plug>(coc-bookmark-next)
+nmap <silent> <C-M-k> <Plug>(coc-bookmark-prev)
+nmap <silent> <C-M-h> <Plug>(coc-bookmark-toggle)
+nmap <silent> <C-M-l> <Plug>(coc-bookmark-annotate)
 
-noremap <Leader>a :CocAction<CR>
-noremap <Leader>b :CocList buffers<CR>
-noremap <Leader>c :CocList outline<CR>
-noremap <Leader>d :CocList diagnostics<CR>
-noremap <Leader>e :CocCommand explorer --sources=buffer+,file+<CR>
-noremap <Leader>f :CocList files<CR>
-noremap <Leader>g :CocList grep<CR>
-noremap <Leader>l :CocList lines<CR>
-noremap <Leader>s :CocList symbols<CR>
-noremap <Leader>w :CocList windows<CR>
-nmap <leader>q <Plug>(coc-fix-current)
-nmap <Leader>r <Plug>(coc-rename)
+nmap <silent> <C-c> :CocList<CR>
+
+nmap <silent> <leader>a :CocCommand actions.open<CR>
+nmap <silent> <Leader>b :CocList buffers<CR>
+nmap <silent> <Leader>c :CocList outline<CR>
+nmap <silent> <Leader>d :CocList diagnostics<CR>
+nmap <silent> <Leader>e :CocCommand explorer --sources=buffer+,file+<CR>
+nmap <silent> <Leader>f :CocList files<CR>
+nmap <silent> <Leader>g :CocList grep<CR>
+nmap <silent> <Leader>l :CocList lines<CR>
+nmap <silent> <Leader>s :CocList symbols<CR>
+nmap <silent> <Leader>w :CocList windows<CR>
+nmap <silent> <leader>q <Plug>(coc-fix-current)
+nmap <silent> <Leader>r <Plug>(coc-rename)
+nmap <silent> <Leader>o :CocList bookmark<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
