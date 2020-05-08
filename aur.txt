@@ -3,6 +3,8 @@ sxhkd
 rofi
 alacritty
 neovim
+nodejs
+yarn
 bat
 lsd
 tree

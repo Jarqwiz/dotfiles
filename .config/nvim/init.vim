@@ -37,6 +37,9 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-surround')
     call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
                 \ 'build': 'sh -c "cd app & yarn install"' })
+    call dein#add('junegunn/fzf')
+    call dein#add('junegunn/fzf.vim')
+    call dein#add('antoinemadec/coc-fzf')
 
     call dein#end()
     call dein#save_state()
@@ -51,10 +54,35 @@ syntax enable
 " ~~~~~>-----)-----}-----=[ Options ]=-----{-----(-----<~~~~~
 " ===========================================================
 
+let g:mapleader = ';'
+
+" Fzf
+let g:fzf_buffers_jump = 1
+let g:fzf_command_prefix = 'Fzf'
+let g:fzf_colors = {
+            \ 'fg':      ['fg', 'Normal'],
+            \ 'bg':      ['bg', 'Normal'],
+            \ 'hl':      ['fg', 'Comment'],
+            \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+            \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+            \ 'hl+':     ['fg', 'Statement'],
+            \ 'info':    ['fg', 'PreProc'],
+            \ 'border':  ['fg', 'Ignore'],
+            \ 'prompt':  ['fg', 'Conditional'],
+            \ 'pointer': ['fg', 'Exception'],
+            \ 'marker':  ['fg', 'Keyword'],
+            \ 'spinner': ['fg', 'Label'],
+            \ 'header':  ['fg', 'Comment'] }
+
+nmap <silent> <Leader>b :FzfBuffers<CR>
+nmap <silent> <Leader>w :FzfWindows<CR>
+nmap <silent> <Leader>g :FzfRg<CR>
+nmap <silent> <Leader>f :FzfFiles<CR>
+nmap <silent> <Leader>l :FzfLines<CR>
+
 " Coc
 let g:coc_global_extensions = [
             \ 'coc-actions',
-            \ 'coc-bookmark',
             \ 'coc-calc',
             \ 'coc-clangd',
             \ 'coc-cmake',
@@ -62,6 +90,7 @@ let g:coc_global_extensions = [
             \ 'coc-cssmodules',
             \ 'coc-diagnostic',
             \ 'coc-emmet',
+            \ 'coc-eslint',
             \ 'coc-explorer',
             \ 'coc-git',
             \ 'coc-github',
@@ -106,26 +135,14 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-nmap <silent> <C-M-j> <Plug>(coc-bookmark-next)
-nmap <silent> <C-M-k> <Plug>(coc-bookmark-prev)
-nmap <silent> <C-M-h> <Plug>(coc-bookmark-toggle)
-nmap <silent> <C-M-l> <Plug>(coc-bookmark-annotate)
-
-nmap <silent> <C-c> :CocList<CR>
-
 nmap <silent> <leader>a :CocCommand actions.open<CR>
-nmap <silent> <Leader>b :CocList buffers<CR>
-nmap <silent> <Leader>c :CocList outline<CR>
-nmap <silent> <Leader>d :CocList diagnostics<CR>
+nmap <silent> <leader>c :CocFzfList commands<CR>
+nmap <silent> <Leader>o :CocFzfList outline<CR>
+nmap <silent> <Leader>d :CocFzfList diagnostics<CR>
 nmap <silent> <Leader>e :CocCommand explorer --sources=buffer+,file+<CR>
-nmap <silent> <Leader>f :CocList files<CR>
-nmap <silent> <Leader>g :CocList grep<CR>
-nmap <silent> <Leader>l :CocList lines<CR>
-nmap <silent> <Leader>s :CocList symbols<CR>
-nmap <silent> <Leader>w :CocList windows<CR>
+nmap <silent> <Leader>s :CocFzfList symbols<CR>
 nmap <silent> <leader>q <Plug>(coc-fix-current)
 nmap <silent> <Leader>r <Plug>(coc-rename)
-nmap <silent> <Leader>o :CocList bookmark<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -137,7 +154,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#whitespace#enabled = 1
 let g:airline_powerline_fonts = 1
-
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 
@@ -163,7 +179,7 @@ set signcolumn=yes
 set foldmethod=syntax foldlevelstart=99
 set tabstop=4 shiftwidth=4 softtabstop=4 smarttab autoindent expandtab
 set listchars=space:·,eol:¬,tab:▸\ ,extends:»,precedes:«,trail:•,nbsp:␣ list
-set colorcolumn=80,100,120 cursorline cursorcolumn
+set colorcolumn=80,100,120
 set undofile undodir=/tmp
 let g:netrw_dirhistmax = 0
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']

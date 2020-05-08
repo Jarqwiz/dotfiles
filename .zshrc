@@ -22,6 +22,7 @@ plugins=(
     fancy-ctrl-z
     github
     extract
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
