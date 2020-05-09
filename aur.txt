@@ -5,6 +5,7 @@ alacritty
 neovim
 nodejs
 yarn
+nvm
 bat
 lsd
 tree
