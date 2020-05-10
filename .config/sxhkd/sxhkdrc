@@ -82,9 +82,6 @@ super + {Left,Down,Up,Right}
 super + Escape
     pkill -USR1 -x sxhkd
 
-super + shift + Escape
-    $HOME/.config/bspwm/launch_polybar.sh &
-
 XF86AudioRaiseVolume
     pulseaudio-ctl up &
 

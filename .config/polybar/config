@@ -29,8 +29,8 @@ border-size = 2
 border-color = #3c3836
 background = ${colors.background}
 foreground = ${colors.foreground}
-modules-left = powermenu bspwm
-modules-center = title
+modules-left = powermenu title
+modules-center = bspwm
 modules-right = memory cpu backlight battery volume time date
 module-margin = 1
 separator = |
@@ -42,6 +42,7 @@ wm-restack = bspwm
 
 [module/bspwm]
 type = internal/bspwm
+reverse-scroll = false
 label-focused = ﳐ
 label-focused-padding = 1
 label-focused-foreground = ${colors.foreground}
@@ -131,7 +132,7 @@ label = %title:0:60:…%
 [module/powermenu]
 type = custom/menu
 expand-right = true
-label-open = 
+label-open = " "
 label-close = 
 label-separator = |
 format-spacing = 1
