@@ -31,7 +31,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 modules-left = powermenu title
 modules-center = bspwm
-modules-right = memory cpu backlight battery volume time date
+modules-right = memory cpu backlight battery github volume time date
 module-margin = 1
 separator = |
 padding = 1
@@ -208,3 +208,10 @@ ramp-11 = 
 ramp-12 = 
 ramp-13 = 
 ramp-14 = 
+
+[module/github]
+type = internal/github
+token = ${env:GITHUB_ACCESS_TOKEN}
+empty-notifications = false
+label =  %notifications%
+label-offline-underline = ${colors.alert}
