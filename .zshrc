@@ -27,8 +27,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export BAT_THEME="ansi-dark"
+
 alias vim='nvim'
-alias bat='bat --theme ansi-dark'
 alias ls='lsd'
 alias cat='bat'
 alias tree='tree -C'
