@@ -40,6 +40,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('junegunn/fzf')
     call dein#add('junegunn/fzf.vim')
     call dein#add('antoinemadec/coc-fzf')
+    call dein#add('sheerun/vim-polyglot')
 
     call dein#end()
     call dein#save_state()
