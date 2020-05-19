@@ -25,7 +25,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('vim-airline/vim-airline')
     call dein#add('morhetz/gruvbox')
     call dein#add('junegunn/vim-slash')
-    call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
+    call dein#add('neoclide/coc.nvim', {'merged':0, 'build': 'yarn install --frozen-lockfile'})
     call dein#add('ryanoasis/vim-devicons')
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('psliwka/vim-smoothie')
@@ -105,6 +105,7 @@ let g:coc_global_extensions = [
             \ 'coc-prettier',
             \ 'coc-python',
             \ 'coc-rls',
+            \ 'coc-sh',
             \ 'coc-snippets',
             \ 'coc-svg',
             \ 'coc-texlab',
