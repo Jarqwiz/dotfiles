@@ -41,6 +41,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('junegunn/fzf.vim')
     call dein#add('antoinemadec/coc-fzf')
     call dein#add('sheerun/vim-polyglot')
+    call dein#add('yggdroot/indentline')
 
     call dein#end()
     call dein#save_state()
@@ -187,6 +188,7 @@ let g:netrw_dirhistmax = 0
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 noremap <plug>(slash-after) zz
 autocmd TermOpen * startinsert
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " Movement maps
 tnoremap <Esc> <C-\><C-n>

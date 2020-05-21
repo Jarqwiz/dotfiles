@@ -1,7 +1,7 @@
 bspwm
 sxhkd
 rofi
-alacritty
+kitty
 neovim
 nodejs
 yarn
@@ -12,8 +12,8 @@ tree
 fd
 broot
 vim-dein
-ttf-hack
-nerd-fonts-hack
+ttf-fira-code
+nerd-fonts-fira-code
 polybar-git
 pavucontrol
 xorg

@@ -6,7 +6,7 @@
 # |___/_/\_\_| |_|_|\_\__,_|
 
 super + Return
-    alacritty &
+    kitty &
 
 super + b
     qutebrowser &

@@ -7,7 +7,7 @@
 
 [global]
     geometry = "600x20-20+50"
-    font = Hack Nerd Font 10
+    font = FiraCode Nerd Font 10
     format = "<b>%s</b>\n%b"
     allow_markup = yes
     shrink = yes

@@ -8,7 +8,7 @@ config.load_autoconfig()
 c.content.default_encoding = 'utf-8'
 c.prompt.radius = 0
 c.completion.shrink = True
-c.editor.command = ["alacritty", "-e", "nvim", "{}"]
+c.editor.command = ["kitty", "-e", "nvim", "{}"]
 c.tabs.background = True
 c.tabs.title.format = "{audio}{index}{title_sep}{current_title}"
 

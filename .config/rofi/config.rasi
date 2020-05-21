@@ -9,7 +9,7 @@ configuration {
     modi: "drun";
     width: 40;
     lines: 25;
-    font: "Hack Nerd Font 10";
+    font: "FiraCode Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
     theme: "gruvbox-dark";
