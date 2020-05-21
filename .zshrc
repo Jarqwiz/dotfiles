@@ -12,7 +12,7 @@ fi
 export ZSH="/usr/share/oh-my-zsh"
 export ZSH_THEME="agnoster"
 export EDITOR="nvim"
-export BROWSER="qutebrowser"
+export BROWSER="firefox"
 plugins=(
     git
     sudo

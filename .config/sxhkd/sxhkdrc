@@ -9,7 +9,7 @@ super + Return
     kitty &
 
 super + b
-    qutebrowser &
+    firefox &
 
 super + @space
     rofi -show &
