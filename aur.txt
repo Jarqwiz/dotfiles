@@ -24,7 +24,7 @@ blueman
 light-git
 mpv
 feh
-firefox
+qutebrowser
 pulseaudio
 playerctl
 pulseaudio-ctl

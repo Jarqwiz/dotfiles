@@ -9,7 +9,7 @@ super + Return
     alacritty &
 
 super + b
-    firefox &
+    qutebrowser &
 
 super + @space
     rofi -show &
