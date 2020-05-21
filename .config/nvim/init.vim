@@ -19,7 +19,6 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('wsdjeg/dein-ui.vim')
-    call dein#add('mhinz/vim-startify')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('honza/vim-snippets')
     call dein#add('vim-airline/vim-airline')
@@ -205,24 +204,3 @@ nnoremap <S-Tab> :bp<CR>
 nnoremap <A-C-n> <C-w>w
 nnoremap <A-C-p> <C-w>W
 nnoremap <A-Tab> <C-w>p
-
-" Startify
-let g:startify_fortune_use_unicode = 1
-let g:startify_change_to_dir = 1
-let g:startify_session_persistence = 1
-
-let g:header = [
-            \ ' ███▄    █ ▓█████  ▒█████   ██▒   █▓ ██▓ ███▄ ▄███▓',
-            \ ' ██ ▀█   █ ▓█   ▀ ▒██▒  ██▒▓██░   █▒▓██▒▓██▒▀█▀ ██▒',
-            \ '▓██  ▀█ ██▒▒███   ▒██░  ██▒ ▓██  █▒░▒██▒▓██    ▓██░',
-            \ '▓██▒  ▐▌██▒▒▓█  ▄ ▒██   ██░  ▒██ █░░░██░▒██    ▒██ ',
-            \ '▒██░   ▓██░░▒████▒░ ████▓▒░   ▒▀█░  ░██░▒██▒   ░██▒',
-            \ '░ ▒░   ▒ ▒ ░░ ▒░ ░░ ▒░▒░▒░    ░ ▐░  ░▓  ░ ▒░   ░  ░',
-            \ '░ ░░   ░ ▒░ ░ ░  ░  ░ ▒ ▒░    ░ ░░   ▒ ░░  ░      ░',
-            \ '   ░   ░ ░    ░   ░ ░ ░ ▒       ░░   ▒ ░░      ░   ',
-            \ '         ░    ░  ░    ░ ░        ░   ░         ░   ',
-            \ '                                ░                  ',
-            \ '                                                   '
-            \  ]
-let g:startify_custom_header =
-            \ 'startify#center(g:header) + startify#center(startify#fortune#boxed())'
