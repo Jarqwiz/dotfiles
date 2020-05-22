@@ -37,3 +37,6 @@ gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 network-manager-applet
 redshift
+mpd
+mpc
+ncmpcpp

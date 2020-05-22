@@ -1,0 +1,4 @@
+/database*
+/mpd*
+!/mpd.conf
+/playlists/
