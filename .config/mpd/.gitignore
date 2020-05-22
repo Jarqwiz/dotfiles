@@ -1,4 +1,6 @@
 /database*
 /mpd*
 !/mpd.conf
+/sticker.sql
+/log
 /playlists/
