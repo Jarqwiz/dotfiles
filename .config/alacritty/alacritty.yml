@@ -7,6 +7,10 @@
 #                                        __/ |
 #                                       |___/
 
+env:
+  TERM: xterm-256color
+  COLORTERM: truecolor
+
 window:
   dimensions:
     columns: 80
