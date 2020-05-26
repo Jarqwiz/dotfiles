@@ -29,8 +29,8 @@ border-size = 2
 border-color = #3c3836
 background = ${colors.background}
 foreground = ${colors.foreground}
-modules-left = powermenu title
-modules-center = bspwm
+modules-left = powermenu bspwm title
+modules-center = mpd
 modules-right = memory cpu backlight battery github volume time date
 module-margin = 1
 separator = |
@@ -57,6 +57,27 @@ label-urgent-underline = ${colors.alert}
 label-empty = 
 label-empty-padding = 1
 label-empty-foreground = ${colors.foreground}
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next> | <icon-repeat> <icon-consume> <icon-random> | <label-time> | <label-song>
+format-offline = <label-offline>
+label-song =   %artist% - %title%
+label-offline = ﱙ  offline
+icon-play = " "
+icon-pause = " "
+icon-stop = " "
+icon-prev = " "
+icon-next = " "
+icon-seekb = " "
+icon-seekf = " "
+icon-random = " "
+icon-repeat = " "
+icon-consume = " "
+toggle-off-foreground = ${colors.alert}
+toggle-on-foreground = ${colors.ok}
 
 [module/time]
 type = internal/date

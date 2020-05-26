@@ -11,6 +11,9 @@ super + Return
 super + b
     firefox &
 
+super + e
+    alacritty -e nvim &
+
 super + @space
     rofi -show &
 
@@ -50,11 +53,6 @@ super + {_,shift + }Tab
 super + ctrl + {_,shift +}Tab
     bspc desktop -f {next,prev}.local
 
-super + {o,i}
-    bspc wm -h off; \
-    bspc node {older,newer} -f; \
-    bspc wm -h on
-
 super + {_,shift + }{1-9,0}
     bspc {desktop -f,node -d} '^{1-9,10}'
 
@@ -64,10 +62,10 @@ super + ctrl + {h,j,k,l}
 super + ctrl + {1-9}
     bspc node -o 0.{1-9}
 
-super + ctrl + space
+super + ctrl + @space
     bspc node -p cancel
 
-super + ctrl + shift + space
+super + ctrl + shift + @space
     bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 super + alt + {h,j,k,l}
@@ -81,6 +79,9 @@ super + {Left,Down,Up,Right}
 
 super + Escape
     pkill -USR1 -x sxhkd
+
+super + shift + Escape
+    (killall -qe polybar ; $HOME/.config/bspwm/launch_polybar.sh) &
 
 XF86AudioRaiseVolume
     pulseaudio-ctl up &

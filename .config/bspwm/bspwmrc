@@ -12,11 +12,16 @@
 bspc config border_width 2
 bspc config window_gap 10
 
-bspc monitor -d $(seq -s ' ' 10)
+# bspc monitor -d $(seq -s ' ' 10)
+$HOME/.config/bspwm/multimonitor.sh
 
 bspc config split_ratio 0.5
 bspc config focus_follows_pointer true
 bspc config pointer_follows_focus true
+
+bspc config remove_disabled_monitors true
+bspc config remove_unplugged_monitors true
+bspc config merge_overlapping_monitors true
 
 bspc config normal_border_color "#3c3836"
 bspc config active_border_color "#3c3836"
@@ -28,8 +33,8 @@ feh --bg-fill $HOME/.config/bspwm/wallpaper.jpg &
 xsetroot -cursor_name left_ptr &
 
 (killall -qe sxhkd ; sxhkd) &
-$HOME/.config/bspwm/launch_polybar.sh &
-(killall -qe polybar ; polybar top) &
+(killall -qe polybar ; $HOME/.config/bspwm/launch_polybar.sh) &
+# (killall -qe polybar ; polybar top) &
 (killall -qe mpd ; mpd) &
 (killall -qe dunst ; dunst) &
 (killall -qe udiskie ; udiskie -ansF) &
