@@ -166,6 +166,7 @@ set termguicolors
 " Misc
 set scrolloff=4
 set number relativenumber
+set cursorline
 set title
 set nowrap
 set hidden
