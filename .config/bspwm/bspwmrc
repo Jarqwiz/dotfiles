@@ -35,7 +35,7 @@ xsetroot -cursor_name left_ptr &
 (killall -qe sxhkd ; sxhkd) &
 (killall -qe polybar ; $HOME/.config/bspwm/launch_polybar.sh) &
 # (killall -qe polybar ; polybar top) &
-(killall -qe mpd ; mpd) &
+(killall -qe mpd ; mpd ; killall -qe mpd-notification ; mpd-notification -m $HOME/Music -p 6600) &
 (killall -qe dunst ; dunst) &
 (killall -qe udiskie ; udiskie -ansF) &
 (killall -qe blueman-applet ; blueman-applet) &

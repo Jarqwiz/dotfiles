@@ -39,4 +39,5 @@ network-manager-applet
 redshift
 mpd
 mpc
+mpd-notification
 ncmpcpp
