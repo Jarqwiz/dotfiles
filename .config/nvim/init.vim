@@ -190,6 +190,9 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 noremap <plug>(slash-after) zz
 autocmd TermOpen * startinsert
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_setConceal=0
+set conceallevel=2 concealcursor=
+let g:vim_json_syntax_conceal = 1
 
 " Movement maps
 tnoremap <Esc> <C-\><C-n>
