@@ -1,0 +1,81 @@
+#   _____ _                 _     _
+#  / ____| |               | |   (_)
+# | (___ | |_ __ _ _ __ ___| |__  _ _ __
+#  \___ \| __/ _` | '__/ __| '_ \| | '_ \
+#  ____) | || (_| | |  \__ \ | | | | |_) |
+# |_____/ \__\__,_|_|  |___/_| |_|_| .__/
+#                                  | |
+#                                  |_|
+
+add_newline = false
+
+[character]
+use_symbol_for_status = true
+
+[line_break]
+disabled = true
+
+[aws]
+symbol = " "
+
+[battery]
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+
+[conda]
+symbol = " "
+
+[docker]
+symbol = " "
+
+[elixir]
+symbol = " "
+
+[elm]
+symbol = " "
+
+[git_branch]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[haskell]
+symbol = " "
+
+[hg_branch]
+symbol = " "
+
+[java]
+symbol = " "
+
+[julia]
+symbol = " "
+
+[memory_usage]
+symbol = " "
+
+[nim]
+symbol = " "
+
+[nix_shell]
+symbol = " "
+
+[nodejs]
+symbol = " "
+
+[package]
+symbol = " "
+
+[php]
+symbol = " "
+
+[python]
+symbol = " "
+
+[ruby]
+symbol = " "
+
+[rust]
+symbol = " "

@@ -1,7 +1,3 @@
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-    source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 #   ______    _
 #  |___  /   | |
 #     / / ___| |__
@@ -27,6 +23,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(starship init zsh)"
+
 export BAT_THEME="ansi-dark"
 
 alias vim='nvim'
@@ -44,6 +42,3 @@ source $HOME/.config/broot/launcher/bash/br
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/nvm/init-nvm.sh
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-
-[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
