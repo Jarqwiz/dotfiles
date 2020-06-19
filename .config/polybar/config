@@ -7,6 +7,9 @@
 # | |             __/ |
 # |_|            |___/
 
+[settings]
+screenchange-reload = true
+
 [colors]
 background = #282828
 foreground = #ebdbb2
@@ -39,6 +42,7 @@ tray-position = right
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 wm-restack = bspwm
+monitor-strict = true
 
 [module/bspwm]
 type = internal/bspwm
@@ -57,6 +61,7 @@ label-urgent-underline = ${colors.alert}
 label-empty = 
 label-empty-padding = 1
 label-empty-foreground = ${colors.foreground}
+pin-workspaces = true
 
 [module/mpd]
 type = internal/mpd
