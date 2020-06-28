@@ -26,7 +26,6 @@ mpv
 feh
 firefox
 pulseaudio
-playerctl
 pulseaudio-ctl
 xdo
 oh-my-zsh-git

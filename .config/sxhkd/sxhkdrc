@@ -62,10 +62,10 @@ super + ctrl + {h,j,k,l}
 super + ctrl + {1-9}
     bspc node -o 0.{1-9}
 
-super + ctrl + @space
+super + ctrl + space
     bspc node -p cancel
 
-super + ctrl + shift + @space
+super + ctrl + shift + space
     bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
 super + alt + {h,j,k,l}
@@ -83,29 +83,11 @@ super + Escape
 super + shift + Escape
     (killall -qe polybar ; $HOME/.config/bspwm/launch_polybar.sh) &
 
-XF86AudioRaiseVolume
-    pulseaudio-ctl up &
+XF86Audio{RaiseVolume,LowerVolume,Mute}
+    pulseaudio-ctl {up,down,mute} &
 
-XF86AudioLowerVolume
-    pulseaudio-ctl down &
+XF86Audio{Play,Stop,Next,Prev}
+    mpc {toggle,stop,next,prev} &
 
-XF86AudioMute
-    pulseaudio-ctl mute &
-
-XF86AudioPlay
-    (playerctl play-pause ; mpc toggle) &
-
-XF86AudioStop
-    (playerctl stop ; mpc stop) &
-
-XF86AudioNext
-    (playerctl next ; mpc next) &
-
-XF86AudioPrev
-    (playerctl previous ; mpc prev) &
-
-XF86MonBrightnessDown
-    light -U 5 &
-
-XF86MonBrightnessUp
-    light -A 5 &
+XF86MonBrightness{Up,Down}
+    light -{A,U} 5 &
