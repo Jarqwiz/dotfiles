@@ -104,7 +104,7 @@ let g:coc_global_extensions = [
             \ 'coc-pairs',
             \ 'coc-prettier',
             \ 'coc-python',
-            \ 'coc-rls',
+            \ 'coc-rust-analyzer',
             \ 'coc-sh',
             \ 'coc-snippets',
             \ 'coc-svg',
