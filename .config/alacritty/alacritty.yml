@@ -16,6 +16,10 @@ window:
     columns: 80
     lines: 24
 
+  padding:
+    x: 10
+    y: 10
+
   dynamic_padding: true
 
   title: terminal
@@ -126,3 +130,4 @@ shell:
 
 key_bindings:
   - { key: Return, mods: Control|Shift, action: SpawnNewInstance }
+
