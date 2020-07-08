@@ -10,15 +10,6 @@
 [settings]
 screenchange-reload = true
 
-[colors]
-background = #282828
-foreground = #ebdbb2
-inactive = #a89984
-alert = #cc241d
-warn = #d65d0e
-note = #d79921
-ok = #98971a
-
 [bar/top]
 monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=10;0"
@@ -27,14 +18,11 @@ width = 100%:-20
 height = 30
 offset-x = 10
 offset-y = 10
-underline-size = 2
-border-size = 2
-border-color = #3c3836
-background = ${colors.background}
-foreground = ${colors.foreground}
-modules-left = powermenu bspwm title
+background = #00000000
+foreground = #ebdbb2
+modules-left = bspwm
 modules-center = mpd
-modules-right = memory cpu backlight battery github volume time date
+modules-right = datetime
 module-margin = 1
 separator = |
 padding = 1
@@ -49,196 +37,29 @@ type = internal/bspwm
 reverse-scroll = false
 label-focused = ﳐ
 label-focused-padding = 1
-label-focused-foreground = ${colors.foreground}
-label-focused-underline = ${colors.foreground}
 label-occupied = 
 label-occupied-padding = 1
-label-occupied-foreground = ${colors.foreground}
 label-urgent = 
 label-urgent-padding = 1
-label-urgent-foreground = ${colors.alert}
-label-urgent-underline = ${colors.alert}
 label-empty = 
 label-empty-padding = 1
-label-empty-foreground = ${colors.foreground}
 pin-workspaces = true
 
 [module/mpd]
 type = internal/mpd
 host = 127.0.0.1
 port = 6600
-format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next> | <icon-repeat> <icon-single> <icon-consume> <icon-random> | <label-time> | <label-song>
+format-online = <icon-prev> <toggle> <icon-next> | <label-time> | <label-song>
 format-offline = <label-offline>
 label-song =   %artist% - %title%
 label-offline = ﱙ  offline
 icon-play = " "
 icon-pause = " "
-icon-stop = " "
-icon-prev = " "
-icon-next = " "
-icon-seekb = " "
-icon-seekf = " "
-icon-random = " "
-icon-single = " "
-icon-repeat = " "
-icon-consume = " "
-toggle-off-foreground = ${colors.alert}
-toggle-on-foreground = ${colors.ok}
+icon-prev = " "
+icon-next = " "
 
-[module/time]
+[module/datetime]
 type = internal/date
 time = %T
-label =  %time%
-label-underline = ${colors.inactive}
-
-[module/date]
-type = internal/date
 date = %F
-label =  %date%
-label-foreground = ${colors.inactive}
-
-[module/cpu]
-type = internal/cpu
-interval = 0.5
-format = <label> <ramp-load>
-label =  %percentage%%
-ramp-load-0 = ▁
-ramp-load-0-foreground = ${colors.ok}
-ramp-load-1 = ▂
-ramp-load-1-foreground = ${colors.ok}
-ramp-load-2 = ▃
-ramp-load-2-foreground = ${colors.note}
-ramp-load-3 = ▄
-ramp-load-3-foreground = ${colors.note}
-ramp-load-4 = ▅
-ramp-load-4-foreground = ${colors.warn}
-ramp-load-5 = ▆
-ramp-load-5-foreground = ${colors.warn}
-ramp-load-6 = ▇
-ramp-load-6-foreground = ${colors.alert}
-ramp-load-7 = █
-ramp-load-7-foreground = ${colors.alert}
-
-[module/memory]
-type = internal/memory
-interval = 3
-format = <label> <ramp-used>
-label =  %percentage_used%%
-ramp-used-0 = ▁
-ramp-used-0-foreground = ${colors.ok}
-ramp-used-1 = ▂
-ramp-used-1-foreground = ${colors.ok}
-ramp-used-2 = ▃
-ramp-used-2-foreground = ${colors.note}
-ramp-used-3 = ▄
-ramp-used-3-foreground = ${colors.note}
-ramp-used-4 = ▅
-ramp-used-4-foreground = ${colors.warn}
-ramp-used-5 = ▆
-ramp-used-5-foreground = ${colors.warn}
-ramp-used-6 = ▇
-ramp-used-6-foreground = ${colors.alert}
-ramp-used-7 = █
-ramp-used-7-foreground = ${colors.alert}
-
-[module/volume]
-type = internal/pulseaudio
-use-ui-max = false
-format-volume = <ramp-volume> <label-volume>
-label-muted = ﱝ muted
-label-muted-foreground = ${colors.inactive}
-ramp-volume-0 = 奄
-ramp-volume-1 = 奔
-ramp-volume-2 = 墳
-click-right = pavucontrol &
-
-[module/title]
-type = internal/xwindow
-label = %title:0:60:…%
-
-[module/powermenu]
-type = custom/menu
-expand-right = true
-label-open = " "
-label-close = 
-label-separator = |
-format-spacing = 1
-menu-0-0 = " lock"
-menu-0-0-exec = sxlock &
-menu-0-1 = " logout"
-menu-0-1-exec = bspc quit &
-menu-0-2 = "⏼ suspend"
-menu-0-2-exec = systemctl suspend &
-menu-0-3 = " reboot"
-menu-0-3-exec = reboot &
-menu-0-4 = " shutdown"
-menu-0-4-exec = poweroff &
-
-[module/battery]
-type = internal/battery
-full-at = 99
-battery = BAT0
-adapter = AC
-time-format = %H:%M
-format-charging = <ramp-capacity> <label-charging> <animation-charging>
-format-discharging = <ramp-capacity> <label-discharging>
-label-charging = %percentage%% - %time%
-label-discharging = %percentage%% - %time%
-label-full =  full
-label-full-foreground = ${colors.ok}
-ramp-capacity-0 = 
-ramp-capacity-0-foreground = ${colors.alert}
-ramp-capacity-1 = 
-ramp-capacity-1-foreground = ${colors.alert}
-ramp-capacity-2 = 
-ramp-capacity-2-foreground = ${colors.alert}
-ramp-capacity-3 = 
-ramp-capacity-3-foreground = ${colors.warn}
-ramp-capacity-4 = 
-ramp-capacity-4-foreground = ${colors.warn}
-ramp-capacity-5 = 
-ramp-capacity-5-foreground = ${colors.warn}
-ramp-capacity-6 = 
-ramp-capacity-6-foreground = ${colors.note}
-ramp-capacity-7 = 
-ramp-capacity-7-foreground = ${colors.note}
-ramp-capacity-8 = 
-ramp-capacity-8-foreground = ${colors.ok}
-ramp-capacity-9 = 
-ramp-capacity-9-foreground = ${colors.ok}
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-5 = 
-animation-charging-6 = 
-animation-charging-framerate = 500
-
-[module/backlight]
-type = internal/backlight
-card = intel_backlight
-enable-scroll = true
-format = <ramp> <label>
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-5 = 
-ramp-6 = 
-ramp-7 = 
-ramp-8 = 
-ramp-9 = 
-ramp-10 = 
-ramp-11 = 
-ramp-12 = 
-ramp-13 = 
-ramp-14 = 
-
-[module/github]
-type = internal/github
-token = ${env:GITHUB_ACCESS_TOKEN}
-empty-notifications = false
-label =  %notifications%
-label-offline-underline = ${colors.alert}
+label =  %time% |  %date%
