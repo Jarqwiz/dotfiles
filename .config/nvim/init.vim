@@ -18,28 +18,28 @@ if dein#load_state('~/.cache/dein')
     call dein#begin('~/.cache/dein')
 
     " Plugins
-    call dein#add('wsdjeg/dein-ui.vim')
+    call dein#add('antoinemadec/coc-fzf')
     call dein#add('editorconfig/editorconfig-vim')
+    call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
-    call dein#add('vim-airline/vim-airline')
-    call dein#add('morhetz/gruvbox')
+    call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
+                \ 'build': 'sh -c "cd app & yarn install"' })
+    call dein#add('junegunn/fzf')
+    call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
-    call dein#add('neoclide/coc.nvim', {'merged':0, 'build': 'yarn install --frozen-lockfile'})
-    call dein#add('ryanoasis/vim-devicons')
+    call dein#add('morhetz/gruvbox')
+    call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('psliwka/vim-smoothie')
-    call dein#add('farmergreg/vim-lastplace')
+    call dein#add('ryanoasis/vim-devicons')
+    call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
     call dein#add('tpope/vim-fugitive')
     call dein#add('tpope/vim-repeat')
     call dein#add('tpope/vim-rhubarb')
     call dein#add('tpope/vim-surround')
-    call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
-                \ 'build': 'sh -c "cd app & yarn install"' })
-    call dein#add('junegunn/fzf')
-    call dein#add('junegunn/fzf.vim')
-    call dein#add('antoinemadec/coc-fzf')
-    call dein#add('sheerun/vim-polyglot')
+    call dein#add('vim-airline/vim-airline')
+    call dein#add('wsdjeg/dein-ui.vim')
     call dein#add('yggdroot/indentline')
 
     call dein#end()
@@ -74,6 +74,9 @@ let g:fzf_colors = {
             \ 'marker':  ['fg', 'Keyword'],
             \ 'spinner': ['fg', 'Label'],
             \ 'header':  ['fg', 'Comment'] }
+let g:fzf_layout = { 'window': { 'width': 0.95, 'height': 0.85 } }
+
+autocmd! FileType fzf tnoremap <buffer> <silent> <Esc> <C-c>
 
 nmap <silent> <Leader>b :FzfBuffers<CR>
 nmap <silent> <Leader>w :FzfWindows<CR>
@@ -195,17 +198,14 @@ set conceallevel=2 concealcursor=
 let g:vim_json_syntax_conceal = 1
 
 " Movement maps
-tnoremap <Esc> <C-\><C-n>
-tnoremap <A-h> <C-\><C-N><C-w>h
-tnoremap <A-j> <C-\><C-N><C-w>j
-tnoremap <A-k> <C-\><C-N><C-w>k
-tnoremap <A-l> <C-\><C-N><C-w>l
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
-nnoremap <Tab> :bn<CR>
-nnoremap <S-Tab> :bp<CR>
-nnoremap <A-C-n> <C-w>w
-nnoremap <A-C-p> <C-w>W
-nnoremap <A-Tab> <C-w>p
+tnoremap <silent> <Esc> <C-\><C-n>
+tnoremap <silent> <C-v><Esc> <Esc>
+nnoremap <silent> <A-h> <C-w>h
+nnoremap <silent> <A-j> <C-w>j
+nnoremap <silent> <A-k> <C-w>k
+nnoremap <silent> <A-l> <C-w>l
+nnoremap <silent> <Tab> :bn<CR>
+nnoremap <silent> <S-Tab> :bp<CR>
+nnoremap <silent> <A-C-n> <C-w>w
+nnoremap <silent> <A-C-p> <C-w>W
+nnoremap <silent> <A-Tab> <C-w>p
