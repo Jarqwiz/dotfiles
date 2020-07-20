@@ -21,10 +21,10 @@ super + alt + {q,r}
     bspc {quit,wm -r}
 
 super + alt + s
-    betterlockscreen -l dimblur
+    xsecurelock
 
 super + ctrl + alt + s
-    betterlockscreen -s dimblur
+    xsecurelock -- systemctl suspend
 
 super + ctrl + alt + r
     reboot

@@ -1,6 +1,5 @@
 alacritty
 bat
-betterlockscreen
 blueman
 broot
 bspwm
@@ -24,7 +23,6 @@ nodejs
 nvm
 oh-my-zsh-git
 pavucontrol
-picom
 polybar-git
 pulseaudio
 pulseaudio-ctl
@@ -38,7 +36,7 @@ udiskie
 vim-dein
 xdo
 xorg
+xsecurelock
 yarn
 zsh-autosuggestions
 zsh-syntax-highlighting
-zsh-theme-powerlevel10k
