@@ -10,27 +10,39 @@
 [settings]
 screenchange-reload = true
 
-[bar/top]
+[bar/base]
 monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=10;0"
 font-1 = "Hack:size=10;0"
+font-2 = "DejaVu Sans Mono:size=16;1"
 width = 100%:-20
-height = 30
+height = 20
 offset-x = 10
 offset-y = 10
 background = #00000000
 foreground = #ebdbb2
-modules-left = bspwm
-modules-center = mpd
-modules-right = datetime
 module-margin = 1
 separator = |
 padding = 1
-tray-position = right
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
 wm-restack = bspwm
 monitor-strict = true
+scroll-up = bspwm-desknext
+scroll-down = bspwm-deskprev
+
+[bar/top]
+inherit = bar/base
+modules-left = volume mpd
+modules-center = time date
+modules-right = cpu ram
+
+[bar/bottom]
+inherit = bar/base
+modules-left = weather
+modules-center = bspwm
+modules-right = title
+tray-position = right
+tray-padding = 4
+bottom = true
 
 [module/bspwm]
 type = internal/bspwm
@@ -49,7 +61,7 @@ pin-workspaces = true
 type = internal/mpd
 host = 127.0.0.1
 port = 6600
-format-online = <icon-prev> <toggle> <icon-next> | <label-time> | <label-song>
+format-online = <label-time> | <icon-prev> <toggle> <icon-next> | <label-song>
 format-offline = <label-offline>
 label-song =   %artist% - %title%
 label-offline = ﱙ  offline
@@ -58,8 +70,45 @@ icon-pause = " "
 icon-prev = " "
 icon-next = " "
 
-[module/datetime]
+[module/time]
 type = internal/date
 time = %T
+label =  %time%
+interval = 1
+
+[module/date]
+type = internal/date
 date = %F
-label =  %time% |  %date%
+label =  %date%
+interval = 60
+format-foreground = "#928374"
+
+[module/weather]
+type = custom/script
+exec = "curl -s wttr.in/?format=%c+%C++%t++%f+%w++%h"
+interval = 60
+
+[module/volume]
+type = internal/pulseaudio
+use-ui-max = false
+format-volume = <ramp-volume> <label-volume>
+label-muted = ﱝ muted
+label-muted-foreground = "#928374"
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+click-right = pavucontrol &
+
+[module/title]
+type = internal/xwindow
+label-maxlen = 60
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+label = ﬙ %percentage%%
+
+[module/ram]
+type = internal/memory
+interval = 3
+label =  %gb_used%/%gb_free%

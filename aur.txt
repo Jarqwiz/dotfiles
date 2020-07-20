@@ -37,7 +37,6 @@ tree
 ttf-hack
 udiskie
 vim-dein
-volumeicon
 xdo
 xorg
 yarn
