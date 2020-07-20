@@ -12,9 +12,9 @@ screenchange-reload = true
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "Hack Nerd Font:size=10;0"
-font-1 = "Hack:size=10;0"
-font-2 = "DejaVu Sans Mono:size=16;1"
+font-0 = "Hack Nerd Font:size=9;0"
+font-1 = "Hack:size=9;0"
+font-2 = "DejaVu Sans Mono:size=13;1"
 width = 100%:-20
 height = 20
 offset-x = 10
@@ -31,18 +31,12 @@ scroll-down = bspwm-deskprev
 
 [bar/top]
 inherit = bar/base
-modules-left = volume mpd
-modules-center = time date
-modules-right = cpu ram
-
-[bar/bottom]
-inherit = bar/base
-modules-left = weather
-modules-center = bspwm
-modules-right = title
+modules-left = bspwm mpd
+modules-center = title
+modules-right = cpu ram volume weather time date
 tray-position = right
 tray-padding = 4
-bottom = true
+bottom = false
 
 [module/bspwm]
 type = internal/bspwm
@@ -85,7 +79,7 @@ format-foreground = "#928374"
 
 [module/weather]
 type = custom/script
-exec = "curl -s wttr.in/?format=%c+%C++%t++%f+%w++%h"
+exec = "curl -s wttr.in/?format=2"
 interval = 60
 
 [module/volume]
