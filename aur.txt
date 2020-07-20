@@ -23,6 +23,7 @@ nodejs
 nvm
 oh-my-zsh-git
 pavucontrol
+playerctl
 polybar-git
 pulseaudio
 pulseaudio-ctl

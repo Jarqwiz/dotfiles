@@ -70,7 +70,6 @@ type = internal/pulseaudio
 use-ui-max = false
 label-volume = VOL: %percentage%%
 label-muted = muted
-label-muted-foreground = "#928374"
 click-right = pavucontrol &
 
 [module/title]
