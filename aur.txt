@@ -4,7 +4,6 @@ betterlockscreen
 blueman
 broot
 bspwm
-cbatticon
 dunst
 fd
 feh

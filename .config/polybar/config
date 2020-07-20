@@ -12,14 +12,10 @@ screenchange-reload = true
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "Hack Nerd Font:size=9;0"
-font-1 = "Hack:size=9;0"
-font-2 = "DejaVu Sans Mono:size=13;1"
-width = 100%:-20
+font-0 = "Hack:size=9;1"
+width = 100%
 height = 20
-offset-x = 10
-offset-y = 10
-background = #00000000
+background = #282828
 foreground = #ebdbb2
 module-margin = 1
 separator = |
@@ -31,9 +27,8 @@ scroll-down = bspwm-deskprev
 
 [bar/top]
 inherit = bar/base
-modules-left = bspwm mpd
-modules-center = title
-modules-right = cpu ram volume weather time date
+modules-left = bspwm mpd title
+modules-right = battery backlight cpu ram volume weather datetime
 tray-position = right
 tray-padding = 4
 bottom = false
@@ -41,56 +36,39 @@ bottom = false
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
-label-focused = ﳐ
-label-focused-padding = 1
-label-occupied = 
-label-occupied-padding = 1
-label-urgent = 
-label-urgent-padding = 1
-label-empty = 
-label-empty-padding = 1
+label-focused = [%name%]
+label-occupied = " %name% "
+label-urgent = {%name%}
+label-empty =
 pin-workspaces = true
 
 [module/mpd]
 type = internal/mpd
 host = 127.0.0.1
 port = 6600
-format-online = <label-time> | <icon-prev> <toggle> <icon-next> | <label-song>
+format-online = <label-song> (<label-time>)
 format-offline = <label-offline>
-label-song =   %artist% - %title%
-label-offline = ﱙ  offline
-icon-play = " "
-icon-pause = " "
-icon-prev = " "
-icon-next = " "
+label-song = %artist% - %title%
+label-offline = offline
 
-[module/time]
+[module/datetime]
 type = internal/date
 time = %T
-label =  %time%
-interval = 1
-
-[module/date]
-type = internal/date
 date = %F
-label =  %date%
-interval = 60
-format-foreground = "#928374"
+label = %time% | %date%
+interval = 1
 
 [module/weather]
 type = custom/script
-exec = "curl -s wttr.in/?format=2"
+exec = "curl -s wttr.in/?format=%C+%t+%w"
 interval = 60
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
-format-volume = <ramp-volume> <label-volume>
-label-muted = ﱝ muted
+label-volume = VOL: %percentage%%
+label-muted = muted
 label-muted-foreground = "#928374"
-ramp-volume-0 = 奄
-ramp-volume-1 = 奔
-ramp-volume-2 = 墳
 click-right = pavucontrol &
 
 [module/title]
@@ -100,9 +78,25 @@ label-maxlen = 60
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-label = ﬙ %percentage%%
+label = CPU: %percentage%%
 
 [module/ram]
 type = internal/memory
 interval = 3
-label =  %gb_used%/%gb_free%
+label = RAM: %percentage_used%%
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+enable-scroll = true
+label = LT: %percentage%%
+
+[module/battery]
+type = internal/battery
+full-at = 95
+battery = BAT0
+adapter = ADP1
+time-format = %H:%M
+label-charging = CHG: %percentage%%
+label-discharging = BAT: %percentage%%
+label-full = full
