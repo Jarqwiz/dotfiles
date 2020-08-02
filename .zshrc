@@ -6,9 +6,8 @@
 #  /_____|___/_| |_|
 
 export ZSH="/usr/share/oh-my-zsh"
-export ZSH_THEME="agnoster"
 export EDITOR="nvim"
-export BROWSER="firefox"
+export BROWSER="qutebrowser"
 plugins=(
     git
     sudo

@@ -6,7 +6,6 @@ bspwm
 dunst
 fd
 feh
-firefox
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 light-git
@@ -27,6 +26,7 @@ playerctl
 polybar-git
 pulseaudio
 pulseaudio-ctl
+qutebrowser
 redshift
 rofi
 starship
