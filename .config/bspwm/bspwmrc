@@ -32,6 +32,7 @@ xsetroot -cursor_name left_ptr &
 
 (killall -qe dunst ; dunst) &
 (killall -qe sxhkd ; sxhkd) &
+(killall -qe unclutter ; unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling) &
 (killall -qe mpd ; mpd ; killall -qe mpd-notification ; mpd-notification -m $HOME/Music -p 6600) &
 (killall -qe polybar ; $HOME/.config/polybar/launch_polybar.sh) &
 (killall -qe udiskie ; udiskie -ansF) &
