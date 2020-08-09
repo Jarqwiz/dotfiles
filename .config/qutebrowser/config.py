@@ -34,7 +34,7 @@ c.tabs.title.format = "{perc}{audio}{index}{title_sep}{current_title}"
 c.tabs.title.format_pinned = "{audio}{index}"
 c.window.title_format = "{perc}{current_title}"
 
-c.aliases['fullfullscreen'] = 'set tabs.show never ;; set statusbar.show never ;; fullscreen ;; enter-mode passthrough'
+c.aliases["fullfullscreen"] = "set tabs.show never ;; set statusbar.show never ;; fullscreen ;; enter-mode passthrough"
 
 base00 = "#282828"
 base01 = "#3c3836"
