@@ -29,6 +29,7 @@ pulseaudio-ctl
 qutebrowser
 redshift
 rofi
+scrot
 starship
 sxhkd
 tree
@@ -36,6 +37,7 @@ ttf-hack
 udiskie
 unclutter
 vim-dein
+xclip
 xdo
 xorg
 xsecurelock

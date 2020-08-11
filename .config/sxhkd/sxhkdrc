@@ -5,13 +5,13 @@
 # \__ \>  <| | | |   < (_| |
 # |___/_/\_\_| |_|_|\_\__,_|
 
-super + Return
+super + @Return
     alacritty &
 
-super + b
+super + @b
     qutebrowser &
 
-super + e
+super + @e
     alacritty -e nvim &
 
 super + @space
@@ -20,10 +20,10 @@ super + @space
 super + alt + {q,r}
     bspc {quit,wm -r}
 
-super + alt + s
+super + alt + @s
     xsecurelock
 
-super + ctrl + alt + s
+super + ctrl + alt + @s
     xsecurelock -- systemctl suspend
 
 super + ctrl + alt + r
@@ -106,3 +106,6 @@ super + ctrl + shift + p
 
 XF86MonBrightness{Up,Down}
     light -{A,U} 5
+
+@Print
+    scrot -soq 100 "/tmp/screenshot.png" -e "xclip -sel clip -t image/png /tmp/screenshot.png"
