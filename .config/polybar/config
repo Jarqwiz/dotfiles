@@ -38,10 +38,10 @@ bottom = false
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
-label-focused = [%name%]
-label-occupied = " %name% "
-label-urgent = {%name%}
-label-empty =
+label-focused = "[%index%]"
+label-occupied = " %index% "
+label-urgent = " U%index% "
+label-empty = ""
 pin-workspaces = true
 
 [module/mpd]
@@ -94,10 +94,10 @@ label = LT: %percentage%%
 
 [module/battery]
 type = internal/battery
-full-at = 95
+full-at = 99
 battery = BAT0
 adapter = ADP1
 time-format = %H:%M
 label-charging = CHG: %percentage%% (%time%)
 label-discharging = BAT: %percentage%% (%time%)
-label-full = full
+label-full = FULL
