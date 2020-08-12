@@ -69,7 +69,7 @@ interval = 60
 type = internal/pulseaudio
 use-ui-max = false
 label-volume = VOL: %percentage%%
-label-muted = muted
+label-muted = MUTED
 click-right = pavucontrol &
 
 [module/title]
