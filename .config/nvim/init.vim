@@ -24,7 +24,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('honza/vim-snippets')
     call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
                 \ 'build': 'sh -c "cd app & yarn install"' })
-    call dein#add('junegunn/fzf')
+    call dein#add('junegunn/fzf', { 'build': './install --all', 'merged': 0 })
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
     call dein#add('morhetz/gruvbox')
