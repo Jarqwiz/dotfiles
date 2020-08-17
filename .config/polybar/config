@@ -12,16 +12,17 @@ screenchange-reload = true
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "Hack:size=9;1"
+font-0 = "Hack Nerd Font:size=9;1"
+font-1 = "Hack:size=9;1"
+font-2 = "DejaVu Sans:size=9;1"
 width = 100%
-height = 20
-background = #282828
+height = 26
+offset-y = 6
+background = #00000000
 foreground = #ebdbb2
-border-size = 2
-border-color = #3c3836
 module-margin = 1
-separator = |
 padding = 1
+underline-size = 1
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
@@ -29,8 +30,9 @@ scroll-down = bspwm-deskprev
 
 [bar/top]
 inherit = bar/base
-modules-left = bspwm mpd title
-modules-right = battery backlight cpu ram volume weather datetime
+modules-left = bspwm title
+modules-center = mpd
+modules-right = battery volume weather backlight time date
 tray-position = right
 tray-padding = 4
 bottom = false
@@ -38,9 +40,16 @@ bottom = false
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
-label-focused = "[%index%]"
-label-occupied = " %index% "
-label-urgent = " U%index% "
+label-focused = " %index%"
+label-focused-background = #cc504945
+label-focused-underline = #ebdbb2
+label-focused-padding = 2
+label-occupied = " %index%"
+label-occupied-background = #cc282828
+label-occupied-padding = 2
+label-urgent = " %index%"
+label-urgent-background = #cccc241d
+label-urgent-padding = 2
 label-empty = ""
 pin-workspaces = true
 
@@ -49,48 +58,75 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 format-online = <label-song> (<label-time>)
-format-offline = <label-offline>
-label-song = %artist% - %title%
-label-offline = offline
+format-online-background = #cc282828
+format-online-underline = #d3869b
+format-online-padding = 1
+label-song = ﴁ %artist%  %title%  %album%
 
-[module/datetime]
+[module/date]
+type = internal/date
+date = %F
+label = %date%
+interval = 60
+format-background = #cc1d2021
+format-padding = 1
+format-foreground = #a89984
+format-underline = #458588
+
+[module/time]
 type = internal/date
 time = %T
-date = %F
-label = %time% | %date%
+label = %time%
 interval = 1
+format-background = #cc282828
+format-padding = 1
+format-underline = #83a598
 
 [module/weather]
 type = custom/script
-exec = "curl -s wttr.in/?format=%C+%t+%w"
+exec = "curl -s wttr.in/?format=2"
+format-background = #cc282828
+format-padding = 1
+format-underline = #b8bb26
 interval = 60
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
-label-volume = VOL: %percentage%%
-label-muted = MUTED
+format-volume = <ramp-volume> <label-volume>
+format-volume-background = #cc282828
+format-volume-padding = 1
+format-volume-underline = #fabd2f
+format-muted-background = #cc1d2021
+format-muted-padding = 1
+format-muted-underline = #d79921
+label-muted = ﱝ muted
+label-muted-foreground = #a89984
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
 click-right = pavucontrol &
 
 [module/title]
 type = internal/xwindow
-label-maxlen = 60
-
-[module/cpu]
-type = internal/cpu
-interval = 0.5
-label = CPU: %percentage%%
-
-[module/ram]
-type = internal/memory
-interval = 3
-label = RAM: %percentage_used%%
+label = %title:0:60:…%
+format-background = #cc282828
+format-padding = 1
+format-underline = #928374
 
 [module/backlight]
 type = internal/backlight
 card = intel_backlight
 enable-scroll = true
-label = LT: %percentage%%
+format = <ramp> <label>
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+format-background = #cc282828
+format-underline = #8ec07c
+format-padding = 1
 
 [module/battery]
 type = internal/battery
@@ -98,6 +134,33 @@ full-at = 99
 battery = BAT0
 adapter = ADP1
 time-format = %H:%M
-label-charging = CHG: %percentage%% (%time%)
-label-discharging = BAT: %percentage%% (%time%)
-label-full = FULL
+format-charging = <animation-charging> <label-charging>
+label-charging = %percentage%% (%time%)
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-framerate = 750
+format-discharging = <ramp-capacity> <label-discharging>
+label-discharging = %percentage%% (%time%)
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+format-full =  full
+format-charging-background = #cc282828
+format-charging-underline = #fe8019
+format-charging-padding = 1
+format-discharging-background = #cc282828
+format-discharging-underline = #fe8019
+format-discharging-padding = 1
+format-full-background = #cc282828
+format-full-underline = #fe8019
+format-full-padding = 1

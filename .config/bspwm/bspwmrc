@@ -9,14 +9,21 @@
 #           | |
 #           |_|
 
-bspc config border_width 2
-bspc config window_gap 2
+bspc config border_width 1
+bspc config window_gap 10
+bspc config single_monocle true
+bspc config gapless_monocle true
+bspc config bottom_padding 10
+bspc config top_padding 40
+bspc config left_padding 10
+bspc config right_padding 10
 
 bspc monitor -d $(seq -s ' ' 10)
 
 bspc config split_ratio 0.5
 bspc config focus_follows_pointer true
 bspc config pointer_follows_focus true
+bspc config pointer_follows_monitor true
 
 bspc config remove_disabled_monitors true
 bspc config remove_unplugged_monitors true
@@ -27,15 +34,16 @@ bspc config active_border_color "#3c3836"
 bspc config focused_border_color "#928374"
 bspc config presel_feedback_color "#ebdbb2"
 
-xsetroot -solid "#282828"
+betterlockscreen -w &
 xsetroot -cursor_name left_ptr &
 
-(killall -qe dunst ; dunst) &
-(killall -qe sxhkd ; sxhkd) &
-(killall -qe unclutter ; unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling) &
-(killall -qe mpd ; mpd ; killall -qe mpd-notification ; mpd-notification -m $HOME/Music -p 6600) &
-(killall -qe polybar ; $HOME/.config/polybar/launch_polybar.sh) &
-(killall -qe udiskie ; udiskie -ansF) &
-(killall -qe redshift-gtk ; redshift-gtk) &
-(killall -qe nm-applet ; nm-applet) &
-(killall -qe blueman-applet ; blueman-applet) &
+(killall -qe mpd ; sleep 1 ; mpd ; killall -qe mpd-notification ; sleep 0.1 ; mpd-notification -m $HOME/Music -p 6600) &
+(killall -qe picom ; sleep 0.1 ; picom) &
+(killall -qe sxhkd ; sleep 0.1 ; sxhkd) &
+(killall -qe dunst ; sleep 0.1 ; dunst) &
+(killall -qe polybar ; sleep 0.1 ; $HOME/.config/polybar/launch_polybar.sh) &
+(killall -qe unclutter ; sleep 0.1 ; unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling) &
+(killall -qe udiskie ; sleep 0.1 ; udiskie -ansF) &
+(killall -qe redshift-gtk ; sleep 0.1 ; redshift-gtk) &
+(killall -qe nm-applet ; sleep 0.1 ; nm-applet) &
+(killall -qe blueman-applet ; sleep 0.1 ; blueman-applet) &

@@ -21,10 +21,10 @@ super + alt + {q,r}
     bspc {quit,wm -r}
 
 super + alt + @s
-    xsecurelock
+    betterlockscreen -l dimblur
 
 super + ctrl + alt + @s
-    xsecurelock -- systemctl suspend
+    betterlockscreen -s dimblur
 
 super + ctrl + alt + r
     reboot
@@ -84,7 +84,7 @@ super + Escape
     pkill -USR1 -x sxhkd
 
 super + shift + Escape
-    (killall -qe polybar ; $HOME/.config/polybar/launch_polybar.sh)
+    (killall -qe polybar ; sleep 0.1 ; $HOME/.config/polybar/launch_polybar.sh)
 
 XF86Audio{RaiseVolume,LowerVolume,Mute}
     pulseaudio-ctl {up,down,mute}
@@ -108,4 +108,4 @@ XF86MonBrightness{Up,Down}
     light -{A,U} 5
 
 @Print
-    scrot -soq 100 "/tmp/screenshot.png" -e "xclip -sel clip -t image/png /tmp/screenshot.png"
+    gnome-screenshot -ia &
