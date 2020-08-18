@@ -10,13 +10,9 @@
 #           |_|
 
 bspc config border_width 1
-bspc config window_gap 10
+bspc config window_gap 4
 bspc config single_monocle true
 bspc config gapless_monocle true
-bspc config bottom_padding 10
-bspc config top_padding 40
-bspc config left_padding 10
-bspc config right_padding 10
 
 bspc monitor -d $(seq -s ' ' 10)
 

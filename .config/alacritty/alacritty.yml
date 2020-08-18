@@ -16,6 +16,10 @@ window:
     columns: 80
     lines: 24
 
+  padding:
+    x: 4
+    y: 4
+
   dynamic_padding: true
 
   title: terminal

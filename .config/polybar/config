@@ -16,12 +16,11 @@ font-0 = "Hack Nerd Font:size=9;1"
 font-1 = "Hack:size=9;1"
 font-2 = "DejaVu Sans:size=9;1"
 width = 100%
-height = 26
-offset-y = 6
-background = #00000000
+height = 20
+background = #cc282828
 foreground = #ebdbb2
 module-margin = 1
-padding = 1
+padding-right = 1
 underline-size = 1
 wm-restack = bspwm
 monitor-strict = true
@@ -45,7 +44,6 @@ label-focused-background = #cc504945
 label-focused-underline = #ebdbb2
 label-focused-padding = 2
 label-occupied = " %index%"
-label-occupied-background = #cc282828
 label-occupied-padding = 2
 label-urgent = " %index%"
 label-urgent-background = #cccc241d
@@ -58,7 +56,6 @@ type = internal/mpd
 host = 127.0.0.1
 port = 6600
 format-online = <label-song> (<label-time>)
-format-online-background = #cc282828
 format-online-underline = #d3869b
 format-online-padding = 1
 label-song = ﴁ %artist%  %title%  %album%
@@ -66,7 +63,7 @@ label-song = ﴁ %artist%  %title%  %album%
 [module/date]
 type = internal/date
 date = %F
-label = %date%
+label =  %date%
 interval = 60
 format-background = #cc1d2021
 format-padding = 1
@@ -76,16 +73,14 @@ format-underline = #458588
 [module/time]
 type = internal/date
 time = %T
-label = %time%
+label =  %time%
 interval = 1
-format-background = #cc282828
 format-padding = 1
 format-underline = #83a598
 
 [module/weather]
 type = custom/script
 exec = "curl -s wttr.in/?format=2"
-format-background = #cc282828
 format-padding = 1
 format-underline = #b8bb26
 interval = 60
@@ -94,7 +89,6 @@ interval = 60
 type = internal/pulseaudio
 use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
-format-volume-background = #cc282828
 format-volume-padding = 1
 format-volume-underline = #fabd2f
 format-muted-background = #cc1d2021
@@ -110,7 +104,6 @@ click-right = pavucontrol &
 [module/title]
 type = internal/xwindow
 label = %title:0:60:…%
-format-background = #cc282828
 format-padding = 1
 format-underline = #928374
 
@@ -124,7 +117,6 @@ ramp-1 = 🌔
 ramp-2 = 🌓
 ramp-3 = 🌒
 ramp-4 = 🌑
-format-background = #cc282828
 format-underline = #8ec07c
 format-padding = 1
 
@@ -155,12 +147,9 @@ ramp-capacity-7 = 
 ramp-capacity-8 = 
 ramp-capacity-9 = 
 format-full =  full
-format-charging-background = #cc282828
 format-charging-underline = #fe8019
 format-charging-padding = 1
-format-discharging-background = #cc282828
 format-discharging-underline = #fe8019
 format-discharging-padding = 1
-format-full-background = #cc282828
 format-full-underline = #fe8019
 format-full-padding = 1
