@@ -30,7 +30,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('morhetz/gruvbox')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
-    call dein#add('psliwka/vim-smoothie')
+    call dein#add('yuttie/comfortable-motion.vim')
     call dein#add('ryanoasis/vim-devicons')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
@@ -193,9 +193,10 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 noremap <plug>(slash-after) zz
 autocmd TermOpen * startinsert
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_setConceal=0
+let g:indentLine_setConceal = 0
 set conceallevel=2 concealcursor=
 let g:vim_json_syntax_conceal = 1
+set clipboard=unnamed
 
 " Movement maps
 tnoremap <silent> <Esc> <C-\><C-n>
