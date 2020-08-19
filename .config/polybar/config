@@ -112,11 +112,11 @@ type = internal/backlight
 card = intel_backlight
 enable-scroll = true
 format = <ramp> <label>
-ramp-0 = 🌕
-ramp-1 = 🌔
-ramp-2 = 🌓
-ramp-3 = 🌒
-ramp-4 = 🌑
+ramp-0 = 🌑
+ramp-1 = 🌘
+ramp-2 = 🌗
+ramp-3 = 🌖
+ramp-4 = 🌕
 format-underline = #8ec07c
 format-padding = 1
 
