@@ -36,6 +36,7 @@ starship
 sxhkd
 tree
 ttf-hack
+ttf-joypixels
 udiskie
 unclutter
 vim-dein
