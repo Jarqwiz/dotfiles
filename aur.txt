@@ -33,6 +33,7 @@ qutebrowser
 redshift
 rofi
 starship
+stow
 sxhkd
 tree
 ttf-hack
