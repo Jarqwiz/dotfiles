@@ -9,6 +9,12 @@
 #           | |
 #           |_|
 
+function autostart() {
+    local app="$1"
+    shift
+    pgrep -x "$app" > /dev/null || "$app" $@
+}
+
 bspc config border_width 1
 bspc config window_gap 4
 bspc config single_monocle true
@@ -33,13 +39,13 @@ bspc config presel_feedback_color "#ebdbb2"
 betterlockscreen -w &
 xsetroot -cursor_name left_ptr &
 
-(killall -qe mpd ; sleep 1 ; mpd ; killall -qe mpd-notification ; sleep 0.1 ; mpd-notification -m $HOME/Music -p 6600) &
-(killall -qe picom ; sleep 0.1 ; picom) &
-(killall -qe sxhkd ; sleep 0.1 ; sxhkd) &
-(killall -qe dunst ; sleep 0.1 ; dunst) &
-(killall -qe polybar ; sleep 0.1 ; $HOME/.config/polybar/launch_polybar.sh) &
-(killall -qe unclutter ; sleep 0.1 ; unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling) &
-(killall -qe udiskie ; sleep 0.1 ; udiskie -ansF) &
-(killall -qe redshift-gtk ; sleep 0.1 ; redshift-gtk) &
-(killall -qe nm-applet ; sleep 0.1 ; nm-applet) &
-(killall -qe blueman-applet ; sleep 0.1 ; blueman-applet) &
+autostart picom &
+autostart sxhkd &
+$HOME/.config/polybar/launch_polybar.sh &
+$HOME/.config/mpd/launch_mpd.sh &
+autostart dunst &
+autostart unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling &
+autostart udiskie -ansF &
+autostart redshift-gtk &
+autostart nm-applet &
+autostart blueman-applet &
