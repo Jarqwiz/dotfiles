@@ -30,7 +30,7 @@ scroll-down = bspwm-deskprev
 inherit = bar/base
 modules-left = bspwm title
 modules-center = mpd
-modules-right = battery volume weather backlight time date
+modules-right = weather backlight battery volume cpu ram time date
 tray-position = right
 tray-padding = 4
 bottom = false
@@ -162,3 +162,19 @@ format-discharging-underline = #fe8019
 format-discharging-padding = 1
 format-full-underline = #fe8019
 format-full-padding = 1
+
+[module/ram]
+type = internal/memory
+interval = 3
+label =  %percentage_used%%
+format-padding = 1
+format-underline = #cc241d
+format-background = #cc1d2021
+format-foreground = #a89984
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+label =  %percentage%%
+format-padding = 1
+format-underline = #fb4934
