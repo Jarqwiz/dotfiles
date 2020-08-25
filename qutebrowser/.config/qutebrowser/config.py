@@ -20,6 +20,7 @@ c.fonts.default_family = "Hack"
 c.hints.padding = {"bottom": 2, "top": 2, "left": 2, "right": 2}
 c.prompt.radius = 0
 c.statusbar.padding = {"bottom": 2, "top": 2, "left": 4, "right": 4}
+c.statusbar.show = "in-mode"
 c.tabs.background = True
 c.tabs.favicons.scale = 1.25
 c.tabs.indicator.padding = {"bottom": 0, "top": 0, "left": 0, "right": 2}
@@ -29,12 +30,11 @@ c.tabs.max_width = 300
 c.tabs.min_width = 100
 c.tabs.padding = {"bottom": 2, "top": 2, "left": 0, "right": 4}
 c.tabs.pinned.frozen = True
+c.tabs.show = "multiple"
 c.tabs.title.alignment = "center"
 c.tabs.title.format = "{perc}{audio}{index}{title_sep}{current_title}"
 c.tabs.title.format_pinned = "{audio}{index}"
 c.window.title_format = "{perc}{current_title}"
-
-c.aliases["fullfullscreen"] = "set tabs.show never ;; set statusbar.show never ;; fullscreen ;; enter-mode passthrough"
 
 base00 = "#282828"
 base01 = "#3c3836"
