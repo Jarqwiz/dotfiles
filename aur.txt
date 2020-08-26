@@ -1,6 +1,6 @@
 alacritty
 bat
-betterlockscreen
+betterlockscreen-git
 blueman
 broot
 bspwm
