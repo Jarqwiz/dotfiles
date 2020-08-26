@@ -16,10 +16,6 @@ window:
     columns: 80
     lines: 24
 
-  padding:
-    x: 4
-    y: 4
-
   dynamic_padding: true
 
   title: terminal
@@ -44,8 +40,6 @@ font:
     style: Bold Italic
 
   size: 10.0
-
-background_opacity: 0.8
 
 schemes:
   gruvbox_light: &light
