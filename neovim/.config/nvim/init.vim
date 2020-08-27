@@ -11,6 +11,9 @@
 
 " Init
 scriptencoding utf-8
+if &compatible
+    set nocompatible
+endif
 filetype off
 set runtimepath+=/usr/share/vim/vimfiles
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
@@ -19,18 +22,14 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
+    call dein#add('arcticicestudio/nord-vim')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
-    call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
-                \ 'build': 'sh -c "cd app & yarn install"' })
-    call dein#add('junegunn/fzf')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
-    call dein#add('arcticicestudio/nord-vim')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
-    call dein#add('yuttie/comfortable-motion.vim')
     call dein#add('ryanoasis/vim-devicons')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
@@ -41,6 +40,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('vim-airline/vim-airline')
     call dein#add('wsdjeg/dein-ui.vim')
     call dein#add('yggdroot/indentline')
+    call dein#add('yuttie/comfortable-motion.vim')
 
     call dein#end()
     call dein#save_state()
@@ -167,11 +167,11 @@ colorscheme nord
 set termguicolors
 
 " Misc
-set scrolloff=4
+set scrolloff=4 sidescroll=1 sidescrolloff=4
 set number relativenumber
 set cursorline
 set title
-set nowrap
+set wrap breakindent breakindentopt=sbr showbreak=↪
 set hidden
 set confirm
 set inccommand=nosplit
