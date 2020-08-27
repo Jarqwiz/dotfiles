@@ -33,6 +33,7 @@ eval "$(starship init zsh)"
 export BAT_THEME="Nord"
 
 alias vim='nvim'
+alias v='nvim'
 alias ls='lsd'
 alias cat='bat'
 alias tree='tree -C'
