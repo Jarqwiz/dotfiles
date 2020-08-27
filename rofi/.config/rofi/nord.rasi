@@ -30,7 +30,6 @@
     background-color: @backgroundcolor;
     border-color: @separatorcolor;
     border: 1;
-    border-radius: 2px;
 }
 
 #mainbox {

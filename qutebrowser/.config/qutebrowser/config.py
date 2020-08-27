@@ -12,6 +12,7 @@ c = c  # noqa: F821 pylint: disable=E0602,C0103
 config = config  # noqa: F821 pylint: disable=E0602,C0103
 
 c.completion.shrink = True
+c.confirm_quit = ["multiple-tabs", "downloads"]
 c.content.autoplay = False
 c.downloads.location.suggestion = "both"
 c.downloads.position = "bottom"
@@ -23,12 +24,12 @@ c.statusbar.padding = {"bottom": 2, "top": 2, "left": 4, "right": 4}
 c.statusbar.show = "always"
 c.tabs.background = True
 c.tabs.favicons.scale = 1.25
-c.tabs.indicator.padding = {"bottom": 0, "top": 0, "left": 0, "right": 2}
+c.tabs.indicator.padding = {"bottom": 2, "top": 2, "left": 2, "right": 2}
 c.tabs.indicator.width = 4
 c.tabs.last_close = "close"
 c.tabs.max_width = 300
 c.tabs.min_width = 100
-c.tabs.padding = {"bottom": 2, "top": 2, "left": 0, "right": 4}
+c.tabs.padding = {"bottom": 2, "top": 2, "left": 4, "right": 4}
 c.tabs.pinned.frozen = True
 c.tabs.show = "always"
 c.tabs.title.alignment = "center"

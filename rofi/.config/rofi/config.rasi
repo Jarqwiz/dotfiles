@@ -6,7 +6,8 @@
 // |_|  \___/|_| |_|
 
 configuration {
-    modi: "drun";
+    modi: "combi";
+    combi-modi: "window,drun";
     width: 40;
     lines: 30;
     matching: "fuzzy";
@@ -15,4 +16,5 @@ configuration {
     scroll-method: 1;
     theme: "nord";
     display-drun: "Run";
+    icon-theme: "Papirus-nord-folders";
 }
