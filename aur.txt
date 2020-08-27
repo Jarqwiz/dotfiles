@@ -8,8 +8,6 @@ dunst
 fd
 feh
 gnome-screenshot
-gruvbox-dark-gtk
-gruvbox-dark-icons-gtk
 light-git
 lsd
 mpc
@@ -21,8 +19,10 @@ neovim
 nerd-fonts-hack
 network-manager-applet
 nodejs
+nordic-theme-git
 nvm
 oh-my-zsh-git
+papirus-folders-nordic
 pavucontrol
 picom
 playerctl

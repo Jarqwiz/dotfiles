@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
-export BAT_THEME="ansi-dark"
+export BAT_THEME="Nord"
 
 alias vim='nvim'
 alias ls='lsd'

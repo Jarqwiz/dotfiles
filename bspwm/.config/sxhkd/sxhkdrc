@@ -21,10 +21,10 @@ super + alt + {q,r}
     bspc {quit,wm -r}
 
 super + alt + @s
-    betterlockscreen -l dimblur --off 10
+    betterlockscreen -l --off 10
 
 super + ctrl + alt + @s
-    betterlockscreen -s dimblur --off 10
+    betterlockscreen -s --off 10
 
 super + ctrl + alt + r
     reboot

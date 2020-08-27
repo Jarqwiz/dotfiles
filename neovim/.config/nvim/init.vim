@@ -27,7 +27,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('junegunn/fzf')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
-    call dein#add('morhetz/gruvbox')
+    call dein#add('arcticicestudio/nord-vim')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('yuttie/comfortable-motion.vim')
@@ -163,8 +163,7 @@ let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 
 " Theme
-let g:gruvbox_italic = 1
-colorscheme gruvbox
+colorscheme nord
 set termguicolors
 
 " Misc
