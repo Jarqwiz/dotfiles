@@ -16,12 +16,12 @@ font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
 width = 100%
 height = 16
-background = #2e3440
-foreground = #d8dee9
+background = #282828
+foreground = #ebdbb2
 padding-right = 1
 border-size = 1
 separator = " "
-border-color = #434c5e
+border-color = #3c3836
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
@@ -43,7 +43,7 @@ label-focused-padding = 1
 label-occupied = "喝 %index%"
 label-occupied-padding = 1
 label-urgent = " %index%"
-label-urgent-foreground = #bf616a
+label-urgent-foreground = #cc241d
 label-urgent-padding = 1
 label-empty = ""
 pin-workspaces = true
@@ -62,7 +62,7 @@ date = %F
 label =  %date%
 interval = 60
 format-padding = 1
-format-foreground = #a5abb6
+format-foreground = #a89984
 
 [module/time]
 type = internal/date
@@ -84,7 +84,7 @@ format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 1
 format-muted-padding = 1
 label-muted = ﱝ muted
-label-muted-foreground = #a5abb6
+label-muted-foreground = #a89984
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
 ramp-volume-2 = 墳
@@ -153,7 +153,7 @@ type = internal/memory
 interval = 3
 label =  %percentage_used%%
 format-padding = 1
-format-foreground = #a5abb6
+format-foreground = #a89984
 
 [module/cpu]
 type = internal/cpu
