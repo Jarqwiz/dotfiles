@@ -10,7 +10,6 @@ configuration {
     combi-modi: "window,drun";
     width: 40;
     lines: 30;
-    matching: "fuzzy";
     font: "Hack Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
