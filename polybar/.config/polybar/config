@@ -15,12 +15,12 @@ monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
 width = 100%
-height = 16
+height = 30
 background = #282828
 foreground = #ebdbb2
 padding-right = 1
-border-size = 1
-separator = " "
+padding-left = 1
+module-margin = 1
 border-color = #3c3836
 wm-restack = bspwm
 monitor-strict = true
@@ -38,13 +38,15 @@ tray-padding = 4
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
-label-focused = "卑 %index%"
-label-focused-padding = 1
-label-occupied = "喝 %index%"
-label-occupied-padding = 1
-label-urgent = " %index%"
-label-urgent-foreground = #cc241d
-label-urgent-padding = 1
+label-focused = "%index%"
+label-focused-background = #3c3836
+label-focused-foreground = #fbf1c7
+label-focused-padding = 2
+label-occupied = "%index%"
+label-occupied-padding = 2
+label-urgent = "%index%"
+label-urgent-foreground = #fb4934
+label-urgent-padding = 2
 label-empty = ""
 pin-workspaces = true
 
