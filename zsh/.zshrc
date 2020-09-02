@@ -13,7 +13,7 @@ setopt nocheckjobs
 
 export ZSH="/usr/share/oh-my-zsh"
 export EDITOR="nvim"
-export BROWSER="qutebrowser"
+export BROWSER="brave"
 plugins=(
     git
     sudo

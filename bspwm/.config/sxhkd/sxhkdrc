@@ -9,7 +9,7 @@ super + @Return
     alacritty &
 
 super + @b
-    qutebrowser &
+    brave &
 
 super + @e
     alacritty -e nvim &

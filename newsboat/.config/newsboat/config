@@ -10,7 +10,7 @@ feed-sort-order unreadarticlecount
 show-read-articles no
 show-read-feeds no
 notify-program "notify-send"
-browser qutebrowser %u
+browser brave %u
 color info yellow blue
 color listfocus_unread black green bold dim
 color listfocus black green
