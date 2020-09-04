@@ -56,7 +56,9 @@ host = 127.0.0.1
 port = 6600
 format-online = <label-song> (<label-time>)
 format-online-padding = 1
-label-song = ﴁ %artist%  %title%  %album%
+format-paused = <label-song> (<label-time>)  Paused
+format-stopped =  Stopped
+label-song = ﴁ %artist:0:20:…%  %title:0:60:…%  %album:0:40:…%
 
 [module/date]
 type = internal/date
