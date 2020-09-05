@@ -6,7 +6,7 @@
 #  \__,_|\__,_|_| |_|___/\__|
 
 [global]
-    geometry = "600x20-20+40"
+    geometry = "600x20-10+40"
     font = Hack Nerd Font 10
     format = "<b>%s</b>\n%b"
     allow_markup = yes
@@ -21,7 +21,6 @@
     frame_width = 2
     separator_color = frame
     follow = mouse
-    transparency = 20
 
 [urgency_low]
     background = "#1d2021"

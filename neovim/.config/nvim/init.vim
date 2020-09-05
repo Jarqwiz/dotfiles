@@ -163,7 +163,9 @@ let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 
 " Theme
+set background=dark
 let g:gruvbox_italic = 1
+let g:gruvbox_italicize_strings = 1
 colorscheme gruvbox
 set termguicolors
 
