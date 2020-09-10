@@ -108,4 +108,13 @@ XF86MonBrightness{Up,Down}
     light -{A,U} 5
 
 @Print
+    maim -su | xclip -selection clipboard -t image/png
+
+shift + @Print
+    maim -u | xclip -selection clipboard -t image/png
+
+ctrl + @Print
     maim -s | xclip -selection clipboard -t image/png
+
+ctrl + shift + @Print
+    maim | xclip -selection clipboard -t image/png
