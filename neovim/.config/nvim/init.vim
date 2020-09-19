@@ -39,7 +39,6 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-surround')
     call dein#add('vim-airline/vim-airline')
     call dein#add('wsdjeg/dein-ui.vim')
-    call dein#add('yggdroot/indentline')
     call dein#add('yuttie/comfortable-motion.vim')
 
     call dein#end()
@@ -165,7 +164,9 @@ let g:airline#extensions#coc#error_symbol = ' '
 " Theme
 set background=dark
 let g:gruvbox_italic = 1
-let g:gruvbox_italicize_strings = 1
+let g:gruvbox_bold = 1
+let g:gruvbox_underline = 1
+let g:gruvbox_invert_selection = 0
 colorscheme gruvbox
 set termguicolors
 
@@ -194,10 +195,7 @@ let g:netrw_dirhistmax = 0
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 noremap <plug>(slash-after) zz
 autocmd TermOpen * startinsert
-let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-let g:indentLine_setConceal = 0
-set conceallevel=2 concealcursor=
-let g:vim_json_syntax_conceal = 1
+set conceallevel=0
 set clipboard=unnamed
 
 " Movement maps

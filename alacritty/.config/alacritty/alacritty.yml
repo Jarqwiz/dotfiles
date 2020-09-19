@@ -16,6 +16,10 @@ window:
     columns: 80
     lines: 24
 
+  padding:
+    x: 10
+    y: 10
+
   dynamic_padding: true
 
   title: terminal
@@ -75,6 +79,8 @@ colors:
     white: "#ebdbb2"
 
 draw_bold_text_with_bright_colors: true
+
+background_opacity: 0.8
 
 mouse:
   hide_when_typing: true

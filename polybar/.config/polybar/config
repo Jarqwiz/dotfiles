@@ -14,12 +14,14 @@ screenchange-reload = true
 monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
-width = 100%
+width = 100%:-20
 height = 20
+offset-x = 10
+offset-y = 10
 background = #282828
 foreground = #ebdbb2
-border-color = #3c3836
-border-size = 1
+border-color = #665c54
+border-size = 2
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
