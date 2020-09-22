@@ -14,10 +14,8 @@ screenchange-reload = true
 monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
-width = 100%:-20
+width = 100%
 height = 20
-offset-x = 10
-offset-y = 10
 background = #282828
 foreground = #ebdbb2
 border-color = #665c54
