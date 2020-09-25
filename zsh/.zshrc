@@ -38,6 +38,15 @@ alias ls='lsd'
 alias cat='bat'
 alias tree='tree -C'
 alias sudo='sudo '
+alias exa='exa --git --time-style long-iso --header --color-scale --icons'
+alias ea='exa --all --long'
+alias e='exa --long'
+alias et='exa --tree'
+alias eta='exa --tree --long --all'
+alias b='bat'
+alias s='sudo'
+alias y='yay'
+alias ys='yay -S'
 
 unalias fd
 

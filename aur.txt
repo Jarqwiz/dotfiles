@@ -6,6 +6,7 @@ brave-bin
 broot
 bspwm
 dunst
+exa
 fd
 feh
 gruvbox-dark-gtk
