@@ -22,12 +22,13 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
+    call dein#add('chriskempson/base16-vim')
+    call dein#add('dawikur/base16-vim-airline-themes')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
-    call dein#add('morhetz/gruvbox')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('ryanoasis/vim-devicons')
@@ -39,7 +40,6 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-surround')
     call dein#add('vim-airline/vim-airline')
     call dein#add('wsdjeg/dein-ui.vim')
-    call dein#add('yuttie/comfortable-motion.vim')
 
     call dein#end()
     call dein#save_state()
@@ -157,17 +157,12 @@ nmap <silent> gr <Plug>(coc-references)
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#whitespace#enabled = 1
-let g:airline_powerline_fonts = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 
 " Theme
 set background=dark
-let g:gruvbox_italic = 1
-let g:gruvbox_bold = 1
-let g:gruvbox_underline = 1
-let g:gruvbox_invert_selection = 0
-colorscheme gruvbox
+colorscheme base16-synth-midnight-dark
 set termguicolors
 
 " Misc

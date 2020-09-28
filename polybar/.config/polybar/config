@@ -16,35 +16,36 @@ font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
 width = 100%
 height = 20
-background = #282828
-foreground = #ebdbb2
-border-color = #665c54
+background = #040404
+foreground = #dfdbdf
+border-color = #61507a
 border-size = 1
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
-[bar/top]
+[bar/primary]
 inherit = bar/base
 modules-left = bspwm title
 modules-center = mpd
 modules-right = backlight battery volume cpu ram time date
 tray-position = right
 tray-padding = 4
+bottom = true
 
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
 label-focused = "%index%"
-label-focused-background = #a89984
-label-focused-foreground = #1d2021
+label-focused-background = #dfdbdf
+label-focused-foreground = #040404
 label-focused-padding = 1
 label-occupied = "%index%"
 label-occupied-padding = 1
 label-urgent = "%index%"
-label-urgent-foreground = #1d2021
-label-urgent-background = #fb4934
+label-urgent-foreground = #fffbff
+label-urgent-background = #b53b50
 label-urgent-padding = 1
 label-empty = ""
 pin-workspaces = true
@@ -65,7 +66,6 @@ date = %F
 label =  %date%
 interval = 60
 format-padding = 1
-format-foreground = #a89984
 
 [module/time]
 type = internal/date
@@ -81,7 +81,7 @@ format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 1
 format-muted-padding = 1
 label-muted = ﱝ muted
-label-muted-foreground = #a89984
+label-muted-foreground = #61507a
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
 ramp-volume-2 = 墳
@@ -150,7 +150,6 @@ type = internal/memory
 interval = 3
 label =  %percentage_used%%
 format-padding = 1
-format-foreground = #a89984
 
 [module/cpu]
 type = internal/cpu

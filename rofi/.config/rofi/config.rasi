@@ -14,9 +14,7 @@ configuration {
     font: "Hack Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
-    theme: "gruvbox-dark";
-    display-drun: "Run";
-    icon-theme: "gruvbox-dark-icons-gtk";
+    theme: "custom-theme";
     display-drun: " ";
     fixed-num-lines: false;
 }
