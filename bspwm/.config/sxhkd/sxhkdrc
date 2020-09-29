@@ -104,6 +104,12 @@ super + ctrl + {n,p}
 super + ctrl + shift + p
     playerctl play-pause
 
+super + m
+    $HOME/.config/rofi/mpd-song.sh &
+
+super + ctrl + m
+    $HOME/.config/rofi/mpd-playlist.sh &
+
 XF86MonBrightness{Up,Down}
     light -{A,U} 5
 
