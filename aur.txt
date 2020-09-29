@@ -33,7 +33,7 @@ pulseaudio
 pulseaudio-ctl
 redshift
 rofi
-starship
+starship-bin
 stow
 sxhkd
 tree

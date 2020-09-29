@@ -8,7 +8,7 @@
 super + {@Return,@b,@e}
     {alacritty,brave,alacritty -e nvim} &
 
-super + {_,ctrl + }@space
+super + {_,shift + }@space
     rofi -show {drun,window} &
 
 super + alt + {q,r}

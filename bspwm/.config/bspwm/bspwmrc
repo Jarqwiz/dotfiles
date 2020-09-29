@@ -16,7 +16,7 @@ function autostart() {
 }
 
 bspc config border_width 1
-bspc config window_gap 6
+bspc config window_gap 10
 bspc config single_monocle true
 bspc monitor -d $(seq -s ' ' 10)
 

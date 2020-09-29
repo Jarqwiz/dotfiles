@@ -9,6 +9,7 @@
 
 [settings]
 screenchange-reload = true
+pseudo-transparency = true
 
 [bar/base]
 monitor = ${env:MONITOR:}
@@ -16,14 +17,13 @@ font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
 width = 100%
 height = 20
-background = #282828
+background = #00000000
 foreground = #ebdbb2
-border-color = #665c54
-border-size = 1
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
+line-size = 1
 
 [bar/primary]
 inherit = bar/base
@@ -32,6 +32,8 @@ modules-center = mpd
 modules-right = backlight battery volume cpu ram time date
 tray-position = right
 tray-padding = 4
+tray-background = #504945
+tray-maxsize = 16
 bottom = false
 
 [module/bspwm]
@@ -41,11 +43,15 @@ label-focused = "%index%"
 label-focused-background = #a89984
 label-focused-foreground = #1d2021
 label-focused-padding = 1
+label-focused-underline = #ebdbb2
 label-occupied = "%index%"
 label-occupied-padding = 1
+label-occupied-background = #1d2021
+label-occupied-foreground = #a89984
 label-urgent = "%index%"
-label-urgent-foreground = #1d2021
 label-urgent-background = #fb4934
+label-urgent-foreground = #1d2021
+label-urgent-underline = #cc241d
 label-urgent-padding = 1
 label-empty = ""
 pin-workspaces = true
@@ -56,8 +62,14 @@ host = 127.0.0.1
 port = 6600
 format-online = <label-song> (<label-time>)
 format-online-padding = 1
-format-paused = <label-song> (<label-time>)  Paused
+format-online-background = #282828
+format-online-underline = #d3869b
+format-paused = <label-song>  Paused
+format-paused-padding = 1
 format-stopped =  Stopped
+format-stopped-background = #1d2021
+format-stopped-foreground = #a89984
+format-stopped-underline = #b16286
 label-song = ﴁ %artist:0:20:…%  %title:0:60:…%  %album:0:40:…%
 
 [module/date]
@@ -66,6 +78,9 @@ date = %F
 label =  %date%
 interval = 60
 format-padding = 1
+format-background = #1d2021
+format-foreground = #a89984
+format-underline = #458588
 
 [module/time]
 type = internal/date
@@ -73,15 +88,21 @@ time = %T
 label =  %time%
 interval = 1
 format-padding = 1
+format-background = #282828
+format-underline = #83a598
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 1
+format-volume-background = #282828
+format-volume-underline = #8ec07c
 format-muted-padding = 1
 label-muted = ﱝ muted
-label-muted-foreground = #a89984
+format-muted-background = #1d2021
+format-muted-foreground = #a89984
+format-muted-underline = #689d6a
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
 ramp-volume-2 = 墳
@@ -91,6 +112,9 @@ click-right = pavucontrol &
 type = internal/xwindow
 label =  %title:0:60:…%
 format-padding = 1
+format-background = #1d2021
+format-foreground = #a89984
+format-underline = #a89984
 
 [module/backlight]
 type = internal/backlight
@@ -113,6 +137,8 @@ ramp-12 = 
 ramp-13 = 
 ramp-14 = 
 format-padding = 1
+format-background = #282828
+format-underline = #fabd2f
 
 [module/battery]
 type = internal/battery
@@ -142,17 +168,28 @@ ramp-capacity-8 = 
 ramp-capacity-9 = 
 format-full =  full
 format-charging-padding = 1
+format-charging-background = #282828
+format-charging-underline = #b8bb26
 format-discharging-padding = 1
+format-discharging-background = #282828
+format-discharging-underline = #b8bb26
 format-full-padding = 1
+format-full-background = #282828
+format-full-underline = #b8bb26
 
 [module/ram]
 type = internal/memory
 interval = 3
 label =  %percentage_used%%
 format-padding = 1
+format-background = #1d2021
+format-foreground = #a89984
+format-underline = #d65d0e
 
 [module/cpu]
 type = internal/cpu
 interval = 0.5
 label =  %percentage%%
 format-padding = 1
+format-background = #282828
+format-underline = #fe8019

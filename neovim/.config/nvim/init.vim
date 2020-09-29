@@ -21,6 +21,7 @@ if dein#load_state('~/.cache/dein')
     call dein#begin('~/.cache/dein')
 
     " Plugins
+    call dein#add('Kjwon15/vim-transparent')
     call dein#add('antoinemadec/coc-fzf')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
