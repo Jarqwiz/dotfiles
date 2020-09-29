@@ -38,17 +38,8 @@ super + ctrl + s
 super + {_,shift + }{h,j,k,l}
     bspc node -{f,s} {west,south,north,east}
 
-super + {_,shift + }Tab
-    bspc node -f {next,prev}.local
-
-super + ctrl + {_,shift +}Tab
-    bspc desktop -f {next,prev}.local
-
-super + {1-9,0}
-    bspc desktop -f '^{1-9,10}'
-
-super + shift + {1-9,0}
-    $HOME/.config/sxhkd/move-window.sh '{1-9,10}'
+super + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
 
 super + ctrl + {h,j,k,l}
     bspc node -p {west,south,north,east}
@@ -77,20 +68,8 @@ super + Escape
 super + shift + Escape
     $HOME/.config/polybar/launch_polybar.sh &
 
-super + w
-    $HOME/.config/sxhkd/current-window.sh &
-
-super + ctrl + w
-    $HOME/.config/rofi/desktop.sh &
-
-super + ctrl + v
-    pavucontrol &
-
-super + v
-    $HOME/.config/sxhkd/change-volume.sh status
-
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-    $HOME/.config/sxhkd/change-volume.sh {up,down,mute}
+    pulseaudio-ctl {up,down,mute}
 
 XF86Audio{Play,Stop,Next,Prev}
     mpc {toggle,stop,next,prev}
