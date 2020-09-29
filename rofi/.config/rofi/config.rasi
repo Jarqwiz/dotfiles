@@ -6,7 +6,7 @@
 // |_|  \___/|_| |_|
 
 configuration {
-    modi: "drun";
+    modi: "drun,window";
     width: 40;
     lines: 30;
     yoffset: 200;
