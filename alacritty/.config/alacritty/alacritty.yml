@@ -47,38 +47,38 @@ font:
 
 colors:
   primary:
-    background: "#323d43"
-    foreground: "#d8caac"
+    background: "#282828"
+    foreground: "#ebdbb2"
 
   cursor:
-    text: "#323d43"
-    cursor: "#d8caac"
+    text: "#282828"
+    cursor: "#ebdbb2"
 
   selection:
-    text: "#323d43"
-    background: "#d8caac"
+    text: "#282828"
+    background: "#ebdbb2"
 
   normal:
-    black: "#465258"
-    red: "#e68183"
-    green: "#a7c080"
-    yellow: "#d9bb80"
-    blue: "#89beba"
-    magenta: "#d3a0bc"
-    cyan: "#87c095"
-    white: "#d8caac"
+    black: "#282828"
+    red: "#cc241d"
+    green: "#98971a"
+    yellow: "#d79921"
+    blue: "#458588"
+    magenta: "#b16286"
+    cyan: "#689d6a"
+    white: "#a89984"
 
   bright:
-    black: "#465258"
-    red: "#e68183"
-    green: "#a7c080"
-    yellow: "#d9bb80"
-    blue: "#89beba"
-    magenta: "#d3a0bc"
-    cyan: "#87c095"
-    white: "#d8caac"
+    black: "#928374"
+    red: "#fb4934"
+    green: "#b8bb26"
+    yellow: "#fabd2f"
+    blue: "#83a598"
+    magenta: "#d3869b"
+    cyan: "#8ec07c"
+    white: "#ebdbb2"
 
-draw_bold_text_with_bright_colors: false
+draw_bold_text_with_bright_colors: true
 
 background_opacity: 1.0
 
