@@ -16,9 +16,9 @@ font-0 = "Hack Nerd Font:size=9;2"
 font-1 = "Hack:size=9;2"
 width = 100%
 height = 20
-background = #040404
-foreground = #dfdbdf
-border-color = #61507a
+background = #323d43
+foreground = #d8caac
+border-color = #3c474d
 border-size = 1
 wm-restack = bspwm
 monitor-strict = true
@@ -32,20 +32,20 @@ modules-center = mpd
 modules-right = backlight battery volume cpu ram time date
 tray-position = right
 tray-padding = 4
-bottom = true
+bottom = false
 
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
 label-focused = "%index%"
-label-focused-background = #dfdbdf
-label-focused-foreground = #040404
+label-focused-background = #d8caac
+label-focused-foreground = #3c474d
 label-focused-padding = 1
 label-occupied = "%index%"
 label-occupied-padding = 1
 label-urgent = "%index%"
-label-urgent-foreground = #fffbff
-label-urgent-background = #b53b50
+label-urgent-foreground = #3c474d
+label-urgent-background = #e68183
 label-urgent-padding = 1
 label-empty = ""
 pin-workspaces = true
@@ -81,7 +81,7 @@ format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 1
 format-muted-padding = 1
 label-muted = ﱝ muted
-label-muted-foreground = #61507a
+label-muted-foreground = #868d80
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
 ramp-volume-2 = 墳

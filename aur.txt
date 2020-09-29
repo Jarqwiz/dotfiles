@@ -9,6 +9,8 @@ dunst
 exa
 fd
 feh
+gruvbox-dark-gtk
+gruvbox-dark-icons-gtk
 light-git
 lsd
 maim

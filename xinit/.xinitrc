@@ -1,3 +1,3 @@
 $HOME/.screenlayout/default.sh
-betterlockscreen -l &
+betterlockscreen -l dimblur &
 exec bspwm

@@ -17,8 +17,8 @@ window:
     lines: 24
 
   padding:
-    x: 5
-    y: 5
+    x: 6
+    y: 6
 
   dynamic_padding: true
 
@@ -47,38 +47,36 @@ font:
 
 colors:
   primary:
-    background: "#040404"
-    foreground: "#dfdbdf"
+    background: "#323d43"
+    foreground: "#d8caac"
 
   cursor:
-    text: "#040404"
-    cursor: "#dfdbdf"
+    text: "#323d43"
+    cursor: "#d8caac"
 
   selection:
-    text: "#040404"
-    background: "#dfdbdf"
+    text: "#323d43"
+    background: "#d8caac"
 
-  # Normal colors
   normal:
-    black: "#040404"
-    red: "#b53b50"
-    green: "#06ea61"
-    yellow: "#dae84d"
-    blue: "#03aeff"
-    magenta: "#ea5ce2"
-    cyan: "#7cede9"
-    white: "#dfdbdf"
+    black: "#465258"
+    red: "#e68183"
+    green: "#a7c080"
+    yellow: "#d9bb80"
+    blue: "#89beba"
+    magenta: "#d3a0bc"
+    cyan: "#87c095"
+    white: "#d8caac"
 
-  # Bright colors
   bright:
-    black: "#61507a"
-    red: "#e4600e"
-    green: "#141414"
-    yellow: "#242424"
-    blue: "#bfbbbf"
-    magenta: "#efebef"
-    cyan: "#9d4d0e"
-    white: "#fffbff"
+    black: "#465258"
+    red: "#e68183"
+    green: "#a7c080"
+    yellow: "#d9bb80"
+    blue: "#89beba"
+    magenta: "#d3a0bc"
+    cyan: "#87c095"
+    white: "#d8caac"
 
 draw_bold_text_with_bright_colors: false
 

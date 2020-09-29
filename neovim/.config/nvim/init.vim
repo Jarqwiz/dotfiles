@@ -22,8 +22,6 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
-    call dein#add('chriskempson/base16-vim')
-    call dein#add('dawikur/base16-vim-airline-themes')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
@@ -32,6 +30,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('ryanoasis/vim-devicons')
+    call dein#add('sainnhe/forest-night')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
     call dein#add('tpope/vim-fugitive')
@@ -162,7 +161,8 @@ let g:airline#extensions#coc#error_symbol = ' '
 
 " Theme
 set background=dark
-colorscheme base16-synth-midnight-dark
+let g:forest_night_enable_italic = 1
+colorscheme forest-night
 set termguicolors
 
 " Misc

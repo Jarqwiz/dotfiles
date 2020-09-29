@@ -15,24 +15,24 @@
     ignore_newline = no
     icon_position = left
     max_icon_size = 80
-    padding = 4
-    horizontal_padding = 4
-    frame_color = "#61507a"
+    padding = 6
+    horizontal_padding = 6
+    frame_color = "#3c474d"
     frame_width = 1
     separator_color = frame
     follow = mouse
 
 [urgency_low]
-    background = "#040404"
-    foreground = "#61507a"
+    background = "#323d43"
+    foreground = "#868d80"
     timeout = 10
 
 [urgency_normal]
-    background = "#040404"
-    foreground = "#fffbff"
+    background = "#323d43"
+    foreground = "#d8caac"
     timeout = 10
 
 [urgency_critical]
-    background = "#b53b50"
-    foreground = "#fffbff"
+    background = "#e68183"
+    foreground = "#3c474d"
     timeout = 0
