@@ -13,8 +13,7 @@ pseudo-transparency = true
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "Hack Nerd Font:size=9;2"
-font-1 = "Hack:size=9;2"
+font-0 = "VictorMono Nerd Font:size=9;2"
 width = 100%
 height = 20
 background = #00000000
@@ -42,17 +41,17 @@ reverse-scroll = false
 label-focused = "%name%"
 label-focused-background = #a89984
 label-focused-foreground = #1d2021
-label-focused-padding = 1
+label-focused-padding = 2
 label-focused-underline = #ebdbb2
 label-occupied = "%name%"
-label-occupied-padding = 1
+label-occupied-padding = 2
 label-occupied-background = #1d2021
 label-occupied-foreground = #a89984
 label-urgent = "%name%"
 label-urgent-background = #fb4934
 label-urgent-foreground = #1d2021
 label-urgent-underline = #cc241d
-label-urgent-padding = 1
+label-urgent-padding = 2
 label-empty = ""
 pin-workspaces = true
 

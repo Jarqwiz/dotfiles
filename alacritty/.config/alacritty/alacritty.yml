@@ -28,19 +28,19 @@ window:
 
 font:
   normal:
-    family: Hack Nerd Font
+    family: VictorMono Nerd Font
     style: Regular
 
   bold:
-    family: Hack Nerd Font
+    family: VictorMono Nerd Font
     style: Bold
 
   italic:
-    family: Hack Nerd Font
+    family: VictorMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: Hack Nerd Font
+    family: VictorMono Nerd Font
     style: Bold Italic
 
   size: 10.0
@@ -80,7 +80,7 @@ colors:
 
 draw_bold_text_with_bright_colors: true
 
-background_opacity: 0.8
+background_opacity: 0.9
 
 mouse:
   hide_when_typing: true
