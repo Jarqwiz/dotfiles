@@ -5,6 +5,7 @@ blueman
 brave-bin
 broot
 bspwm
+desknamer-git
 dunst
 exa
 fd
