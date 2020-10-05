@@ -6,7 +6,7 @@
 #  \__,_|\__,_|_| |_|___/\__|
 
 [global]
-    geometry = "600x20-20+50"
+    geometry = "600x20-10+10"
     font = VictorMono Nerd Font 10
     format = "<b>%s</b>\n%b"
     allow_markup = yes

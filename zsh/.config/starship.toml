@@ -11,9 +11,16 @@ add_newline = false
 
 [character]
 use_symbol_for_status = true
+success_symbol = "[λ](bold green)"
+error_symbol = "[λ](bold red)"
+vicmd_symbol = "[Λ](bold green)"
 
 [line_break]
 disabled = true
+
+[status]
+disabled = false
+format = "[$symbol $status]($style) "
 
 [aws]
 symbol = " "
