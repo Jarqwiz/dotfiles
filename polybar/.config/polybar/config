@@ -29,16 +29,16 @@ tray-background = #282828
 
 [bar/primary]
 inherit = bar/base
-modules-left = cpu ram
+modules-left = bspwm
 modules-center = title
-modules-right = backlight battery volume
+modules-right = time date
 bottom = false
 
 [bar/secondary]
 inherit = bar/base
-modules-left = bspwm
+modules-left = cpu ram
 modules-center = mpd
-modules-right = time date
+modules-right = backlight battery volume
 tray-position = right
 bottom = true
 
