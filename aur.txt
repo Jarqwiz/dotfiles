@@ -21,7 +21,7 @@ mpd-notification
 mpv
 ncmpcpp
 neovim
-nerd-fonts-victor-mono
+nerd-fonts-hack
 network-manager-applet
 nodejs
 nvm

@@ -18,6 +18,6 @@ verifcolor=ebdbb2
 timecolor=ebdbb2
 datecolor=a89984
 loginbox=28282899
-font="VictorMono Nerd Font"
+font="Hack Nerd Font"
 locktext="%F"
 lock_timeout=10
