@@ -1,4 +1,4 @@
-alacritty-ligatures
+alacritty
 bat
 betterlockscreen-git
 blueman
