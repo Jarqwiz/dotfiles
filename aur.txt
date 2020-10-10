@@ -29,11 +29,11 @@ oh-my-zsh-git
 pavucontrol
 picom
 playerctl
-polybar-git
 pulseaudio
 pulseaudio-ctl
 redshift
 rofi
+stalonetray
 starship-bin
 stow
 sxhkd

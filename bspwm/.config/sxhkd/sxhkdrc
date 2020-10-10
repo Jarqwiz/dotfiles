@@ -65,9 +65,6 @@ super + {Left,Down,Up,Right}
 super + Escape
     pkill -USR1 -x sxhkd
 
-super + shift + Escape
-    $HOME/.config/polybar/launch_polybar.sh &
-
 XF86Audio{RaiseVolume,LowerVolume,Mute}
     pulseaudio-ctl {up,down,mute}
 
