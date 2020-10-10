@@ -5,13 +5,14 @@ blueman
 brave-bin
 broot
 bspwm
-desknamer-git
 dunst
 exa
 fd
 feh
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
+libcanberra
+libcanberra-pulse
 light-git
 lsd
 maim
