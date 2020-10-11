@@ -23,7 +23,6 @@ mpv
 ncmpcpp
 neovim
 nerd-fonts-hack
-network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
@@ -31,10 +30,10 @@ pavucontrol
 picom
 playerctl
 pulseaudio
+pulseaudio-bluetooth
 pulseaudio-ctl
 redshift
 rofi
-stalonetray
 starship-bin
 stow
 sxhkd

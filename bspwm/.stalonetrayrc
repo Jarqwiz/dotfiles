@@ -1,6 +1,0 @@
-geometry 1x1-4+4
-grow_gravity NE
-icon_gravity NE
-icon_size 16
-kludges force_icons_size
-transparent true
