@@ -21,6 +21,9 @@
     frame_width = 1
     separator_color = frame
     follow = mouse
+    stack_duplicates = false
+    dmenu = /usr/bin/rofi -dmenu -p dunst
+    browser = /usr/bin/brave
 
 [urgency_low]
     background = "#1d2021"

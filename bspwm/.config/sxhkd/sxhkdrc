@@ -89,8 +89,8 @@ super + {shift,ctrl,alt} + i
 {_,shift + ,ctrl + ,ctrl + shift + }@Print
     (maim {-su,-u,-s,_} | xclip -selection clipboard -t image/png ; canberra-gtk-play -i screen-capture -d "screenshot") &
 
-super + {_,shift + }d
-    dunstctl close{_,-all} &
+super + {_,shift + ,ctrl + ,alt + }d
+    dunstctl {close,close-all,action,context} &
 
 super + {ctrl + t,i}
     $HOME/.config/sxhkd/show_{time,info}.sh &
