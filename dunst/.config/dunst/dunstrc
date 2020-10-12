@@ -6,24 +6,25 @@
 #  \__,_|\__,_|_| |_|___/\__|
 
 [global]
-    geometry = "600x20-16+16"
+    allow_markup = yes
+    browser = /usr/bin/brave
+    dmenu = /usr/bin/rofi -dmenu -p dunst
+    follow = mouse
     font = Hack Nerd Font 10
     format = "<b>%s</b>\n%b"
-    allow_markup = yes
-    shrink = yes
-    word_wrap = yes
-    ignore_newline = no
-    icon_position = left
-    max_icon_size = 80
-    padding = 6
-    horizontal_padding = 6
     frame_color = "#928374"
     frame_width = 1
+    geometry = "600x20-16+16"
+    horizontal_padding = 6
+    icon_position = left
+    idle_threshold = 10
+    ignore_newline = no
+    max_icon_size = 80
+    padding = 6
     separator_color = frame
-    follow = mouse
+    shrink = yes
     stack_duplicates = false
-    dmenu = /usr/bin/rofi -dmenu -p dunst
-    browser = /usr/bin/brave
+    word_wrap = yes
 
 [urgency_low]
     background = "#1d2021"
