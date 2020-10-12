@@ -97,3 +97,6 @@ super + {ctrl + t,i}
 
 super + {_,shift + ,ctrl + ,alt + }v
     $HOME/.config/sxhkd/change_volume.sh {stat,up,down,mute} &
+
+super + shift + b
+    $HOME/.config/sxhkd/show_battery.sh &
