@@ -12,6 +12,5 @@ down)
 	ICON=""
 	;;
 esac
-REAL_LIGHT=$(light -G 2>/dev/null)
-LIGHT="$(( ${LIGHT//.} ))"
-notify-send -h string:x-canonical-private-synchronous:light-notification "$ICON Light" "$LIGHT %"
+LIGHT=$(light -G)
+notify-send -h string:x-canonical-private-synchronous:light-notification "$ICON Light" "$LIGHT%"
