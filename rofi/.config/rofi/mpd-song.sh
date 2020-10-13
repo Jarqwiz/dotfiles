@@ -7,10 +7,10 @@ if [ "$PLAYLIST" = "" ]; then
 	exit 1
 fi
 
-ROW="$(echo -e "$PLAYLIST" | grep -nx "$(mpc current)" | cut -f1 -d:)"
+ROW="$(echo -e "$PLAYLIST" | grep -nx "$(mpc current)" | cut -f1 -d: | head -n1)"
 
 CHOSEN="$(echo -e "$PLAYLIST" | rofi -i -selected-row $(($ROW - 1)) -dmenu -p "Change song 蘿 ")"
 if [ "$CHOSEN" != "" ]; then
-	CHOSEN_ROW="$(echo -e "$PLAYLIST" | grep -nx "$CHOSEN" | cut -f1 -d:)"
+	CHOSEN_ROW="$(echo -e "$PLAYLIST" | grep -nx "$CHOSEN" | cut -f1 -d: | head -n1)"
 	mpc play $CHOSEN_ROW
 fi
