@@ -92,8 +92,8 @@ super + {shift,ctrl,alt} + i
 super + {_,shift + ,ctrl + ,alt + }d
     dunstctl {close,close-all,action,context} &
 
-super + {ctrl + t,i}
-    $HOME/.config/sxhkd/show_{time,info}.sh &
+super + {ctrl + t,u,i}
+    $HOME/.config/sxhkd/show_{time,usage,info}.sh &
 
 super + {_,shift + ,ctrl + ,alt + }v
     $HOME/.config/sxhkd/change_volume.sh {stat,up,down,mute} &

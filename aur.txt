@@ -30,6 +30,7 @@ oh-my-zsh-git
 pavucontrol
 picom
 playerctl
+procps-ng
 pulseaudio
 pulseaudio-bluetooth
 pulseaudio-ctl
