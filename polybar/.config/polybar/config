@@ -50,7 +50,7 @@ label-urgent = "%name%"
 label-urgent-foreground = #fb4934
 label-urgent-background = #1d2021
 label-urgent-padding = 2
-label-empty = ""
+label-empty =
 pin-workspaces = true
 
 [module/mpd]
