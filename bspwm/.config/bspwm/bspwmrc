@@ -16,7 +16,7 @@ function autostart() {
 }
 
 bspc config border_width 1
-bspc config window_gap 0
+bspc config window_gap 8
 bspc config single_monocle true
 bspc config borderless_monocle true
 bspc config gapless_monocle true
@@ -46,9 +46,11 @@ xsetroot -cursor_name left_ptr &
 
 autostart picom &
 autostart sxhkd &
+$HOME/.config/polybar/launch_polybar.sh &
 (autostart mpd && killall -qe mpd-notification ; mpd-notification -m $HOME/Music -p 6600) &
 (killall -qe dunst ; dunst) &
 autostart unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling &
-autostart udiskie -anT &
-autostart redshift -P &
+autostart udiskie -ansF &
+autostart redshift-gtk -P &
+autostart nm-applet &
 autostart blueman-applet &

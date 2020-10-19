@@ -65,8 +65,11 @@ super + {Left,Down,Up,Right}
 super + Escape
     pkill -USR1 -x sxhkd
 
+super + shift + Escape
+    $HOME/.config/polybar/launch_polybar.sh &
+
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-    $HOME/.config/sxhkd/change_volume.sh {up,down,mute} &
+	pulseaudio-ctl {up,down,mute} &
 
 XF86Audio{Play,Stop,Next,Prev}
     mpc {toggle,stop,next,prev}
@@ -81,22 +84,16 @@ super + {_,ctrl + }m
     $HOME/.config/rofi/mpd-{song,playlist}.sh &
 
 XF86MonBrightness{Up,Down}
-    $HOME/.config/sxhkd/change_light.sh {up,down} &
+	light -{A,U} 5 &
 
-super + {shift,ctrl,alt} + i
-    $HOME/.config/sxhkd/change_light.sh {up,down,stat} &
+super + {shift,ctrl} + i
+	light -{A,U} 5 &
 
 {_,shift + ,ctrl + ,ctrl + shift + }@Print
-    (maim {-su,-u,-s,_} | xclip -selection clipboard -t image/png ; canberra-gtk-play -i screen-capture -d "screenshot") &
+    maim {-su,-u,-s,_} | xclip -selection clipboard -t image/png &
 
 super + {_,shift + ,ctrl + ,alt + }d
     dunstctl {close,close-all,action,context} &
 
-super + {ctrl + t,u,i}
-    $HOME/.config/sxhkd/show_{time,usage,info}.sh &
-
-super + {_,shift + ,ctrl + ,alt + }v
-    $HOME/.config/sxhkd/change_volume.sh {stat,up,down,mute} &
-
-super + shift + b
-    $HOME/.config/sxhkd/show_battery.sh &
+super + {shift + ,ctrl + ,alt + }v
+	pulseaudio-ctl {up,down,mute} &

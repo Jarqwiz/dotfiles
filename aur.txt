@@ -12,8 +12,6 @@ fd
 feh
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
-libcanberra
-libcanberra-pulse
 light-git
 lsd
 maim
@@ -24,12 +22,14 @@ mpv
 ncmpcpp
 neovim
 nerd-fonts-hack
+network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
 pavucontrol
 picom
 playerctl
+polybar
 procps-ng
 pulseaudio
 pulseaudio-bluetooth
