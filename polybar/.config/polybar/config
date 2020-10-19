@@ -29,9 +29,9 @@ tray-background = #282828
 
 [bar/primary]
 inherit = bar/base
-modules-left = time date volume mpd bspwm
-modules-center = title
-modules-right = backlight battery cpu ram
+modules-left = bspwm title
+modules-center = time mpd date
+modules-right = cpu ram backlight battery volume
 tray-position = right
 bottom = false
 
