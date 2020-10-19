@@ -69,7 +69,7 @@ super + shift + Escape
     $HOME/.config/polybar/launch_polybar.sh &
 
 XF86Audio{RaiseVolume,LowerVolume,Mute}
-	pulseaudio-ctl {up,down,mute} &
+    pulseaudio-ctl {up,down,mute} &
 
 XF86Audio{Play,Stop,Next,Prev}
     mpc {toggle,stop,next,prev}
@@ -84,10 +84,10 @@ super + {_,ctrl + }m
     $HOME/.config/rofi/mpd-{song,playlist}.sh &
 
 XF86MonBrightness{Up,Down}
-	light -{A,U} 5 &
+    light -{A,U} 5 &
 
 super + {shift,ctrl} + i
-	light -{A,U} 5 &
+    light -{A,U} 5 &
 
 {_,shift + ,ctrl + ,ctrl + shift + }@Print
     maim {-su,-u,-s,_} | xclip -selection clipboard -t image/png &
@@ -96,4 +96,4 @@ super + {_,shift + ,ctrl + ,alt + }d
     dunstctl {close,close-all,action,context} &
 
 super + {shift + ,ctrl + ,alt + }v
-	pulseaudio-ctl {up,down,mute} &
+    pulseaudio-ctl {up,down,mute} &
