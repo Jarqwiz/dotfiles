@@ -30,7 +30,7 @@ module-margin = 0
 padding = 0
 fixed-center = true
 tray-padding = 2
-tray-maxsize = 24
+tray-maxsize = 20
 tray-background = #282828
 
 [bar/primary]
