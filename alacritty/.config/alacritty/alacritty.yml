@@ -28,19 +28,19 @@ window:
 
 font:
   normal:
-    family: DejaVuSansMono Nerd Font Mono
+    family: DejaVuSansMono Nerd Font
     style: Regular
 
   bold:
-    family: DejaVuSansMono Nerd Font Mono
+    family: DejaVuSansMono Nerd Font
     style: Bold
 
   italic:
-    family: DejaVuSansMono Nerd Font Mono
+    family: DejaVuSansMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: DejaVuSansMono Nerd Font Mono
+    family: DejaVuSansMono Nerd Font
     style: Bold Italic
 
   size: 10.0
