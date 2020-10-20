@@ -8,13 +8,13 @@
 configuration {
     modi: "drun,window";
     width: 40;
-    lines: 30;
+    lines: 20;
     yoffset: 200;
     location: 2;
-    font: "Hack Nerd Font 10";
+    font: "DejaVuSansMono Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
-    theme: "gruvbox-dark";
+    theme: "nord";
     display-drun: " ";
     fixed-num-lines: false;
 }

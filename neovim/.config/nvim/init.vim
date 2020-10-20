@@ -27,7 +27,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('honza/vim-snippets')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
-    call dein#add('morhetz/gruvbox')
+    call dein#add('arcticicestudio/nord-vim')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('ryanoasis/vim-devicons')
@@ -163,11 +163,12 @@ let g:airline_powerline_fonts = 1
 " Theme
 set termguicolors
 set background=dark
-let g:gruvbox_italic = 1
-let g:gruvbox_bold = 1
-let g:gruvbox_underline = 1
-let g:gruvbox_invert_selection = 0
-colorscheme gruvbox
+let g:nord_bold = 1
+let g:nord_italic = 1
+let g:nord_italic_comments = 1
+let g:nord_underline = 1
+let g:nord_uniform_diff_background = 1
+colorscheme nord
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

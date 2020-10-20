@@ -6,13 +6,10 @@ blueman
 brave-bin
 broot
 bspwm
-desknamer-git
 dunst
 exa
 fd
 feh
-gruvbox-dark-gtk
-gruvbox-dark-icons-gtk
 light-git
 lsd
 maim
@@ -22,11 +19,13 @@ mpd-notification
 mpv
 ncmpcpp
 neovim
-nerd-fonts-hack
+nerd-fonts-dejavu-complete
 network-manager-applet
 nodejs
+nordic-theme-git
 nvm
 oh-my-zsh-git
+papirus-folders-nordic
 pavucontrol
 picom
 playerctl
@@ -41,6 +40,7 @@ starship-bin
 stow
 sxhkd
 tree
+ttf-dejavu
 udiskie
 unclutter
 vim-dein
