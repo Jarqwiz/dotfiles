@@ -10,18 +10,18 @@
 [settings]
 screenchange-reload = true
 format-padding = 2
-format-background = #3b4252
-format-foreground = #d8dee9
+format-background = #282828
+format-foreground = #d4be98
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "DejaVuSansMono Nerd Font:size=9;2"
+font-0 = "Hack Nerd Font:size=9;2"
 width = 100%:-20
 height = 30
 offset-x = 10
 offset-y = 10
 background = #00000000
-foreground = #d8dee9
+foreground = #d4be98
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
@@ -31,7 +31,7 @@ padding = 0
 fixed-center = true
 tray-padding = 2
 tray-maxsize = 16
-tray-background = #3b4252
+tray-background = #282828
 
 [bar/primary]
 inherit = bar/base
@@ -45,16 +45,16 @@ bottom = false
 type = internal/bspwm
 reverse-scroll = false
 label-focused = "%name%"
-label-focused-foreground = #eceff4
-label-focused-background = #5e81ac
+label-focused-foreground = #282828
+label-focused-background = #d4be98
 label-focused-padding = 2
 label-occupied = "%name%"
 label-occupied-padding = 2
-label-occupied-foreground = #81a1c1
-label-occupied-background = #2e3440
+label-occupied-foreground = #d4be98
+label-occupied-background = #282828
 label-urgent = "%name%"
-label-urgent-foreground = #eceff4
-label-urgent-background = #bf616a
+label-urgent-foreground = #282828
+label-urgent-background = #ea6962
 label-urgent-padding = 2
 label-empty =
 format-padding = 0
@@ -64,25 +64,23 @@ pin-workspaces = true
 type = internal/mpd
 host = 127.0.0.1
 port = 6600
-format-online = <label-song> %{F#8fbcbb}(<label-time>)%{F-}
-format-paused = %{F#8fbcbb} Paused%{F-} <label-song> %{F#8fbcbb}(<label-time>)%{F-}
+format-online = <label-song> %{F#d3869b}(<label-time>)%{F-}
+format-paused = %{F#d3869b} Paused%{F-} <label-song> %{F#d3869b}(<label-time>)%{F-}
 format-stopped =  Stopped
-format-stopped-foreground = #8fbcbb
-format-stopped-background = #2e3440
+format-stopped-foreground = #d3869b
 label-song =  %title:0:60:…%
 
 [module/time]
 type = internal/date
 time = %H:%M
-time-alt = "%H:%M%{F#8fbcbb}:%S %Y-%{F-}%m-%d"
+time-alt = "%H:%M%{F#d3869b}:%S %Y-%{F-}%m-%d"
 label =  %time%
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
-format-muted-background = #2e3440
-format-muted-foreground = #8fbcbb
+format-muted-foreground = #d3869b
 label-muted = ﱝ muted
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
@@ -95,7 +93,7 @@ battery = BAT0
 adapter = ADP1
 time-format = %H:%M
 format-charging = <animation-charging>  <label-charging>
-label-charging = %percentage%% %{F#8fbcbb}(%time%)%{F-}
+label-charging = %percentage%% %{F#d3869b}(%time%)%{F-}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
@@ -103,7 +101,7 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 format-discharging = <ramp-capacity>  <label-discharging>
-label-discharging = %percentage%% %{F#8fbcbb}(%time%)%{F-}
+label-discharging = %percentage%% %{F#d3869b}(%time%)%{F-}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 

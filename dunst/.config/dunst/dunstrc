@@ -10,9 +10,9 @@
     browser = /usr/bin/brave
     dmenu = /usr/bin/rofi -dmenu -p dunst
     follow = mouse
-    font = DejaVuSansMono Nerd Font 10
+    font = Hack Nerd Font 10
     format = "<b>%s</b>\n%b"
-    frame_color = "#4c566a"
+    frame_color = "#d4be98"
     frame_width = 1
     geometry = "600x20-20+60"
     horizontal_padding = 6
@@ -27,16 +27,16 @@
     word_wrap = yes
 
 [urgency_low]
-    background = "#2e3440"
-    foreground = "#d8dee9"
+    background = "#282828"
+    foreground = "#d3869b"
     timeout = 10
 
 [urgency_normal]
-    background = "#434c5e"
-    foreground = "#eceff4"
+    background = "#282828"
+    foreground = "#d4be98"
     timeout = 10
 
 [urgency_critical]
-    background = "#2e3440"
-    foreground = "#bf616a"
+    background = "#ea6962"
+    foreground = "#282828"
     timeout = 0

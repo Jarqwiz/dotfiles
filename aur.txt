@@ -10,6 +10,8 @@ dunst
 exa
 fd
 feh
+gruvbox-material-gtk-theme-git
+gruvbox-material-icon-theme-git
 light-git
 lsd
 maim
@@ -19,13 +21,11 @@ mpd-notification
 mpv
 ncmpcpp
 neovim
-nerd-fonts-dejavu-complete
+nerd-fonts-hack
 network-manager-applet
 nodejs
-nordic-theme-git
 nvm
 oh-my-zsh-git
-papirus-folders-nordic
 pavucontrol
 picom
 playerctl
@@ -40,7 +40,6 @@ starship-bin
 stow
 sxhkd
 tree
-ttf-dejavu
 udiskie
 unclutter
 vim-dein
