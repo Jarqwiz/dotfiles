@@ -9,7 +9,7 @@
 
 [settings]
 screenchange-reload = true
-format-padding = 2
+format-padding = 1
 format-background = #282828
 format-foreground = #d4be98
 
@@ -17,7 +17,7 @@ format-foreground = #d4be98
 monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=9;2"
 width = 100%:-20
-height = 30
+height = 20
 offset-x = 10
 offset-y = 10
 background = #00000000
@@ -47,15 +47,15 @@ reverse-scroll = false
 label-focused = "%name%"
 label-focused-foreground = #282828
 label-focused-background = #d4be98
-label-focused-padding = 2
+label-focused-padding = 1
 label-occupied = "%name%"
-label-occupied-padding = 2
+label-occupied-padding = 1
 label-occupied-foreground = #d4be98
 label-occupied-background = #282828
 label-urgent = "%name%"
 label-urgent-foreground = #282828
 label-urgent-background = #ea6962
-label-urgent-padding = 2
+label-urgent-padding = 1
 label-empty =
 format-padding = 0
 pin-workspaces = true
