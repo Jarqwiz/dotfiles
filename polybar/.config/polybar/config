@@ -16,10 +16,8 @@ format-foreground = #d4be98
 [bar/base]
 monitor = ${env:MONITOR:}
 font-0 = "Hack Nerd Font:size=9;2"
-width = 100%:-20
+width = 100%
 height = 20
-offset-x = 10
-offset-y = 10
 background = #00000000
 foreground = #d4be98
 wm-restack = bspwm

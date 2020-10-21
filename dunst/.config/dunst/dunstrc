@@ -14,7 +14,7 @@
     format = "<b>%s</b>\n%b"
     frame_color = "#d4be98"
     frame_width = 1
-    geometry = "600x20-20+50"
+    geometry = "600x20-20+40"
     horizontal_padding = 6
     icon_position = left
     idle_threshold = 10
