@@ -10,8 +10,8 @@ dunst
 exa
 fd
 feh
-gruvbox-material-gtk-theme-git
-gruvbox-material-icon-theme-git
+gruvbox-dark-gtk
+gruvbox-dark-icons-gtk
 light-git
 lsd
 maim
