@@ -110,7 +110,6 @@ let g:coc_global_extensions = [
             \ 'coc-snippets',
             \ 'coc-svg',
             \ 'coc-texlab',
-            \ 'coc-tsserver',
             \ 'coc-vimlsp',
             \ 'coc-yaml',
             \ 'coc-yank',
