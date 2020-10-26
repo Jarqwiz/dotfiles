@@ -5,19 +5,19 @@
 # | |_) |  __/ |_| ||  __/ |  | | (_) | (__|   <\__ \ (__| | |  __/  __/ | | |
 # |_.__/ \___|\__|\__\___|_|  |_|\___/ \___|_|\_\___/\___|_|  \___|\___|_| |_|
 
-insidecolor=3c3836
-ringcolor=665c54
-keyhlcolor=ebdbb2
-bshlcolor=ebdbb2
-separatorcolor=504945
-insidevercolor=458588
-insidewrongcolor=cc241d
-ringvercolor=83a598
-ringwrongcolor=fb4934
-verifcolor=ebdbb2
-timecolor=ebdbb2
-datecolor=a89984
-loginbox=28282899
+insidecolor=ceefe6
+ringcolor=9ae2b7
+keyhlcolor=e053ed
+bshlcolor=de90e5
+separatorcolor=7b7c7c
+insidevercolor=9be6e8
+insidewrongcolor=e5a292
+ringvercolor=6abdd8
+ringwrongcolor=e27261
+verifcolor=e2c5e5
+timecolor=333535
+datecolor=626566
+loginbox=d9dddd99
 font="Hack Nerd Font"
 locktext="%F"
 lock_timeout=10
