@@ -37,7 +37,7 @@ modules-left = volume backlight battery mpd
 modules-center = bspwm
 modules-right = time
 tray-position = right
-bottom = true
+bottom = false
 
 [module/bspwm]
 type = internal/bspwm
