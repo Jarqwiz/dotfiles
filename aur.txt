@@ -10,8 +10,6 @@ dunst
 exa
 fd
 feh
-gruvbox-dark-gtk
-gruvbox-dark-icons-gtk
 light-git
 lsd
 maim
@@ -26,6 +24,8 @@ network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
+paper-gtk-theme-git
+paper-icon-theme-git
 pavucontrol
 picom
 playerctl

@@ -47,36 +47,32 @@ font:
 
 colors:
   primary:
-    background: "#282828"
-    foreground: "#ebdbb2"
+    background: "#eeeeee"
+    foreground: "#878787"
 
   cursor:
-    text: CellBackground
-    cursor: "#ebdbb2"
-
-  selection:
-    text: CellForeground
-    background: "#665c54"
+    text: "#eeeeee"
+    cursor: "#878787"
 
   normal:
-    black: "#282828"
-    red: "#cc241d"
-    green: "#98971a"
-    yellow: "#d79921"
-    blue: "#458588"
-    magenta: "#b16286"
-    cyan: "#689d6a"
-    white: "#a89984"
+    black: "#eeeeee"
+    red: "#af0000"
+    green: "#008700"
+    yellow: "#5f8700"
+    blue: "#0087af"
+    magenta: "#878787"
+    cyan: "#005f87"
+    white: "#444444"
 
   bright:
-    black: "#928374"
-    red: "#fb4934"
-    green: "#b8bb26"
-    yellow: "#fabd2f"
-    blue: "#83a598"
-    magenta: "#d3869b"
-    cyan: "#8ec07c"
-    white: "#ebdbb2"
+    black: "#bcbcbc"
+    red: "#d70000"
+    green: "#d70087"
+    yellow: "#8700af"
+    blue: "#d75f00"
+    magenta: "#d75f00"
+    cyan: "#005faf"
+    white: "#005f87"
 
 draw_bold_text_with_bright_colors: true
 

@@ -14,7 +14,7 @@ configuration {
     font: "Hack Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
-    theme: "gruvbox-dark";
+    theme: "Paper";
     display-drun: " ";
     fixed-num-lines: false;
 }
