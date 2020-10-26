@@ -15,7 +15,7 @@ format-foreground = #444444
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "Hack Nerd Font:size=9;2"
+font-0 = "VictorMono Nerd Font:size=9;2"
 width = 100%
 height = 20
 background = #00000000

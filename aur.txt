@@ -1,5 +1,5 @@
 acpi
-alacritty
+alacritty-ligatures
 bat
 betterlockscreen-git
 blueman
@@ -20,7 +20,7 @@ mpd-notification
 mpv
 ncmpcpp
 neovim
-nerd-fonts-hack
+nerd-fonts-victor-mono
 network-manager-applet
 nodejs
 nvm
@@ -41,6 +41,7 @@ starship-bin
 stow
 sxhkd
 tree
+ttf-lato
 udiskie
 unclutter
 vim-dein
