@@ -1,5 +1,6 @@
 acpi
 alacritty-ligatures
+ant-gtk-theme
 bat
 betterlockscreen-git
 blueman
@@ -25,8 +26,7 @@ network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
-paper-gtk-theme-git
-paper-icon-theme-git
+papirus-icon-theme
 pavucontrol
 picom
 playerctl

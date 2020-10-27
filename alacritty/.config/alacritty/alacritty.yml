@@ -47,32 +47,32 @@ font:
 
 colors:
   primary:
-    background: "#eeeeee"
-    foreground: "#878787"
+    background: "#282828"
+    foreground: "#eeeeee"
 
   cursor:
-    text: "#eeeeee"
-    cursor: "#878787"
+    text: "#282828"
+    cursor: "#eeeeee"
 
   normal:
-    black: "#eeeeee"
-    red: "#af0000"
-    green: "#008700"
-    yellow: "#5f8700"
-    blue: "#0087af"
-    magenta: "#878787"
-    cyan: "#005f87"
-    white: "#444444"
+    black: "#282828"
+    red: "#f43753"
+    green: "#c9d05c"
+    yellow: "#ffc24b"
+    blue: "#b3deef"
+    magenta: "#d3b987"
+    cyan: "#73cef4"
+    white: "#eeeeee"
 
   bright:
-    black: "#bcbcbc"
-    red: "#d70000"
-    green: "#d70087"
-    yellow: "#8700af"
-    blue: "#d75f00"
-    magenta: "#d75f00"
-    cyan: "#005faf"
-    white: "#005f87"
+    black: "#4c4c4c"
+    red: "#f43753"
+    green: "#c9d05c"
+    yellow: "#ffc24b"
+    blue: "#b3deef"
+    magenta: "#d3b987"
+    cyan: "#73cef4"
+    white: "#feffff"
 
 draw_bold_text_with_bright_colors: true
 

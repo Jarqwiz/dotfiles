@@ -12,7 +12,7 @@
     follow = mouse
     font = VictorMono Nerd Font 10
     format = "<b>%s</b>\n%b"
-    frame_color = "#4a606b"
+    frame_color = "#4c4c4c"
     frame_width = 1
     geometry = "600x20-20+40"
     horizontal_padding = 6
@@ -27,16 +27,16 @@
     word_wrap = yes
 
 [urgency_low]
-    background = "#ececec"
-    foreground = "#797979"
+    background = "#282828"
+    foreground = "#eeeeee"
     timeout = 10
 
 [urgency_normal]
-    background = "#f7f7f7"
-    foreground = "#444444"
+    background = "#4c4c4c"
+    foreground = "#eeeeee"
     timeout = 10
 
 [urgency_critical]
-    background = "#d32f2f"
-    foreground = "#f7f7f7"
+    background = "#f43753"
+    foreground = "#282828"
     timeout = 0

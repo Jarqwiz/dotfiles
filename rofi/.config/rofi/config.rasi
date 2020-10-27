@@ -14,7 +14,7 @@ configuration {
     font: "VictorMono Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
-    theme: "Paper";
+    theme: "custom";
     display-drun: " ";
     fixed-num-lines: false;
 }

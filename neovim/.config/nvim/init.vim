@@ -21,11 +21,11 @@ if dein#load_state('~/.cache/dein')
     call dein#begin('~/.cache/dein')
 
     " Plugins
-    call dein#add('NLKNguyen/papercolor-theme')
     call dein#add('antoinemadec/coc-fzf')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
+    call dein#add('jacoborus/tender.vim')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
@@ -166,8 +166,8 @@ let g:airline_right_alt_alt_sep = ""
 
 " Theme
 set termguicolors
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme tender
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4
