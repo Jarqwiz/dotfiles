@@ -1,6 +1,5 @@
 acpi
 alacritty-ligatures
-ant-gtk-theme
 bat
 betterlockscreen-git
 blueman
@@ -26,7 +25,6 @@ network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
-papirus-icon-theme
 pavucontrol
 picom
 playerctl
@@ -45,6 +43,8 @@ ttf-lato
 udiskie
 unclutter
 vim-dein
+whitesur-gtk-theme-git
+whitesur-icon-theme-git
 xclip
 xdo
 xorg
