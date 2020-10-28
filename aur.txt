@@ -12,6 +12,7 @@ dunst
 exa
 fd
 feh
+fzf
 light-git
 lsd
 maim
