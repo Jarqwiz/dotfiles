@@ -1,6 +1,5 @@
 acpi
-alacritty-ligatures
-ant-gtk-theme
+alacritty
 bat
 betterlockscreen-git
 blueman
@@ -22,14 +21,13 @@ mpd-notification
 mpv
 ncmpcpp
 neovim
-nerd-fonts-victor-mono
+nerd-fonts-hack
 network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
-papirus-icon-theme
 pavucontrol
-picom
+picom-git
 playerctl
 polybar
 procps-ng

@@ -30,7 +30,7 @@ source $ZSH/oh-my-zsh.sh
 
 eval "$(starship init zsh)"
 
-export BAT_THEME="ansi-dark"
+export BAT_THEME="Dracula"
 
 alias vim='nvim'
 alias v='nvim'
@@ -38,7 +38,7 @@ alias ls='lsd'
 alias cat='bat'
 alias tree='tree -C'
 alias sudo='sudo '
-alias exa='exa --git --time-style long-iso --header --icons'
+alias exa='exa --git --time-style long-iso --header --icons --color-scale'
 alias ea='exa --all --long'
 alias e='exa --long'
 alias et='exa --tree'

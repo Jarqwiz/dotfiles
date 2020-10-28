@@ -80,9 +80,6 @@ super + {shift + p,shift + s,n,p}
 super + ctrl + {shift + p,shift + s,n,p}
     playerctl {play-pause,stop,next,previous}
 
-super + {_,ctrl + }m
-    $HOME/.config/rofi/mpd-{song,playlist}.sh &
-
 XF86MonBrightness{Up,Down}
     light -{A,U} 5 &
 
