@@ -43,7 +43,9 @@ tree
 ttf-lato
 udiskie
 unclutter
+unzip
 vim-dein
+wget
 xclip
 xdo
 xorg
