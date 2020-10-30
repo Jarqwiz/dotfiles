@@ -10,8 +10,6 @@
 [settings]
 screenchange-reload = true
 format-padding = 1
-format-background = #282a36
-format-foreground = #f8f8f2
 
 [bar/base]
 monitor = ${env:MONITOR:}
