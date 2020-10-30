@@ -33,9 +33,9 @@ tray-background = #282a36
 
 [bar/primary]
 inherit = bar/base
-modules-left = volume backlight battery mpd
-modules-center = bspwm
-modules-right = time
+modules-left = bspwm cpu memory
+modules-center = time
+modules-right = mpd battery backlight volume
 tray-position = right
 bottom = false
 
@@ -125,3 +125,32 @@ ramp-11 = 
 ramp-12 = 
 ramp-13 = 
 ramp-14 = 
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format = <label> <ramp-coreload>
+label =  %percentage%%
+ramp-coreload-spacing = 0
+ramp-coreload-0 = ▁
+ramp-coreload-1 = ▂
+ramp-coreload-2 = ▃
+ramp-coreload-3 = ▄
+ramp-coreload-4 = ▅
+ramp-coreload-5 = ▆
+ramp-coreload-6 = ▇
+ramp-coreload-7 = █
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label> <ramp-used>
+label =  %gb_used%/%gb_free%
+ramp-used-0 = ▁
+ramp-used-1 = ▂
+ramp-used-2 = ▃
+ramp-used-3 = ▄
+ramp-used-4 = ▅
+ramp-used-5 = ▆
+ramp-used-6 = ▇
+ramp-used-7 = █
