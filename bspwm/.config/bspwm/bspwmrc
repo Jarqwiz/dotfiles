@@ -43,6 +43,7 @@ xsetroot -cursor_name left_ptr &
 autostart picom --experimental-backends &
 autostart sxhkd &
 $HOME/.config/polybar/launch_polybar.sh &
+autostart conky &
 (autostart mpd && killall -qe mpd-notification ; mpd-notification -m $HOME/Music -p 6600) &
 (killall -qe dunst ; dunst) &
 autostart unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling &

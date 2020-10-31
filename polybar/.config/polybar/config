@@ -27,7 +27,6 @@ padding = 1
 fixed-center = true
 tray-padding = 2
 tray-maxsize = 16
-tray-background = #282a36
 
 [bar/primary]
 inherit = bar/base
@@ -66,7 +65,7 @@ label-song =  %title:0:60:…%
 
 [module/time]
 type = internal/date
-time =  %H:%M:%S %{F#bd93f9} %Y-%m-%d%{F-}
+time =  %H:%M
 label = %time%
 
 [module/volume]
