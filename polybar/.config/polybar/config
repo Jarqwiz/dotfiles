@@ -9,21 +9,21 @@
 
 [settings]
 screenchange-reload = true
-format-padding = 1
 
 [bar/base]
 monitor = ${env:MONITOR:}
-font-0 = "Hack Nerd Font:size=9;2"
+font-0 = Hack Nerd Font:size=9;2
 width = 100%
-height = 20
+height = 16
+offset-y = 4
 background = #00000000
 foreground = #f8f8f2
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
-module-margin = 0
-padding = 0
+module-margin = 1
+padding = 1
 fixed-center = true
 tray-padding = 2
 tray-maxsize = 16
@@ -31,29 +31,27 @@ tray-background = #282a36
 
 [bar/primary]
 inherit = bar/base
-modules-left = bspwm cpu memory
-modules-center = time
-modules-right = mpd battery backlight volume
+modules-left = mpd volume battery backlight cpu memory
+modules-center = bspwm
+modules-right = title time
 tray-position = right
 bottom = false
 
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
-label-focused = "%name%"
-label-focused-background = #bd93f9
-label-focused-foreground = #282a36
+label-focused = 
+label-focused-foreground = #f8f8f2
 label-focused-padding = 1
-label-occupied = "%name%"
+label-occupied = 
 label-occupied-padding = 1
-label-occupied-background = #282a36
-label-occupied-foreground = #bd93f9
-label-urgent = "%name%"
-label-urgent-background = #ff5555
-label-urgent-foreground = #282a36
+label-occupied-foreground = #6272a4
+label-urgent = 
+label-urgent-foreground = #ff5555
 label-urgent-padding = 1
-label-empty =
-format-padding = 0
+label-empty = 
+label-empty-foreground = #44475a
+label-empty-padding = 1
 pin-workspaces = true
 
 [module/mpd]
@@ -68,7 +66,7 @@ label-song =  %title:0:60:…%
 
 [module/time]
 type = internal/date
-time = " %H:%M:%S %{F#bd93f9} %Y-%m-%d%{F-}"
+time =  %H:%M:%S %{F#bd93f9} %Y-%m-%d%{F-}
 label = %time%
 
 [module/volume]
@@ -127,28 +125,15 @@ ramp-14 = 
 [module/cpu]
 type = internal/cpu
 interval = 0.5
-format = <label> <ramp-coreload>
+format = <label>
 label =  %percentage%%
-ramp-coreload-spacing = 0
-ramp-coreload-0 = ▁
-ramp-coreload-1 = ▂
-ramp-coreload-2 = ▃
-ramp-coreload-3 = ▄
-ramp-coreload-4 = ▅
-ramp-coreload-5 = ▆
-ramp-coreload-6 = ▇
-ramp-coreload-7 = █
 
 [module/memory]
 type = internal/memory
 interval = 3
-format = <label> <ramp-used>
-label =  %gb_used%/%gb_free%
-ramp-used-0 = ▁
-ramp-used-1 = ▂
-ramp-used-2 = ▃
-ramp-used-3 = ▄
-ramp-used-4 = ▅
-ramp-used-5 = ▆
-ramp-used-6 = ▇
-ramp-used-7 = █
+format = <label>
+label =  %percentage_used%%
+
+[module/title]
+type = internal/xwindow
+label = %title:0:60:…%
