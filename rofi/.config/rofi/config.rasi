@@ -13,12 +13,12 @@ configuration {
 
 * {
     font: "Hack Nerd Font 10";
-    foreground: #f8f8f2ff;
-    background: #282a36ff;
-    foreground-alt: #f8f8f255;
-    background-alt: #282a3655;
-    active-background: #bd93f9aa;
-    urgent-background: #ff2222aa;
+    foreground: #ebdbb2;
+    background: #282828;
+    foreground-alt: #a8998455;
+    background-alt: #1d202155;
+    active-background: #928374aa;
+    urgent-background: #fb4934aa;
     selected-background: @active-background;
     selected-urgent-background: @urgent-background;
     selected-active-background: @active-background;
@@ -31,7 +31,7 @@ window {
     anchor: center;
     height: 100%;
     width: 100%;
-    padding: 25%;
+    padding: 15%;
     background-color: @background-alt;
     text-color: @foreground-alt;
     children: [ mainbox ];
@@ -50,8 +50,8 @@ listview {
     layout: vertical;
     dynamic: false;
     cycle: false;
-    padding: 10;
-    spacing: 10;
+    padding: 1%;
+    spacing: 0.5%;
     columns: 5;
 }
 
@@ -64,18 +64,18 @@ inputbar {
 entry {
     background-color: @background;
     text-color: @foreground;
-    padding: 10px;
+    padding: 1%;
 }
 
 element {
     background-color: @background;
     text-color: @foreground;
     orientation: vertical;
-    padding: 35px;
+    padding: 3%;
 }
 
 element-icon {
-    size: 32px;
+    size: 4.5%;
 }
 
 element-text {
