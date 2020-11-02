@@ -27,11 +27,11 @@ configuration {
 }
 
 window {
-    location: center;
-    anchor: center;
-    height: 100%;
-    width: 100%;
-    padding: 15%;
+    location: southwest;
+    anchor: southwest;
+    height: calc(100% - 20px);
+    width: 30em;
+    padding: 0.4em;
     background-color: @background-alt;
     text-color: @foreground-alt;
     children: [ mainbox ];
@@ -49,10 +49,10 @@ listview {
     text-color: @foreground-alt;
     layout: vertical;
     dynamic: false;
-    cycle: false;
-    padding: 1%;
-    spacing: 0.5%;
-    columns: 5;
+    cycle: true;
+    padding: 0.6em;
+    spacing: 0.4em;
+    columns: 1;
 }
 
 inputbar {
@@ -64,22 +64,25 @@ inputbar {
 entry {
     background-color: @background;
     text-color: @foreground;
-    padding: 1%;
+    padding: 0.4em;
 }
 
 element {
     background-color: @background;
     text-color: @foreground;
-    orientation: vertical;
-    padding: 3%;
+    orientation: horizontal;
+    padding: 0.6em;
+    children: [ element-text, element-icon ];
 }
 
 element-icon {
-    size: 4.5%;
+    size: 1.0em;
+    horizontal-align: 1.0;
+    vertical-align: 0.5;
 }
 
 element-text {
-    horizontal-align: 0.5;
+    horizontal-align: 0.0;
     vertical-align: 0.5;
 }
 
