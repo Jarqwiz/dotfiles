@@ -37,6 +37,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-repeat')
     call dein#add('tpope/vim-rhubarb')
     call dein#add('tpope/vim-surround')
+    call dein#add('triglav/vim-visual-increment')
     call dein#add('vim-airline/vim-airline')
     call dein#add('vim-airline/vim-airline-themes')
     call dein#add('wsdjeg/dein-ui.vim')
@@ -196,6 +197,7 @@ noremap <plug>(slash-after) zz
 autocmd TermOpen * startinsert
 set conceallevel=0
 set clipboard=unnamed
+set nrformats=bin,hex,octal
 
 " Movement maps
 tnoremap <silent> <Esc> <C-\><C-n>
