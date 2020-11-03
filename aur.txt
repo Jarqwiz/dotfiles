@@ -4,7 +4,6 @@ bat
 betterlockscreen-git
 blueman
 brave-bin
-broot
 bspwm
 capitaine-cursors
 dunst
