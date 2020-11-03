@@ -14,16 +14,28 @@ setopt nocheckjobs
 export ZSH="/usr/share/oh-my-zsh"
 export EDITOR="nvim"
 export BROWSER="brave"
+export GREP="rg"
+export MAGIC_ENTER_OTHER_COMMAND="exa --long"
 plugins=(
-    git
-    sudo
+    alias-finder
+    archlinux
+    colored-man-pages
     colorize
     common-aliases
-    colored-man-pages
-    fancy-ctrl-z
-    github
     extract
+    fancy-ctrl-z
+    fd
     fzf
+    git
+    github
+    gitignore
+    magic-enter
+    rust
+    rustup
+    singlechar
+    sudo
+    systemd
+    zsh-interactive-cd
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -43,10 +55,6 @@ alias ea='exa --all --long'
 alias e='exa --long'
 alias et='exa --tree'
 alias eta='exa --tree --long --all'
-alias b='bat'
-alias s='sudo'
-alias y='yay'
-alias ys='yay -S'
 
 unalias fd
 
