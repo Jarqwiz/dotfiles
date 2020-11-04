@@ -40,7 +40,7 @@ bspc config presel_feedback_color "#d3869b"
 betterlockscreen -w &
 xsetroot -cursor_name left_ptr &
 
-autostart picom --experimental-backends &
+autostart picom &
 autostart sxhkd &
 $HOME/.config/polybar/launch_polybar.sh &
 (autostart mpd && killall -qe mpd-notification ; mpd-notification -m $HOME/Music -p 6600) &

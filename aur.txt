@@ -28,7 +28,7 @@ nodejs
 nvm
 oh-my-zsh-git
 pavucontrol
-picom-git
+picom
 playerctl
 polybar
 procps-ng
