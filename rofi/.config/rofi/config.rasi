@@ -7,123 +7,14 @@
 
 configuration {
     modi: "drun,window";
-    show-icons: true;
-    display-drun: " ";
-}
-
-* {
+    width: 40;
+    lines: 30;
+    yoffset: 200;
+    location: 2;
     font: "Hack Nerd Font 10";
-    foreground: #ebdbb2;
-    background: #282828;
-    foreground-alt: #a8998455;
-    background-alt: #1d202155;
-    active-background: #928374aa;
-    urgent-background: #fb4934aa;
-    selected-background: @active-background;
-    selected-urgent-background: @urgent-background;
-    selected-active-background: @active-background;
-    separatorcolor: @active-background;
-    bordercolor: @active-background;
-}
-
-window {
-    location: center;
-    anchor: center;
-    height: 100%;
-    width: 100%;
-    padding: 15%;
-    background-color: @background-alt;
-    text-color: @foreground-alt;
-    children: [ mainbox ];
-}
-
-mainbox {
-    background-color: @background-alt;
-    text-color: @foreground-alt;
-    expand: true;
-    children: [ inputbar, listview ];
-}
-
-listview {
-    background-color: @background-alt;
-    text-color: @foreground-alt;
-    layout: vertical;
-    dynamic: false;
-    cycle: false;
-    padding: 1%;
-    spacing: 0.5%;
-    columns: 5;
-}
-
-inputbar {
-    background-color: @background;
-    text-color: @foreground;
-    children: [ entry ];
-}
-
-entry {
-    background-color: @background;
-    text-color: @foreground;
-    padding: 1%;
-}
-
-element {
-    background-color: @background;
-    text-color: @foreground;
-    orientation: vertical;
-    padding: 3%;
-}
-
-element-icon {
-    size: 4.5%;
-}
-
-element-text {
-    horizontal-align: 0.5;
-    vertical-align: 0.5;
-}
-
-element.normal.normal {
-    background-color: @background;
-    text-color: @foreground;
-}
-
-element.normal.urgent {
-    background-color: @urgent-background;
-    text-color: @urgent-foreground;
-}
-
-element.normal.active {
-    background-color: @active-background;
-    text-color: @foreground;
-}
-
-element.selected.normal {
-    background-color: @selected-background;
-    text-color: @foreground;
-}
-
-element.selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color: @foreground;
-}
-
-element.selected.active {
-    background-color: @selected-active-background;
-    text-color: @foreground;
-}
-
-element.alternate.normal {
-    background-color: @background;
-    text-color: @foreground;
-}
-
-element.alternate.urgent {
-    background-color: @urgent-background;
-    text-color: @foreground;
-}
-
-element.alternate.active {
-    background-color: @active-background;
-    text-color: @foreground;
+    show-icons: true;
+    scroll-method: 1;
+    theme: "gruvbox-dark";
+    display-drun: " ";
+    fixed-num-lines: false;
 }

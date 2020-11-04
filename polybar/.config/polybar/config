@@ -16,7 +16,7 @@ font-0 = Hack Nerd Font:size=9;2
 width = 100%
 height = 20
 offset-y = 0
-background = #aa282828
+background = #282828
 foreground = #ebdbb2
 wm-restack = bspwm
 monitor-strict = true

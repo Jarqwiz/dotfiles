@@ -27,16 +27,16 @@
     word_wrap = yes
 
 [urgency_low]
-    background = "#1d202199"
+    background = "#1d2021"
     foreground = "#bdae93"
     timeout = 10
 
 [urgency_normal]
-    background = "#28282899"
+    background = "#282828"
     foreground = "#ebdbb2"
     timeout = 10
 
 [urgency_critical]
-    background = "#fb493499"
+    background = "#fb4934"
     foreground = "#1d2021"
     timeout = 0
