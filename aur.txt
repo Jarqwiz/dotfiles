@@ -53,3 +53,4 @@ xorg
 yarn
 zsh-autosuggestions
 zsh-syntax-highlighting
+zsh-you-should-use
