@@ -11,8 +11,6 @@ exa
 fd
 feh
 fzf
-gruvbox-dark-gtk
-gruvbox-dark-icons-gtk
 light-git
 lsd
 maim
@@ -25,8 +23,10 @@ neovim
 nerd-fonts-hack
 network-manager-applet
 nodejs
+nordic-theme-git
 nvm
 oh-my-zsh-git
+papirus-folders-nordic
 pavucontrol
 picom
 playerctl

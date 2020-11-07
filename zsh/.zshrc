@@ -36,9 +36,10 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+eval "$(dircolors $HOME/.dir_colors)"
 eval "$(starship init zsh)"
 
-export BAT_THEME="gruvbox"
+export BAT_THEME="Nord"
 
 alias vim='nvim'
 alias v='nvim'
