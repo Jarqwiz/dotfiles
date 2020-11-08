@@ -22,7 +22,6 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
-    call dein#add('arcticicestudio/nord-vim')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
@@ -32,6 +31,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('ryanoasis/vim-devicons')
     call dein#add('sheerun/vim-polyglot')
+    call dein#add('srcery-colors/srcery-vim')
     call dein#add('tpope/vim-commentary')
     call dein#add('tpope/vim-fugitive')
     call dein#add('tpope/vim-repeat')
@@ -164,7 +164,8 @@ let g:airline_powerline_fonts = 1
 " Theme
 set termguicolors
 set background=dark
-colorscheme nord
+let g:srcery_italic = 1
+colorscheme srcery
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

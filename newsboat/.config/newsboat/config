@@ -11,6 +11,8 @@ show-read-articles no
 show-read-feeds no
 notify-program "notify-send"
 browser brave %u
-color info blue black
-color listfocus_unread black blue bold dim
-color listfocus black blue
+color info color15 color235 bold
+color listfocus color10 color237
+color listfocus_unread color9 color237
+color listnormal color7 default
+color listnormal_unread color15 default

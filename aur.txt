@@ -23,10 +23,9 @@ neovim
 nerd-fonts-hack
 network-manager-applet
 nodejs
-nordic-theme-git
 nvm
 oh-my-zsh-git
-papirus-folders-nordic
+oomox
 pavucontrol
 picom
 playerctl

@@ -5,19 +5,19 @@
 # | |_) |  __/ |_| ||  __/ |  | | (_) | (__|   <\__ \ (__| | |  __/  __/ | | |
 # |_.__/ \___|\__|\__\___|_|  |_|\___/ \___|_|\_\___/\___|_|  \___|\___|_| |_|
 
-insidecolor=2e344099
-ringcolor=4c566a99
-keyhlcolor=eceff4
-bshlcolor=ebcb8b
-separatorcolor=4c566a99
-insidevercolor=81a1c199
-insidewrongcolor=d0877099
-ringvercolor=5e81ac99
-ringwrongcolor=bf616a99
-verifcolor=88c0d099
-timecolor=e5e9f0
-datecolor=d8dee999
-loginbox=3b425299
+insidecolor=918175
+ringcolor=1c1b19
+keyhlcolor=fce8c3
+bshlcolor=fbb829
+separatorcolor=918175
+insidevercolor=68a8e4
+insidewrongcolor=f75e41
+ringvercolor=2c78bf
+ringwrongcolor=ef2f27
+verifcolor=0aaeb3
+timecolor=d0bfa1
+datecolor=918175
+loginbox=1c1b1999
 font="Lato"
 locktext="%F"
 lock_timeout=10
