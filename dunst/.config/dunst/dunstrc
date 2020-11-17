@@ -12,7 +12,7 @@
     follow = mouse
     font = Hack Nerd Font 10
     format = "<b>%s</b>\n%b"
-    frame_color = "#e02c6d"
+    frame_color = "#576268"
     frame_width = 1
     geometry = "600x20-20+40"
     horizontal_padding = 6
@@ -27,16 +27,16 @@
     word_wrap = yes
 
 [urgency_low]
-    background = "#1c1b19"
-    foreground = "#918175"
+    background = "#323d43"
+    foreground = "#999f93"
     timeout = 10
 
 [urgency_normal]
-    background = "#1c1b19"
-    foreground = "#fce8ce"
+    background = "#3c474d"
+    foreground = "#d8caac"
     timeout = 10
 
 [urgency_critical]
-    background = "#ef2f27"
-    foreground = "#1c1b19"
+    background = "#e68183"
+    foreground = "#323d43"
     timeout = 0

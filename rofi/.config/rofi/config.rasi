@@ -17,40 +17,40 @@ configuration {
 * {
   spacing: 2;
 
-  black: #1C1B19;
-  brightblack: #918175;
+  black: #323d43;
+  brightblack: #576268;
 
-  red: #EF2F27;
-  brightred: #F75341;
+  red: #e68183;
+  brightred: #e68183;
 
-  green: #519F50;
-  brightgreen: #98BC37;
+  green: #a7c080;
+  brightgreen: #a7c080;
 
-  yellow: #FBB829;
-  brightyellow: #FED06E;
+  yellow: #d9bb80;
+  brightyellow: #d9bb80;
 
-  blue: #2C78BF;
-  brightblue: #68A8E4;
+  blue: #83b6af;
+  brightblue: #83b6af;
 
-  magenta: #E02C6D;
-  brightmagenta: #FF5C8F;
+  magenta: #d39bb6;
+  brightmagenta: #d39bb6;
 
-  cyan: #0AAEB3;
-  brightcyan: #53FDE9;
+  cyan: #87c095;
+  brightcyan: #87c095;
 
-  white: #D0BFA1;
-  brightwhite: #FCE8C3;
+  white: #999f93;
+  brightwhite: #d8caac;
 
-  orange: #D75F00;
-  brightorange: #FF8700;
+  orange: #e39b7b;
+  brightorange: #e39b7b;
 
-  xgray1: #262626;
-  xgray2: #303030;
-  xgray3: #3A3A3A;
-  xgray4: #444444;
-  xgray5: #4E4E4E;
+  xgray1: #323d43;
+  xgray2: #3c474d;
+  xgray3: #465258;
+  xgray4: #505a60;
+  xgray5: #576268;
 
-  highlight: bold #E02C6D;
+  highlight: bold #576268;
 
   selected-normal-foreground: @black;
   selected-normal-background: @brightwhite;
@@ -79,13 +79,13 @@ configuration {
   alternate-active-background: @yellow;
   alternate-active-foreground: @black;
 
-  border-color: @magenta;
+  border-color: @green;
   separatorcolor: @white;
   background-color: @black;
 }
 
 window {
-  border: 2;
+  border: 1;
   foreground: @magenta;
   padding: 4;
   background: @black;
