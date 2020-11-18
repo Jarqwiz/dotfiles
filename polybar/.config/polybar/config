@@ -9,25 +9,28 @@
 
 [settings]
 screenchange-reload = true
+format-background = #1e1c31
+format-foreground = #cbe3e7
+format-padding = 1
 
 [bar/base]
 monitor = ${env:MONITOR:}
 font-0 = Hack Nerd Font:size=9;2
 width = 100%
 height = 20
-background = #323d43
-foreground = #d8caac
-border-color = #a7c080
+background = #00000000
+foreground = #cbe3e7
+border-color = #585273
 wm-restack = bspwm
 monitor-strict = true
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
-module-margin = 1
-padding = 1
+module-margin = 0
+padding = 0
 fixed-center = true
 tray-padding = 2
 tray-maxsize = 16
-tray-background = #323d43
+tray-background = #1e1c31
 
 [bar/primary]
 inherit = bar/base
@@ -41,16 +44,16 @@ bottom = false
 type = internal/bspwm
 reverse-scroll = false
 label-focused = 
-label-focused-foreground = #d8caac
+label-focused-foreground = #cbe3e7
 label-focused-padding = 1
 label-occupied = 
 label-occupied-padding = 1
-label-occupied-foreground = #999f93
+label-occupied-foreground = #8a889d
 label-urgent = 
-label-urgent-foreground = #e68183
+label-urgent-foreground = #f02e6e
 label-urgent-padding = 1
 label-empty = 
-label-empty-foreground = #576268
+label-empty-foreground = #585273
 label-empty-padding = 1
 pin-workspaces = true
 
@@ -58,10 +61,10 @@ pin-workspaces = true
 type = internal/mpd
 host = 127.0.0.1
 port = 6600
-format-online = <label-song> %{F#999f93}(<label-time>)%{F-}
-format-paused = %{F#999f93} Paused%{F-} <label-song> %{F#999f93}(<label-time>)%{F-}
+format-online = <label-song> %{F#8a889d}(<label-time>)%{F-}
+format-paused = %{F#8a889d} Paused%{F-} <label-song> %{F#8a889d}(<label-time>)%{F-}
 format-stopped =  Stopped
-format-stopped-foreground = #999f93
+format-stopped-foreground = #8a889d
 label-song =  %title:0:60:…%
 
 [module/time]
@@ -73,13 +76,13 @@ label = %time%
 type = internal/date
 date =  %Y-%m-%d
 label = %date%
-format-foreground = #999f93
+format-foreground = #8a889d
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
-format-muted-foreground = #999f93
+format-muted-foreground = #8a889d
 label-muted = ﱝ muted
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
@@ -92,7 +95,7 @@ battery = BAT0
 adapter = ADP1
 time-format = %H:%M
 format-charging = <animation-charging>  <label-charging>
-label-charging = %percentage%% %{F#999f93}(%time%)%{F-}
+label-charging = %percentage%% %{F#8a889d}(%time%)%{F-}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
@@ -100,7 +103,7 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 format-discharging = <ramp-capacity>  <label-discharging>
-label-discharging = %percentage%% %{F#999f93}(%time%)%{F-}
+label-discharging = %percentage%% %{F#8a889d}(%time%)%{F-}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 

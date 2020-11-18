@@ -23,6 +23,7 @@ if dein#load_state('~/.cache/dein')
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
     call dein#add('editorconfig/editorconfig-vim')
+    call dein#add('embark-theme/vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
     call dein#add('junegunn/fzf.vim')
@@ -30,7 +31,6 @@ if dein#load_state('~/.cache/dein')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('ryanoasis/vim-devicons')
-    call dein#add('sainnhe/forest-night')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
     call dein#add('tpope/vim-fugitive')
@@ -159,13 +159,13 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'forest_night'
+let g:airline_theme = 'embark'
 
 " Theme
 set termguicolors
 set background=dark
-let g:forest_night_enable_italic = 1
-colorscheme forest-night
+let g:embark_terminal_italics = 1
+colorscheme embark
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

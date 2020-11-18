@@ -45,30 +45,37 @@ font:
 
   size: 10.0
 
-colors:
-  primary:
-    background: "0x323d43"
-    foreground: "0xd8caac"
+schemes:
+  embark: &embark
+    primary:
+      background: "#1e1c31"
+      foreground: "#cbe3e7"
 
-  normal:
-    black: "0x505a60"
-    red: "0xe68183"
-    green: "0xa7c080"
-    yellow: "0xd9bb80"
-    blue: "0x83b6af"
-    magenta: "0xd39bb6"
-    cyan: "0x87c095"
-    white: "0xd8caac"
+    cursor:
+      text: "#1e1c31"
+      cursor: "#a1efd3"
 
-  bright:
-    black: "0x505a60"
-    red: "0xe68183"
-    green: "0xa7c080"
-    yellow: "0xd9bb80"
-    blue: "0x83b6af"
-    magenta: "0xd39bb6"
-    cyan: "0x87c095"
-    white: "0xd8caac"
+    normal:
+      black: "#1e1c31"
+      red: "#f48fb1"
+      green: "#a1efd3"
+      yellow: "#ffe6b3"
+      blue: "#91ddff"
+      magenta: "#d4bfff"
+      cyan: "#87dfeb"
+      white: "#cbe3e7"
+
+    bright:
+      black: "#585273"
+      red: "#f02e6e"
+      green: "#62d196"
+      yellow: "#f2b482"
+      blue: "#65b2ff"
+      magenta: "#a37acc"
+      cyan: "#63f2f1"
+      white: "#8a889d"
+
+colors: *embark
 
 draw_bold_text_with_bright_colors: true
 

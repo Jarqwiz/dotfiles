@@ -16,22 +16,22 @@ export EDITOR="nvim"
 export BROWSER="brave"
 export MAGIC_ENTER_OTHER_COMMAND="exa --long"
 plugins=(
-    archlinux
-    colored-man-pages
-    colorize
-    common-aliases
-    extract
-    fancy-ctrl-z
-    fd
-    fzf
-    git
-    github
-    gitignore
-    magic-enter
-    rust
-    rustup
-    sudo
-    systemd
+	archlinux
+	colored-man-pages
+	colorize
+	common-aliases
+	extract
+	fancy-ctrl-z
+	fd
+	fzf
+	git
+	github
+	gitignore
+	magic-enter
+	rust
+	rustup
+	sudo
+	systemd
 )
 
 source $ZSH/oh-my-zsh.sh
