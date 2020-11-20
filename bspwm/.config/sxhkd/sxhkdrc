@@ -32,6 +32,9 @@ super + y
 super + {t,shift + t,s,f}
     bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
+super + m
+    bspc desktop -l next
+
 super + ctrl + s
     bspc node -g sticky
 

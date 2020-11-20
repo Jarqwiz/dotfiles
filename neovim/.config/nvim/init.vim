@@ -22,8 +22,8 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
+    call dein#add('danilo-augusto/vim-afterglow')
     call dein#add('editorconfig/editorconfig-vim')
-    call dein#add('embark-theme/vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
     call dein#add('junegunn/fzf.vim')
@@ -159,13 +159,11 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'embark'
 
 " Theme
 set termguicolors
 set background=dark
-let g:embark_terminal_italics = 1
-colorscheme embark
+colorscheme afterglow
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

@@ -17,8 +17,8 @@ window:
     lines: 24
 
   padding:
-    x: 4
-    y: 4
+    x: 10
+    y: 10
 
   dynamic_padding: true
 
@@ -45,37 +45,57 @@ font:
 
   size: 10.0
 
-schemes:
-  embark: &embark
-    primary:
-      background: "#1e1c31"
-      foreground: "#cbe3e7"
+colors:
+  primary:
+    background: "#2c2c2c"
+    foreground: "#d6d6d6"
 
-    cursor:
-      text: "#1e1c31"
-      cursor: "#a1efd3"
+    dim_foreground: "#dbdbdb"
+    bright_foreground: "#d9d9d9"
+    dim_background: "#202020"
+    bright_background: "#3a3a3a"
 
-    normal:
-      black: "#1e1c31"
-      red: "#f48fb1"
-      green: "#a1efd3"
-      yellow: "#ffe6b3"
-      blue: "#91ddff"
-      magenta: "#d4bfff"
-      cyan: "#87dfeb"
-      white: "#cbe3e7"
+  cursor:
+    text: "#2c2c2c"
+    cursor: "#d9d9d9"
 
-    bright:
-      black: "#585273"
-      red: "#f02e6e"
-      green: "#62d196"
-      yellow: "#f2b482"
-      blue: "#65b2ff"
-      magenta: "#a37acc"
-      cyan: "#63f2f1"
-      white: "#8a889d"
+  vi_mode_cursor:
+    text: "#2c2c2c"
+    cursor: "#909d63"
 
-colors: *embark
+  selection:
+    text: CellForeground
+    background: "#556b79"
+
+  normal:
+    black: "#1c1c1c"
+    red: "#bc5653"
+    green: "#909d63"
+    yellow: "#ebc17a"
+    blue: "#7eaac7"
+    magenta: "#aa6292"
+    cyan: "#86d3ce"
+    white: "#cacaca"
+
+  bright:
+    black: "#636363"
+    red: "#bc5653"
+    green: "#909d63"
+    yellow: "#ebc17a"
+    blue: "#7eaac7"
+    magenta: "#aa6292"
+    cyan: "#86d3ce"
+    white: "#f7f7f7"
+
+  dim:
+    black: "#232323"
+    red: "#74423f"
+    green: "#5e6547"
+    yellow: "#8b7653"
+    blue: "#556b79"
+    magenta: "#6e4962"
+    cyan: "#5c8482"
+    white: "#828282"
 
 draw_bold_text_with_bright_colors: true
 
