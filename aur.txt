@@ -14,6 +14,7 @@ fzf
 light-git
 lsd
 maim
+mcmojave-cursors
 mpc
 mpd
 mpd-notification
