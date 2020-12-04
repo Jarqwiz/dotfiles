@@ -16,9 +16,9 @@ format-padding = 1
 [bar/base]
 monitor = ${env:MONITOR:}
 font-0 = Hack Nerd Font:size=9;2
-width = 100%
+width = 1000
 height = 18
-offset-x = 0
+offset-x = 50%:-500
 offset-y = 0
 background = #1c1c1c
 foreground = #d6d6d6
