@@ -16,9 +16,9 @@ format-padding = 1
 [bar/base]
 monitor = ${env:MONITOR:}
 font-0 = Hack Nerd Font:size=9;2
-width = 1000
+width = 100%
 height = 18
-offset-x = 50%:-500
+offset-x = 0
 offset-y = 0
 background = #1c1c1c
 foreground = #d6d6d6
@@ -37,34 +37,58 @@ tray-background = #2c2c2c
 
 [bar/primary]
 inherit = bar/base
-modules-left = volume battery backlight
-modules-center = bspwm
-modules-right = time
+modules-left = bspwm mpd title
+modules-right = cpu memory battery backlight time date volume
 tray-position = right
 bottom = false
 
 [module/bspwm]
 type = internal/bspwm
 reverse-scroll = false
-label-focused = 
+label-focused = %icon%
 label-focused-foreground = #7eaac7
 label-focused-padding = 1
-label-occupied = 
+label-occupied = %icon%
 label-occupied-padding = 1
 label-occupied-foreground = #d6d6d6
-label-urgent = 
+label-urgent = %icon%
 label-urgent-foreground = #bc5653
 label-urgent-padding = 1
-label-empty = 
+label-empty = %icon%
 label-empty-foreground = #636363
 label-empty-padding = 1
 pin-workspaces = true
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-3 = 4;
+ws-icon-4 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
 
 [module/time]
 type = internal/date
-time =  %H:%M
-time-alt =  %Y-%m-%d
+time =  %H:%M:%S
 label = %time%
+
+[module/date]
+type = internal/date
+date =  %Y-%m-%d
+label = %date%
+format-foreground = #828282
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+format-online = <label-song> %{F#828282}(<label-time>)%{F-}
+format-paused = %{F#828282} Paused%{F-} <label-song> %{F#828282}(<label-time>)%{F-}
+format-stopped =  Stopped
+format-stopped-foreground = #828282
+label-song =  %title:0:60:…% - ﴁ %artist:0:40:…%
 
 [module/volume]
 type = internal/pulseaudio
@@ -118,3 +142,22 @@ ramp-11 = 
 ramp-12 = 
 ramp-13 = 
 ramp-14 = 
+format-foreground = #828282
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format = <label>
+label =  %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 3
+format = <label>
+label =  %percentage_used%%
+format-foreground = #828282
+
+[module/title]
+type = internal/xwindow
+label =  %title:0:60:…%
+format-foreground = #828282
