@@ -53,8 +53,6 @@ alias et='exa --tree'
 alias eta='exa --tree --long --all'
 alias b='bat'
 
-unalias fd
-
 GPG_TTY=$(tty)
 export GPG_TTY
 
