@@ -1,7 +1,7 @@
 acpi
 alacritty
 bat
-betterlockscreen-git
+betterlockscreen
 blueman
 brave-bin
 bspwm
