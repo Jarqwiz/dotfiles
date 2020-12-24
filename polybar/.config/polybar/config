@@ -37,7 +37,8 @@ tray-background = #2c2c2c
 
 [bar/primary]
 inherit = bar/base
-modules-left = bspwm title
+modules-left = bspwm
+modules-center = title
 modules-right = cpu memory battery backlight time date volume
 tray-position = right
 bottom = false
