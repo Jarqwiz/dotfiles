@@ -15,11 +15,7 @@ light-git
 lsd
 maim
 mcmojave-cursors
-mpc
-mpd
-mpd-notification
 mpv
-ncmpcpp
 neovim
 nerd-fonts-hack
 network-manager-applet

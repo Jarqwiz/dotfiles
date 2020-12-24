@@ -37,7 +37,7 @@ tray-background = #2c2c2c
 
 [bar/primary]
 inherit = bar/base
-modules-left = bspwm mpd title
+modules-left = bspwm title
 modules-right = cpu memory battery backlight time date volume
 tray-position = right
 bottom = false
@@ -74,16 +74,6 @@ type = internal/date
 date =  %Y-%m-%d
 label = %date%
 format-foreground = #828282
-
-[module/mpd]
-type = internal/mpd
-host = 127.0.0.1
-port = 6600
-format-online = <label-song> %{F#828282}(<label-time>)%{F-}
-format-paused = %{F#828282} Paused%{F-} <label-song> %{F#828282}(<label-time>)%{F-}
-format-stopped =  Stopped
-format-stopped-foreground = #828282
-label-song =  %title:0:60:…% - ﴁ %artist:0:40:…%
 
 [module/volume]
 type = internal/pulseaudio

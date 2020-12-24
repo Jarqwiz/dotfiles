@@ -75,12 +75,9 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
     pulseaudio-ctl {up,down,mute} &
 
 XF86Audio{Play,Stop,Next,Prev}
-    mpc {toggle,stop,next,prev}
+    playerctl {play-pause,stop,next,previous}
 
 super + {shift + p,shift + s,n,p}
-    mpc {toggle,stop,next,prev}
-
-super + ctrl + {shift + p,shift + s,n,p}
     playerctl {play-pause,stop,next,previous}
 
 XF86MonBrightness{Up,Down}
