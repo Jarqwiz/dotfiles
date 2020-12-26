@@ -52,6 +52,7 @@ xsetroot -cursor_name left_ptr &
 
 autostart picom &
 autostart sxhkd &
+$HOME/.config/polybar/launch_polybar.sh &
 autostart unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling &
 autostart udiskie -ansF &
 autostart redshift-gtk -P &
