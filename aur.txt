@@ -33,7 +33,7 @@ pulseaudio-bluetooth
 pulseaudio-ctl
 redshift
 rofi
-starship-bin
+starship
 stow
 sxhkd
 tree
