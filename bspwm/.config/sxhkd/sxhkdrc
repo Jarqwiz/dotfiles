@@ -15,7 +15,7 @@ super + alt + {q,r}
     bspc {quit,wm -r}
 
 super {_,ctrl + }alt + @s
-    dunstctl set-paused true && betterlockscreen -{l,s} dimblur && dunstctl set-paused false
+    $HOME/.config/bspwm/lock.sh -{l,s}
 
 super + ctrl + alt + {r,p}
     {reboot,poweroff}
