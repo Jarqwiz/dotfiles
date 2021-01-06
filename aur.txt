@@ -1,7 +1,6 @@
 acpi
 alacritty
 bat
-betterlockscreen
 blueman
 brave-bin
 bspwm
@@ -11,6 +10,7 @@ exa
 fd
 feh
 fzf
+hsetroot
 light-git
 lsd
 maim
@@ -24,6 +24,7 @@ nvm
 oh-my-zsh-git
 oomox
 pavucontrol
+physlock
 picom
 playerctl
 polybar
@@ -46,6 +47,7 @@ wget
 xclip
 xdo
 xorg
+xss-lock
 yarn
 zsh-autosuggestions
 zsh-syntax-highlighting

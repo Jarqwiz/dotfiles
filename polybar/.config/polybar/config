@@ -37,7 +37,7 @@ tray-background = #2c2c2c
 
 [bar/primary]
 inherit = bar/base
-modules-left = bspwm
+modules-left = bspwm music
 modules-center = title
 modules-right = cpu memory battery backlight time date volume
 tray-position = right
@@ -145,5 +145,13 @@ format-foreground = #828282
 
 [module/title]
 type = internal/xwindow
-label =  %title:0:60:…%
+label =  %title%
 format-foreground = #828282
+
+[module/music]
+type = custom/script
+exec = $HOME/.config/polybar/current_song.sh
+exec-if = playerctl status
+click-left = playerctl play-pause
+click-right = playerctl next
+click-middle = playerctl previous

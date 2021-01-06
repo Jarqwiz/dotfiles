@@ -1,4 +1,5 @@
 #!/bin/sh
-dunstctl set-paused true
-betterlockscreen $1 dimblur
-dunstctl set-paused false
+playerctl pause &
+killall -SIGUSR1 dunst
+physlock -m -p "Don't touch my computer!"
+killall -SIGUSR2 dunst
