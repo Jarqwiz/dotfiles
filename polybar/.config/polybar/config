@@ -152,6 +152,7 @@ format-foreground = #828282
 type = custom/script
 exec = $HOME/.config/polybar/current_song.sh
 exec-if = playerctl status
+interval = 1
 click-left = playerctl play-pause
 click-right = playerctl next
 click-middle = playerctl previous
