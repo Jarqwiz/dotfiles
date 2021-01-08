@@ -14,7 +14,8 @@ setopt nocheckjobs
 export ZSH="/usr/share/oh-my-zsh"
 export EDITOR="nvim"
 export BROWSER="brave"
-export MAGIC_ENTER_OTHER_COMMAND="exa --long"
+export MAGIC_ENTER_OTHER_COMMAND="e"
+export MAGIC_ENTER_GIT_COMMAND="gst -uall"
 plugins=(
 	archlinux
 	colored-man-pages
