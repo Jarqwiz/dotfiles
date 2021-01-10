@@ -28,6 +28,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('honza/vim-snippets')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
+    call dein#add('justinmk/vim-sneak')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('ryanoasis/vim-devicons')
@@ -54,7 +55,7 @@ syntax enable
 " ~~~~~>-----)-----}-----=[ Options ]=-----{-----(-----<~~~~~
 " ===========================================================
 
-let g:mapleader = ';'
+let g:mapleader = ' '
 
 " Fzf
 let g:fzf_buffers_jump = 1
@@ -100,6 +101,7 @@ let g:coc_global_extensions = [
             \ 'coc-json',
             \ 'coc-lists',
             \ 'coc-markdownlint',
+            \ 'coc-omnisharp',
             \ 'coc-pairs',
             \ 'coc-prettier',
             \ 'coc-python',
@@ -189,6 +191,7 @@ autocmd TermOpen * startinsert
 set conceallevel=0
 set clipboard=unnamed
 set nrformats=bin,hex,octal
+let g:sneak#label = 1
 
 " Movement maps
 tnoremap <silent> <Esc> <C-\><C-n>
