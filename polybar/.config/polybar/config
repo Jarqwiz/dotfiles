@@ -145,7 +145,7 @@ format-foreground = #828282
 
 [module/title]
 type = internal/xwindow
-label =  %title%
+label =  %title:0:60:…%
 format-foreground = #828282
 
 [module/music]
@@ -156,3 +156,4 @@ interval = 1
 click-left = playerctl play-pause
 click-right = playerctl next
 click-middle = playerctl previous
+label = %output:0:60:…%
