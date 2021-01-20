@@ -60,3 +60,4 @@ autostart udiskie -ansF &
 autostart redshift-gtk -P &
 autostart nm-applet &
 autostart blueman-applet &
+autostart syncthing-gtk -m &

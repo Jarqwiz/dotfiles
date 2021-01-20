@@ -37,6 +37,7 @@ rofi
 starship
 stow
 sxhkd
+syncthing-gtk
 tree
 ttf-lato
 udiskie
