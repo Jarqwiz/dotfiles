@@ -84,10 +84,10 @@ super + {shift + p,shift + s,n,p}
 	playerctl {play-pause,stop,next,previous}
 
 XF86MonBrightness{Up,Down}
-	light -{A,U} 5 &
+	light -{A,U} 1 &
 
 super + {shift,ctrl} + i
-	light -{A,U} 5 &
+	light -{A,U} 1 &
 
 {_,shift + ,ctrl + ,ctrl + shift + }@Print
 	maim {-su,-u,-s,_} | xclip -selection clipboard -t image/png &
