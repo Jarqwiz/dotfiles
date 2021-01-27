@@ -14,7 +14,6 @@ hsetroot
 light-git
 lsd
 maim
-mcmojave-cursors
 mpv
 neovim
 nerd-fonts-hack
@@ -45,6 +44,7 @@ unzip
 vim-dein
 wget
 xclip
+xcursor-hackneyed-light
 xdo
 xorg
 xss-lock
