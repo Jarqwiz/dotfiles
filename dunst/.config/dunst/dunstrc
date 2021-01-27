@@ -25,6 +25,7 @@
     shrink = yes
     stack_duplicates = false
     word_wrap = yes
+    corner_radius = 4
 
 [urgency_low]
     background = "#1c1c1c"

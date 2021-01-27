@@ -38,7 +38,6 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-repeat')
     call dein#add('tpope/vim-rhubarb')
     call dein#add('tpope/vim-surround')
-    call dein#add('triglav/vim-visual-increment')
     call dein#add('vim-airline/vim-airline')
     call dein#add('wsdjeg/dein-ui.vim')
 
@@ -187,10 +186,11 @@ set undofile undodir=/tmp
 let g:netrw_dirhistmax = 0
 let g:EditorConfig_exclude_patterns = ['fugitive://.\*']
 noremap <plug>(slash-after) zz
+autocmd TermOpen * setlocal listchars= nonumber norelativenumber signcolumn=no nocursorline
 autocmd TermOpen * startinsert
 set conceallevel=0
 set clipboard=unnamed
-set nrformats=bin,hex,octal
+set nrformats=bin,hex,octal,alpha
 let g:sneak#label = 1
 
 " Movement maps

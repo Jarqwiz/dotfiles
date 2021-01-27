@@ -42,12 +42,14 @@ configuration {
 
 #window {
     background-color: @background-color;
+    border-radius: 8px;
     children: [ mainbox ];
 }
 
 #mainbox {
     border: 1px;
     border-color: @selbg;
+    border-radius: 8px;
     orientation: vertical;
     children: [ entry, message, listview ];
 }
