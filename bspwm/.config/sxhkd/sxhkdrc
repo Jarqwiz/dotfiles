@@ -97,3 +97,6 @@ super + {_,shift + ,ctrl + ,alt + }d
 
 super + {shift + ,ctrl + ,alt + }v
 	pulseaudio-ctl {up,down,mute} &
+
+super + r
+	pkill -USR1 '^redshift$'
