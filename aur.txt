@@ -10,7 +10,6 @@ exa
 fd
 feh
 fzf
-hsetroot
 light-git
 lsd
 maim
