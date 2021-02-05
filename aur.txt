@@ -20,7 +20,6 @@ network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
-oomox
 pavucontrol
 physlock
 picom
@@ -42,6 +41,9 @@ unclutter
 unzip
 vim-dein
 wget
+whitesur-cursor-theme-git
+whitesur-gtk-theme-git
+whitesur-icon-theme-git
 xclip
 xcursor-hackneyed-light
 xdo
