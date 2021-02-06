@@ -31,6 +31,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('justinmk/vim-sneak')
     call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
+    call dein#add('rhysd/git-messenger.vim', {'lazy' : 1, 'on_cmd' : 'GitMessenger', 'on_map' : '<Plug>(git-messenger'})
     call dein#add('ryanoasis/vim-devicons')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
@@ -135,13 +136,13 @@ endfunction
 
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-nmap <silent> <leader>a :CocCommand actions.open<CR>
-nmap <silent> <leader>c :CocFzfList commands<CR>
+nmap <silent> <Leader>a :CocCommand actions.open<CR>
+nmap <silent> <Leader>c :CocFzfList commands<CR>
 nmap <silent> <Leader>o :CocFzfList outline<CR>
 nmap <silent> <Leader>d :CocFzfList diagnostics<CR>
 nmap <silent> <Leader>e :CocCommand explorer --sources=buffer+,file+<CR>
 nmap <silent> <Leader>s :CocFzfList symbols<CR>
-nmap <silent> <leader>q <Plug>(coc-fix-current)
+nmap <silent> <Leader>q <Plug>(coc-fix-current)
 nmap <silent> <Leader>r <Plug>(coc-rename)
 
 nmap <silent> gd <Plug>(coc-definition)
