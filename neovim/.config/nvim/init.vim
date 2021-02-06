@@ -22,7 +22,7 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
-    call dein#add('danilo-augusto/vim-afterglow')
+    call dein#add('cocopon/iceberg.vim')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
@@ -156,15 +156,15 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+let g:airline_left_sep = ' '
+let g:airline_left_alt_sep = '  '
+let g:airline_right_sep = ' '
+let g:airline_right_alt_sep = '  '
 
 " Theme
 set termguicolors
 set background=dark
-colorscheme afterglow
+colorscheme iceberg
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

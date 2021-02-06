@@ -47,55 +47,40 @@ font:
 
 colors:
   primary:
-    background: "#2c2c2c"
-    foreground: "#d6d6d6"
-
-    dim_foreground: "#dbdbdb"
-    bright_foreground: "#d9d9d9"
-    dim_background: "#202020"
-    bright_background: "#3a3a3a"
+    background: "#161821"
+    foreground: "#d2d4de"
 
   cursor:
-    text: "#2c2c2c"
-    cursor: "#d9d9d9"
+    text: "#161821"
+    cursor: "#d2d4de"
 
   vi_mode_cursor:
-    text: "#2c2c2c"
-    cursor: "#909d63"
+    text: "#161821"
+    cursor: "#c0ca8e"
 
   selection:
     text: CellForeground
-    background: "#556b79"
+    background: "#272c42"
 
   normal:
-    black: "#1c1c1c"
-    red: "#bc5653"
-    green: "#909d63"
-    yellow: "#ebc17a"
-    blue: "#7eaac7"
-    magenta: "#aa6292"
-    cyan: "#86d3ce"
-    white: "#cacaca"
+    black: "#161821"
+    red: "#e27878"
+    green: "#b4be82"
+    yellow: "#e2a478"
+    blue: "#84a0c6"
+    magenta: "#a093c7"
+    cyan: "#89b8c2"
+    white: "#c6c8d1"
 
   bright:
-    black: "#636363"
-    red: "#bc5653"
-    green: "#909d63"
-    yellow: "#ebc17a"
-    blue: "#7eaac7"
-    magenta: "#aa6292"
-    cyan: "#86d3ce"
-    white: "#f7f7f7"
-
-  dim:
-    black: "#232323"
-    red: "#74423f"
-    green: "#5e6547"
-    yellow: "#8b7653"
-    blue: "#556b79"
-    magenta: "#6e4962"
-    cyan: "#5c8482"
-    white: "#828282"
+    black: "#6b7089"
+    red: "#e98989"
+    green: "#c0ca8e"
+    yellow: "#e9b189"
+    blue: "#91acd1"
+    magenta: "#ada0d3"
+    cyan: "#95c4ce"
+    white: "#d2d4de"
 
 draw_bold_text_with_bright_colors: true
 
