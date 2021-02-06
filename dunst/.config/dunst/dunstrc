@@ -10,7 +10,7 @@
     browser = /usr/bin/brave
     dmenu = /usr/bin/rofi -dmenu -p dunst
     follow = mouse
-    font = Hack Nerd Font 10
+    font = InputSans Nerd Font 10
     format = "<b>%s</b>\n%b"
     frame_color = "#202020"
     frame_width = 1

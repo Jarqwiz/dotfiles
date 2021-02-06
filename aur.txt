@@ -1,6 +1,7 @@
 acpi
 alacritty
 bat
+bibata-cursor-theme-bin
 blueman
 brave-bin
 bspwm
@@ -15,7 +16,6 @@ lsd
 maim
 mpv
 neovim
-nerd-fonts-hack
 network-manager-applet
 nodejs
 nvm
@@ -29,6 +29,8 @@ procps-ng
 pulseaudio
 pulseaudio-bluetooth
 pulseaudio-ctl
+qogir-gtk-theme
+qogir-icon-theme
 redshift
 rofi
 starship
@@ -36,16 +38,13 @@ stow
 sxhkd
 tree
 ttf-lato
+ttf-nerd-fonts-input
 udiskie
 unclutter
 unzip
 vim-dein
 wget
-whitesur-cursor-theme-git
-whitesur-gtk-theme-git
-whitesur-icon-theme-git
 xclip
-xcursor-hackneyed-light
 xdo
 xorg
 xss-lock
