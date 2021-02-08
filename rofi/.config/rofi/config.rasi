@@ -16,10 +16,10 @@ configuration {
 
 * {
     background-color: #282828;
-    text-color: #d4be98;
-    actbg: #89b482;
-    selbg: #d3969b;
-    urgbg: #ea6962;
+    text-color: #eeeeee;
+    actbg: #b3deef;
+    selbg: #4c4c4c;
+    urgbg: #f43753;
     winbg: #282828;
 
     selected-normal-foreground: @winbg;

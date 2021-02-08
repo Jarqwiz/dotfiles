@@ -12,7 +12,7 @@
     follow = mouse
     font = InputSans Nerd Font 10
     format = "<b>%s</b>\n%b"
-    frame_color = "#32302f"
+    frame_color = "#4c4c4c"
     frame_width = 1
     geometry = "600x20-10+30"
     horizontal_padding = 6
@@ -29,15 +29,15 @@
 
 [urgency_low]
     background = "#282828"
-    foreground = "#d4be98"
+    foreground = "#eeeeee"
     timeout = 10
 
 [urgency_normal]
-    background = "#32302f"
-    foreground = "#ddc7a1"
+    background = "#4c4c4c"
+    foreground = "#feffff"
     timeout = 10
 
 [urgency_critical]
-    background = "#ea6962"
+    background = "#f43753"
     foreground = "#282828"
     timeout = 0

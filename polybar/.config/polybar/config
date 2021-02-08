@@ -10,7 +10,7 @@
 [settings]
 screenchange-reload = true
 format-background = #282828
-format-foreground = #d4be98
+format-foreground = #eeeeee
 format-padding = 1
 
 [bar/base]
@@ -21,8 +21,8 @@ height = 18
 offset-x = 0
 offset-y = 0
 background = #282828
-foreground = #d4be98
-border-color = #32302f
+foreground = #eeeeee
+border-color = #4c4c4c
 border-size = 1
 wm-restack = bspwm
 monitor-strict = true
@@ -47,20 +47,20 @@ bottom = false
 type = internal/bspwm
 reverse-scroll = false
 label-focused = %name%
-label-focused-background = #89b482
+label-focused-background = #c9d05c
 label-focused-foreground = #282828
 label-focused-padding = 1
 label-occupied = %name%
 label-occupied-padding = 1
-label-occupied-background = #5a524c
-label-occupied-foreground = #ddc7a1
+label-occupied-background = #4c4c4c
+label-occupied-foreground = #eeeeee
 label-urgent = %name%
-label-urgent-background = #ea6962
+label-urgent-background = #f43753
 label-urgent-foreground = #282828
 label-urgent-padding = 1
 label-empty = %name%
 label-empty-background = #282828
-label-empty-foreground = #d4be98
+label-empty-foreground = #eeeeee
 label-empty-padding = 1
 pin-workspaces = true
 format-padding = 0
@@ -74,13 +74,13 @@ label = %time%
 type = internal/date
 date =  %Y-%m-%d
 label = %date%
-format-foreground = #d3869b
+format-foreground = #b3deef
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
-format-muted-foreground = #d3869b
+format-muted-foreground = #b3deef
 label-muted = ﱝ muted
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
@@ -93,7 +93,7 @@ battery = BAT0
 adapter = ADP1
 time-format = %H:%M
 format-charging = <animation-charging>  <label-charging>
-label-charging = %percentage%% %{F#d3869b}(%time%)%{F-}
+label-charging = %percentage%% %{F#b3deef}(%time%)%{F-}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
@@ -101,7 +101,7 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 format-discharging = <ramp-capacity>  <label-discharging>
-label-discharging = %percentage%% %{F#d3869b}(%time%)%{F-}
+label-discharging = %percentage%% %{F#b3deef}(%time%)%{F-}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
@@ -128,7 +128,7 @@ ramp-11 = 
 ramp-12 = 
 ramp-13 = 
 ramp-14 = 
-format-foreground = #d3869b
+format-foreground = #b3deef
 
 [module/cpu]
 type = internal/cpu
@@ -141,12 +141,12 @@ type = internal/memory
 interval = 3
 format = <label>
 label =  %percentage_used%%
-format-foreground = #d3869b
+format-foreground = #b3deef
 
 [module/title]
 type = internal/xwindow
 label =  %title:0:60:…%
-format-foreground = #d3869b
+format-foreground = #b3deef
 
 [module/music]
 type = custom/script
