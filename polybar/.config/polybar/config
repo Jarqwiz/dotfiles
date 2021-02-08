@@ -9,8 +9,8 @@
 
 [settings]
 screenchange-reload = true
-format-background = #2c2c2c
-format-foreground = #d6d6d6
+format-background = #282828
+format-foreground = #d4be98
 format-padding = 1
 
 [bar/base]
@@ -20,9 +20,9 @@ width = 100%
 height = 18
 offset-x = 0
 offset-y = 0
-background = #1c1c1c
-foreground = #d6d6d6
-border-color = #202020
+background = #282828
+foreground = #d4be98
+border-color = #32302f
 border-size = 1
 wm-restack = bspwm
 monitor-strict = true
@@ -33,7 +33,7 @@ padding = 0
 fixed-center = true
 tray-padding = 2
 tray-maxsize = 16
-tray-background = #2c2c2c
+tray-background = #282828
 
 [bar/primary]
 inherit = bar/base
@@ -47,20 +47,20 @@ bottom = false
 type = internal/bspwm
 reverse-scroll = false
 label-focused = %name%
-label-focused-background = #7eaac7
-label-focused-foreground = #1c1c1c
+label-focused-background = #89b482
+label-focused-foreground = #282828
 label-focused-padding = 1
 label-occupied = %name%
 label-occupied-padding = 1
-label-occupied-background = #636363
-label-occupied-foreground = #1c1c1c
+label-occupied-background = #5a524c
+label-occupied-foreground = #ddc7a1
 label-urgent = %name%
-label-urgent-background = #bc5653
-label-urgent-foreground = #1c1c1c
+label-urgent-background = #ea6962
+label-urgent-foreground = #282828
 label-urgent-padding = 1
 label-empty = %name%
-label-empty-background = #2c2c2c
-label-empty-foreground = #d6d6d6
+label-empty-background = #282828
+label-empty-foreground = #d4be98
 label-empty-padding = 1
 pin-workspaces = true
 format-padding = 0
@@ -74,13 +74,13 @@ label = %time%
 type = internal/date
 date =  %Y-%m-%d
 label = %date%
-format-foreground = #828282
+format-foreground = #d3869b
 
 [module/volume]
 type = internal/pulseaudio
 use-ui-max = false
 format-volume = <ramp-volume> <label-volume>
-format-muted-foreground = #828282
+format-muted-foreground = #d3869b
 label-muted = ﱝ muted
 ramp-volume-0 = 奄
 ramp-volume-1 = 奔
@@ -93,7 +93,7 @@ battery = BAT0
 adapter = ADP1
 time-format = %H:%M
 format-charging = <animation-charging>  <label-charging>
-label-charging = %percentage%% %{F#828282}(%time%)%{F-}
+label-charging = %percentage%% %{F#d3869b}(%time%)%{F-}
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
@@ -101,7 +101,7 @@ animation-charging-3 = 
 animation-charging-4 = 
 animation-charging-framerate = 750
 format-discharging = <ramp-capacity>  <label-discharging>
-label-discharging = %percentage%% %{F#828282}(%time%)%{F-}
+label-discharging = %percentage%% %{F#d3869b}(%time%)%{F-}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
@@ -128,7 +128,7 @@ ramp-11 = 
 ramp-12 = 
 ramp-13 = 
 ramp-14 = 
-format-foreground = #828282
+format-foreground = #d3869b
 
 [module/cpu]
 type = internal/cpu
@@ -141,12 +141,12 @@ type = internal/memory
 interval = 3
 format = <label>
 label =  %percentage_used%%
-format-foreground = #828282
+format-foreground = #d3869b
 
 [module/title]
 type = internal/xwindow
 label =  %title:0:60:…%
-format-foreground = #828282
+format-foreground = #d3869b
 
 [module/music]
 type = custom/script

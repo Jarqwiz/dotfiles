@@ -22,7 +22,6 @@ if dein#load_state('~/.cache/dein')
 
     " Plugins
     call dein#add('antoinemadec/coc-fzf')
-    call dein#add('cocopon/iceberg.vim')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
@@ -33,6 +32,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('rhysd/git-messenger.vim', {'lazy' : 1, 'on_cmd' : 'GitMessenger', 'on_map' : '<Plug>(git-messenger'})
     call dein#add('ryanoasis/vim-devicons')
+    call dein#add('sainnhe/gruvbox-material')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
     call dein#add('tpope/vim-fugitive')
@@ -157,15 +157,15 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ' '
+let g:airline_left_sep = ' '
 let g:airline_left_alt_sep = '  '
-let g:airline_right_sep = ' '
+let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '  '
 
 " Theme
 set termguicolors
 set background=dark
-colorscheme iceberg
+colorscheme gruvbox-material
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

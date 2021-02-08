@@ -12,7 +12,7 @@
     follow = mouse
     font = InputSans Nerd Font 10
     format = "<b>%s</b>\n%b"
-    frame_color = "#202020"
+    frame_color = "#32302f"
     frame_width = 1
     geometry = "600x20-10+30"
     horizontal_padding = 6
@@ -25,19 +25,19 @@
     shrink = yes
     stack_duplicates = false
     word_wrap = yes
-    corner_radius = 4
+    corner_radius = 2
 
 [urgency_low]
-    background = "#1c1c1c"
-    foreground = "#828282"
+    background = "#282828"
+    foreground = "#d4be98"
     timeout = 10
 
 [urgency_normal]
-    background = "#2c2c2c"
-    foreground = "#d6d6d6"
+    background = "#32302f"
+    foreground = "#ddc7a1"
     timeout = 10
 
 [urgency_critical]
-    background = "#bc5653"
-    foreground = "#202020"
+    background = "#ea6962"
+    foreground = "#282828"
     timeout = 0

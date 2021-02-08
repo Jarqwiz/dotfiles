@@ -11,6 +11,8 @@ exa
 fd
 feh
 fzf
+gruvbox-material-gtk-theme-git
+gruvbox-material-icon-theme-git
 light-git
 lsd
 maim
@@ -29,8 +31,6 @@ procps-ng
 pulseaudio
 pulseaudio-bluetooth
 pulseaudio-ctl
-qogir-gtk-theme
-qogir-icon-theme
 redshift
 rofi
 starship
