@@ -175,7 +175,7 @@ hi link gitmessengerHistory Title
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4
 set number relativenumber
-set cursorline
+set cursorline cursorcolumn
 set title
 set wrap breakindent breakindentopt=sbr showbreak=↪
 set hidden
