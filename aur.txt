@@ -11,8 +11,6 @@ exa
 fd
 feh
 fzf
-gruvbox-material-gtk-theme-git
-gruvbox-material-icon-theme-git
 light-git
 lsd
 maim
@@ -20,6 +18,9 @@ mpv
 neovim
 network-manager-applet
 nodejs
+numix-cursor-theme
+numix-gtk-theme
+numix-square-icon-theme
 nvm
 oh-my-zsh-git
 pavucontrol

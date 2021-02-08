@@ -25,14 +25,13 @@ if dein#load_state('~/.cache/dein')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
+    call dein#add('jacoborus/tender.vim')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
-    call dein#add('justinmk/vim-sneak')
-    call dein#add('neoclide/coc.nvim', {'merged':0, 'rev': 'release'})
+    call dein#add('neoclide/coc.nvim', {'merged': 0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
-    call dein#add('rhysd/git-messenger.vim', {'lazy' : 1, 'on_cmd' : 'GitMessenger', 'on_map' : '<Plug>(git-messenger'})
+    call dein#add('rhysd/git-messenger.vim', {'lazy': 1, 'on_cmd': 'GitMessenger', 'on_map': '<Plug>(git-messenger)'})
     call dein#add('ryanoasis/vim-devicons')
-    call dein#add('sainnhe/gruvbox-material')
     call dein#add('sheerun/vim-polyglot')
     call dein#add('tpope/vim-commentary')
     call dein#add('tpope/vim-fugitive')
@@ -167,7 +166,11 @@ let g:airline_right_alt_sep = '  '
 " Theme
 set termguicolors
 set background=dark
-colorscheme gruvbox-material
+colorscheme tender
+hi link gitmessengerPopupNormal CursorLine
+hi link gitmessengerHeader Statement
+hi link gitmessengerHash Special
+hi link gitmessengerHistory Title
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

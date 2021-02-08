@@ -48,39 +48,39 @@ font:
 colors:
   primary:
     background: "#282828"
-    foreground: "#dfbf8e"
+    foreground: "#eeeeee"
 
   cursor:
     text: "#282828"
-    cursor: "#dfbf8e"
+    cursor: "#eeeeee"
 
   vi_mode_cursor:
     text: "#282828"
-    cursor: "#a9b665"
+    cursor: "#c9d05c"
 
   selection:
     text: CellForeground
-    background: "#3c3836"
+    background: "#4c4c4c"
 
   normal:
-    black: "#665c54"
-    red: "#ea6962"
-    green: "#a9b665"
-    yellow: "#e78a4e"
-    blue: "#7daea3"
-    magenta: "#d3869b"
-    cyan: "#89b482"
-    white: "#dfbf8e"
+    black: "#282828"
+    red: "#f43753"
+    green: "#c9d05c"
+    yellow: "#ffc24b"
+    blue: "#b3deef"
+    magenta: "#d3b987"
+    cyan: "#73cef4"
+    white: "#eeeeee"
 
   bright:
-    black: "#928374"
-    red: "#ea6962"
-    green: "#a9b665"
-    yellow: "#e3a84e"
-    blue: "#7daea3"
-    magenta: "#d3869b"
-    cyan: "#89b482"
-    white: "#dfbf8e"
+    black: "#4c4c4c"
+    red: "#f43753"
+    green: "#c9d05c"
+    yellow: "#ffc24b"
+    blue: "#b3deef"
+    magenta: "#d3b987"
+    cyan: "#73cef4"
+    white: "#feffff"
 
 draw_bold_text_with_bright_colors: true
 
