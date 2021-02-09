@@ -18,9 +18,6 @@ mpv
 neovim
 network-manager-applet
 nodejs
-numix-cursor-theme
-numix-gtk-theme
-numix-square-icon-theme
 nvm
 oh-my-zsh-git
 pavucontrol
@@ -44,6 +41,9 @@ udiskie
 unclutter
 unzip
 vim-dein
+vimix-cursors
+vimix-gtk-themes
+vimix-icon-theme
 wget
 xclip
 xdo

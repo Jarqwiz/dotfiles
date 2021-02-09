@@ -1,4 +1,4 @@
-gtk-theme-name="Numix"
-gtk-icon-theme-name="Numix-Square"
-gtk-cursor-theme-name="Numix-Cursor"
+gtk-theme-name="vimix-dark"
+gtk-icon-theme-name="Vimix-dark"
+gtk-cursor-theme-name="vimix-cursors"
 gtk-font-name="Lato 10"
