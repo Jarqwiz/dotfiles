@@ -21,6 +21,7 @@ if dein#load_state('~/.cache/dein')
     call dein#begin('~/.cache/dein')
 
     " Plugins
+    call dein#add('andymass/vim-matchup')
     call dein#add('antoinemadec/coc-fzf')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
@@ -201,7 +202,6 @@ autocmd TermOpen * startinsert
 set conceallevel=0
 set clipboard=unnamed
 set nrformats=bin,hex,octal,alpha
-let g:sneak#label = 1
 
 " Movement maps
 tnoremap <silent> <Esc> <C-\><C-n>
