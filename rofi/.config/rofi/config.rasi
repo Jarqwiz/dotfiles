@@ -15,12 +15,12 @@ configuration {
 }
 
 * {
-    background-color: #282828;
-    text-color: #eeeeee;
-    actbg: #b3deef;
-    selbg: #4c4c4c;
-    urgbg: #f43753;
-    winbg: #282828;
+    background-color: #080808;
+    text-color: #b2b2b2;
+    actbg: #b2b2b2;
+    selbg: #7c8f8f;
+    urgbg: #ff5189;
+    winbg: #080808;
 
     selected-normal-foreground: @winbg;
     normal-foreground: @text-color;
@@ -42,14 +42,12 @@ configuration {
 
 #window {
     background-color: @background-color;
-    border-radius: 4px;
     children: [ mainbox ];
 }
 
 #mainbox {
     border: 1px;
     border-color: @selbg;
-    border-radius: 4px;
     orientation: vertical;
     children: [ entry, message, listview ];
 }

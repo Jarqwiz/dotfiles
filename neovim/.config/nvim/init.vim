@@ -23,10 +23,10 @@ if dein#load_state('~/.cache/dein')
     " Plugins
     call dein#add('andymass/vim-matchup')
     call dein#add('antoinemadec/coc-fzf')
+    call dein#add('bluz71/vim-moonfly-colors')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
-    call dein#add('jacoborus/tender.vim')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
     call dein#add('neoclide/coc.nvim', {'merged': 0, 'rev': 'release'})
@@ -159,26 +159,22 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ' '
-let g:airline_left_alt_sep = '  '
-let g:airline_right_sep = ' '
-let g:airline_right_alt_sep = '  '
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 
 " Theme
 set termguicolors
 set background=dark
-colorscheme tender
-hi link gitmessengerPopupNormal CursorLine
-hi link gitmessengerHeader Statement
-hi link gitmessengerHash Special
-hi link gitmessengerHistory Title
+colorscheme moonfly
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4
 set number relativenumber
 set cursorline cursorcolumn
 set title
-set wrap breakindent breakindentopt=sbr showbreak=↪
+set nowrap breakindent breakindentopt=sbr showbreak=↪
 set hidden
 set confirm
 set inccommand=nosplit
@@ -191,7 +187,7 @@ set nobackup nowritebackup
 set signcolumn=yes
 set foldmethod=syntax foldlevelstart=99
 set tabstop=4 shiftwidth=4 softtabstop=4 smarttab autoindent expandtab
-set listchars=space:·,eol:¬,tab:▸\ ,extends:»,precedes:«,trail:•,nbsp:␣ list
+set listchars=space:·,tab:▸\ ,extends:»,precedes:«,trail:•,nbsp:␣ list
 set colorcolumn=80,100,120
 set undofile undodir=/tmp
 let g:netrw_dirhistmax = 0
