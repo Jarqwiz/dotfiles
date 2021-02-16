@@ -1,6 +1,7 @@
 acpi
 alacritty
 bat
+betterlockscreen-git
 bibata-cursor-theme-bin
 bibata-cursor-theme-bin
 blueman
@@ -12,6 +13,7 @@ exa
 fd
 feh
 fzf
+gtk-theme-material-black
 light-git
 lsd
 maim
@@ -21,10 +23,8 @@ network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
-oomox
 pavucontrol
-physlock
-picom
+picom-git
 playerctl
 polybar
 procps-ng

@@ -15,10 +15,10 @@ super + alt + {q,r}
 	bspc {quit,wm -r}
 
 super + alt + @s
-	$HOME/.config/bspwm/lock.sh
+	betterlockscreen -l dimblur
 
 super + ctrl + alt + @s
-	systemctl suspend
+	betterlockscreen -s dimblur
 
 super + ctrl + alt + {r,p}
 	{reboot,poweroff}

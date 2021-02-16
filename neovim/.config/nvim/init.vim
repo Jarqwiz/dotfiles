@@ -167,6 +167,7 @@ let g:airline_right_alt_sep = ''
 " Theme
 set termguicolors
 set background=dark
+let g:moonflyTransparent = 1
 colorscheme moonfly
 
 " Misc

@@ -24,10 +24,10 @@ bspc config left_padding 10
 bspc config right_padding 10
 bspc config top_padding 30
 bspc config bottom_padding 10
-bspc config left_monocle_padding -10
-bspc config right_monocle_padding -10
-bspc config top_monocle_padding -10
-bspc config bottom_monocle_padding -10
+bspc config left_monocle_padding 0
+bspc config right_monocle_padding 0
+bspc config top_monocle_padding 0
+bspc config bottom_monocle_padding 0
 
 bspc monitor -d $(seq -s ' ' 10)
 
@@ -52,8 +52,8 @@ feh --bg-fill $HOME/.config/bspwm/wallpaper.png &
 xsetroot -cursor_name left_ptr &
 
 autostart dunst &
-autostart xss-lock -- $HOME/.config/bspwm/lock.sh &
-autostart picom &
+autostart xss-lock -- betterlockscreen -l dimblur &
+autostart picom --experimental-backends &
 autostart sxhkd &
 $HOME/.config/polybar/launch_polybar.sh &
 autostart unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling &

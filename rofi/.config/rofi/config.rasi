@@ -7,137 +7,124 @@
 
 configuration {
     modi: "drun,window";
-    lines: 20;
-    width: -80;
     font: "InputMono Nerd Font 10";
     show-icons: true;
-    scroll-method: 1;
 }
 
 * {
-    background-color: #080808;
-    text-color: #b2b2b2;
-    actbg: #b2b2b2;
-    selbg: #7c8f8f;
-    urgbg: #ff5189;
-    winbg: #080808;
-
-    selected-normal-foreground: @winbg;
-    normal-foreground: @text-color;
-    selected-normal-background: @actbg;
-    normal-background: @background-color;
-
-    selected-urgent-foreground: @background-color;
-    urgent-foreground: @text-color;
-    selected-urgent-background: @urgbg;
-    urgent-background: @background-color;
-
-    selected-active-foreground: @winbg;
-    active-foreground: @winbg;
-    selected-active-background: @actbg;
-    active-background: @selbg;
-    separator-style: "none";
-    margin: 0;
+    foreground: #b2b2b2ff;
+    background: #080808ff;
+    foreground-alt: #b2b2b255;
+    background-alt: #08080855;
+    active-background: #b2b2b2aa;
+    urgent-background: #ff5189aa;
+    selected-background: #7c8f8faa;
+    selected-urgent-background: @urgent-background;
+    selected-active-background: @active-background;
+    separatorcolor: @active-background;
+    bordercolor: @active-background;
 }
 
-#window {
-    background-color: @background-color;
+window {
+    location: center;
+    anchor: center;
+    height: 100%;
+    width: 100%;
+    padding: 25%;
+    background-color: @background-alt;
+    text-color: @foreground-alt;
     children: [ mainbox ];
 }
 
-#mainbox {
-    border: 1px;
-    border-color: @selbg;
-    orientation: vertical;
-    children: [ entry, message, listview ];
+mainbox {
+    background-color: @background-alt;
+    text-color: @foreground-alt;
+    expand: true;
+    children: [ inputbar, listview ];
 }
 
-#entry {
-    expand: false;
-    text-color: @normal-foreground;
-    padding: 10px;
-    border: 0 0 1px;
-    border-color: @selbg;
+listview {
+    background-color: @background-alt;
+    text-color: @foreground-alt;
+    layout: vertical;
+    dynamic: false;
+    cycle: false;
+    padding: 10;
+    spacing: 10;
+    columns: 5;
+}
+
+inputbar {
+    background-color: @background;
+    text-color: @foreground;
+    children: [ entry ];
+}
+
+entry {
+    background-color: @background;
+    text-color: @foreground;
     placeholder: "  Search…";
-    placeholder-color: @selbg;
+    placeholder-color: @selected-background;
+    padding: 10px;
 }
 
-#sidebar {
-    expand: false;
+element {
+    background-color: @background;
+    text-color: @foreground;
+    orientation: vertical;
+    padding: 35px;
 }
 
-#textbox {
-    horizontal-align: 0;
-    background-color: @background-color;
-    padding: 10px 20px 10px 20px;
-    text-color: @text-color;
+element-icon {
+    size: 32px;
 }
 
-#listview {
-    border: 0px 0px 0px;
-    border-color: @selbg;
-    margin: 0px 0px -38px 0px;
+element-text {
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
 }
 
-#button.selected {
-    background-color: @selected-normal-background;
-    text-color: @selected-normal-foreground;
+element.normal.normal {
+    background-color: @background;
+    text-color: @foreground;
 }
 
-#element {
-    border: 0;
-    padding: 10px 20px 10px 20px;
-}
-
-#element.normal.normal {
-    background-color: @normal-background;
-    text-color: @normal-foreground;
-}
-
-#element.normal.urgent {
+element.normal.urgent {
     background-color: @urgent-background;
     text-color: @urgent-foreground;
 }
 
-#element.normal.active {
+element.normal.active {
     background-color: @active-background;
-    text-color: @active-foreground;
+    text-color: @foreground;
 }
 
-#element.selected.normal {
-    background-color: @selected-normal-background;
-    text-color: @selected-normal-foreground;
+element.selected.normal {
+    background-color: @selected-background;
+    text-color: @foreground;
 }
 
-#element.selected.urgent {
+element.selected.urgent {
     background-color: @selected-urgent-background;
-    text-color: @selected-urgent-foreground;
+    text-color: @foreground;
 }
 
-#element.selected.active {
+element.selected.active {
     background-color: @selected-active-background;
-    text-color: @selected-active-foreground;
+    text-color: @foreground;
 }
 
-#element.alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color: @alternate-normal-foreground;
+element.alternate.normal {
+    background-color: @background;
+    text-color: @foreground;
 }
 
-#element.alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color: @alternate-urgent-foreground;
+element.alternate.urgent {
+    background-color: @urgent-background;
+    text-color: @foreground;
 }
 
-#element.alternate.active {
-    background-color: @alternate-active-background;
-    text-color: @alternate-active-foreground;
-}
-
-#element-icon {
-    size: 16px;
-}
-
-#element-text {
-    vertical-align: 0.5;
+element.alternate.active {
+    background-color: @active-background;
+    text-color: @foreground;
 }
