@@ -29,7 +29,13 @@ bspc config right_monocle_padding 0
 bspc config top_monocle_padding 0
 bspc config bottom_monocle_padding 0
 
-bspc monitor -d $(seq -s ' ' 10)
+monitors=$(bspc query -M --names)
+monitor_count=$(echo "$monitors" | wc -l)
+i=1
+for monitor in $monitors; do
+	bspc monitor $monitor -d $(seq $i $monitor_count 10)
+	i=$(( $i + 1 ))
+done
 
 bspc config automatic_scheme alternate
 bspc config split_ratio 0.5
