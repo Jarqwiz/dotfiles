@@ -2,6 +2,7 @@ acpi
 alacritty
 bat
 bibata-cursor-theme-bin
+bibata-cursor-theme-bin
 blueman
 brave-bin
 bspwm
@@ -20,6 +21,7 @@ network-manager-applet
 nodejs
 nvm
 oh-my-zsh-git
+oomox
 pavucontrol
 physlock
 picom
@@ -41,9 +43,6 @@ udiskie
 unclutter
 unzip
 vim-dein
-vimix-cursors
-vimix-gtk-themes
-vimix-icon-theme
 wget
 xclip
 xdo

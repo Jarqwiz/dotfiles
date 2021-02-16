@@ -19,7 +19,7 @@
     icon_position = left
     idle_threshold = 10
     ignore_newline = no
-    max_icon_size = 80
+    max_icon_size = 96
     padding = 6
     separator_color = frame
     shrink = yes
