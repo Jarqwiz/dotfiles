@@ -11,7 +11,6 @@ capitaine-cursors
 dunst
 exa
 fd
-feh
 fzf
 gtk-theme-material-black
 light-git
