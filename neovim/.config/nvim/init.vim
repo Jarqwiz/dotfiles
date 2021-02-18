@@ -23,12 +23,12 @@ if dein#load_state('~/.cache/dein')
     " Plugins
     call dein#add('andymass/vim-matchup')
     call dein#add('antoinemadec/coc-fzf')
-    call dein#add('bluz71/vim-moonfly-colors')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
     call dein#add('junegunn/fzf.vim')
     call dein#add('junegunn/vim-slash')
+    call dein#add('morhetz/gruvbox')
     call dein#add('neoclide/coc.nvim', {'merged': 0, 'rev': 'release'})
     call dein#add('pbrisbin/vim-mkdir')
     call dein#add('rhysd/git-messenger.vim', {'lazy': 1, 'on_cmd': 'GitMessenger', 'on_map': '<Plug>(git-messenger)'})
@@ -159,16 +159,13 @@ let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#coc#warning_symbol = ' '
 let g:airline#extensions#coc#error_symbol = ' '
 let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
 
 " Theme
 set termguicolors
 set background=dark
-let g:moonflyTransparent = 1
-colorscheme moonfly
+let g:gruvbox_italic = 1
+let g:gruvbox_invert_selection = 0
+colorscheme gruvbox
 
 " Misc
 set scrolloff=4 sidescroll=1 sidescrolloff=4

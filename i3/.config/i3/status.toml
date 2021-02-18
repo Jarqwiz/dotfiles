@@ -1,0 +1,50 @@
+theme = "gruvbox-dark"
+icons = "awesome"
+
+[[block]]
+block = "focused_window"
+max_width = 24
+
+[[block]]
+block = "music"
+buttons = ["prev", "play", "next"]
+dynamic_width = true
+hide_when_empty = true
+marquee_interval = 3
+max_width = 24
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mup}%"
+format_swap = "{SUp}%"
+
+[[block]]
+block = "cpu"
+interval = 0.5
+
+[[block]]
+block = "net"
+hide_missing = true
+hide_inactive = true
+clickable = true
+max_ssid_width = 16
+
+[[block]]
+block = "sound"
+max_vol = 100
+on_click = "pavucontrol"
+
+[[block]]
+block = "battery"
+format = "{percentage}% {time}"
+allow_missing = true
+hide_missing = true
+
+[[block]]
+block = "time"
+interval = 1
+format = "%T"
+
+[[block]]
+block = "notify"

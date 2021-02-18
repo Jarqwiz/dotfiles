@@ -1,6 +1,6 @@
 # dotfiles :tada:
 
-My dotfiles for bspwm, neovim, zsh, etc.
+My dotfiles for i3, neovim, zsh, etc.
 
 ## Installing
 
