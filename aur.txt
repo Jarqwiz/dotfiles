@@ -13,7 +13,7 @@ fzf
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
 i3-gaps
-i3status-rust
+i3status-rust-git
 light-git
 lsd
 maim
