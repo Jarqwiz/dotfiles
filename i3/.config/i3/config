@@ -28,7 +28,7 @@ exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk -P
 exec --no-startup-id unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling
 exec --no-startup-id udiskie -ansF
-exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 60 'betterlockscreen -l dimblur' ''
+exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 300 'betterlockscreen -l dimblur' ''
 
 exec_always --no-startup-id autotiling
 exec_always --no-startup-id xsetroot -cursor_name left_ptr
