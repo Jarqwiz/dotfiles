@@ -27,7 +27,6 @@ interval = 0.5
 block = "net"
 hide_missing = true
 hide_inactive = true
-clickable = true
 max_ssid_width = 16
 
 [[block]]
