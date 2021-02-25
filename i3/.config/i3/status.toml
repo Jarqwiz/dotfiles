@@ -3,6 +3,7 @@ icons = "awesome"
 
 [[block]]
 block = "focused_window"
+max_width = 80
 
 [[block]]
 block = "music"
