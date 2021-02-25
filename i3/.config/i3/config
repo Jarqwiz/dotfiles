@@ -145,6 +145,7 @@ bindsym $mod+d exec --no-startup-id dunstctl close
 bindsym $mod+Shift+d exec --no-startup-id dunstctl close-all
 bindsym $mod+Ctrl+d exec --no-startup-id dunstctl action
 bindsym $mod+$alt+d exec --no-startup-id dunstctl set-paused toggle
+bindsym $mod+Ctrl+Shift+d exec --no-startup-id dunstctl history-pop
 
 set $ws1 "1"
 set $ws2 "2"
@@ -191,25 +192,28 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+$alt+s exec --no-startup-id betterlockscreen -l dimblur
 bindsym $mod+$alt+Ctrl+s exec --no-startup-id betterlockscreen -s dimblur
 
-client.focused #8ec07c #689d6a #1d2021 #8ec07c #8ec07c
-client.focused_inactive #504945 #3c3836 #a89984 #504945 #504945
-client.unfocused #504945 #3c3836 #a89984 #504945 #504945
-client.urgent #fb4934 #cc241d #1d2021 #fb4934 #fb4934
-client.background #282828
+bindsym $mod+u border toggle 1
+
+title_align center
+
+client.focused #7eaac7 #556b79 #1c1c1c #7eaac7 #7eaac7
+client.focused_inactive #636363 #232323 #828282 #636363 #636363
+client.unfocused #232323 #636363 #1c1c1c #232323 #232323
+client.urgent #74423f #bc5653 #1c1c1c #74423f #74423f
+client.background #2c2c2c
 
 bar {
     colors {
-        background #1d2021
+        background #2c2c2c
 
-        focused_workspace #8ec07c #689d6a #1d2021
-        active_workspace #fabd2f #d79921 #1d2021
-        inactive_workspace #504945 #3c3836 #a89984
-        urgent_workspace #fb4934 #cc241d #1d2021
+        focused_workspace #7eaac7 #556b79 #1c1c1c
+        active_workspace #232323 #636363 #1c1c1c
+        inactive_workspace #636363 #232323 #828282
+        urgent_workspace #74423f #bc5653 #1c1c1c
     }
 
     font pango:Hack Nerd Font 10
 
-    tray_padding 0
     status_command i3status-rs $HOME/.config/i3/status.toml
     position top
     tray_output primary

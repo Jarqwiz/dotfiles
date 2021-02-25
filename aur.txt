@@ -2,7 +2,6 @@ acpi
 alacritty
 bat
 betterlockscreen-git
-bibata-cursor-theme-bin
 blueman
 brave-bin
 dunst-git
@@ -10,8 +9,6 @@ exa
 fd
 feh
 fzf
-gruvbox-dark-gtk
-gruvbox-dark-icons-gtk
 i3-gaps
 i3status-rust
 light-git
@@ -41,6 +38,9 @@ udiskie
 unclutter
 unzip
 vim-dein
+vimix-cursors
+vimix-gtk-themes
+vimix-icon-theme
 wget
 xclip
 xdo

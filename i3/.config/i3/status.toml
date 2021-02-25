@@ -1,9 +1,8 @@
-theme = "gruvbox-dark"
+theme = "native"
 icons = "awesome"
 
 [[block]]
 block = "focused_window"
-max_width = 24
 
 [[block]]
 block = "music"
@@ -27,7 +26,6 @@ interval = 0.5
 block = "net"
 hide_missing = true
 hide_inactive = true
-max_ssid_width = 16
 
 [[block]]
 block = "sound"
