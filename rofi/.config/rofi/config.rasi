@@ -9,7 +9,7 @@ configuration {
     modi: "drun,window";
     lines: 20;
     width: -80;
-    font: "InputMono Nerd Font 10";
+    font: "Hack Nerd Font 10";
     show-icons: true;
     scroll-method: 1;
 }
