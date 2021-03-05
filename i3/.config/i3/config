@@ -16,7 +16,7 @@ hide_edge_borders smart_no_gaps
 smart_borders no_gaps
 smart_gaps inverse_outer
 focus_wrapping no
-focus_on_window_activation urgent
+focus_on_window_activation smart
 gaps inner 10
 gaps outer -10
 
