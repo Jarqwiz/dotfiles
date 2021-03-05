@@ -96,7 +96,6 @@ let g:coc_global_extensions = [
             \ 'coc-eslint',
             \ 'coc-explorer',
             \ 'coc-git',
-            \ 'coc-godot',
             \ 'coc-html',
             \ 'coc-json',
             \ 'coc-lists',
