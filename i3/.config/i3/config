@@ -213,7 +213,7 @@ bar {
         urgent_workspace #cd5b5f #cd5b5f #242424
     }
 
-    font pango:Hack Nerd Font 10
+    font pango:Iosevka Nerd Font 10
 
     status_command i3status-rs $HOME/.config/i3/status.toml
     position top

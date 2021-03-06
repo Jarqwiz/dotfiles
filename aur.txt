@@ -1,5 +1,5 @@
 acpi
-alacritty
+alacritty-ligatures-git
 bat
 betterlockscreen-git
 blueman
@@ -16,7 +16,7 @@ lsd
 maim
 mpv
 neovim
-nerd-fonts-hack
+nerd-fonts-iosevka
 network-manager-applet
 nodejs
 nvm
