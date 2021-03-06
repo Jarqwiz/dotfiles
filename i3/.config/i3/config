@@ -197,20 +197,20 @@ bindsym $mod+u border toggle 1
 
 title_align center
 
-client.focused #7eaac7 #556b79 #1c1c1c #7eaac7 #7eaac7
-client.focused_inactive #636363 #232323 #828282 #636363 #636363
-client.unfocused #232323 #636363 #1c1c1c #232323 #232323
-client.urgent #74423f #bc5653 #1c1c1c #74423f #74423f
-client.background #2c2c2c
+client.focused #6e9caf #6e9caf #242424 #6e9caf #6e9caf
+client.focused_inactive #242424 #242424 #b3b8c4 #242424 #242424
+client.unfocused #242424 #242424 #b3b8c4 #242424 #242424
+client.urgent #cd5b5f #cd5b5f #242424 #cd5b5f #cd5b5f
+client.background #242424
 
 bar {
     colors {
-        background #2c2c2c
+        background #242424
 
-        focused_workspace #7eaac7 #556b79 #1c1c1c
-        active_workspace #232323 #636363 #1c1c1c
-        inactive_workspace #636363 #232323 #828282
-        urgent_workspace #74423f #bc5653 #1c1c1c
+        focused_workspace #6e9caf #6e9caf #242424
+        active_workspace #242424 #242424 #b3b8c4
+        inactive_workspace #242424 #242424 #b3b8c4
+        urgent_workspace #cd5b5f #cd5b5f #242424
     }
 
     font pango:Hack Nerd Font 10

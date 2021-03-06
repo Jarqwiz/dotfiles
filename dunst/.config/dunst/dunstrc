@@ -12,7 +12,7 @@
     follow = mouse
     font = InputMono Nerd Font 10
     format = "<b>%s</b>\n%b"
-    frame_color = "#636363"
+    frame_color = "#5c636a"
     frame_width = 1
     geometry = "600x20-20+40"
     horizontal_padding = 6
@@ -31,16 +31,16 @@
     icon_path = "/usr/share/icons/Vimix-dark/16/status/:/usr/share/icons/Vimix-dark/16/devices/:/usr/share/icons/Vimix-dark/16/actions/:/usr/share/icons/Vimix-dark/16/mimetypes/:/usr/share/icons/Vimix-dark/16/places/:/usr/share/icons/Vimix-dark/16/panel/"
 
 [urgency_low]
-    background = "#1c1c1c"
-    foreground = "#838383"
+    background = "#242424"
+    foreground = "#727673"
     timeout = 10
 
 [urgency_normal]
-    background = "#232323"
-    foreground = "#d6d6d6"
+    background = "#242424"
+    foreground = "#b3b8c4"
     timeout = 10
 
 [urgency_critical]
-    background = "#74423f"
-    foreground = "#f7f7f7"
+    background = "#cd5b5f"
+    foreground = "#242424"
     timeout = 0

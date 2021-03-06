@@ -21,9 +21,9 @@ if dein#load_state('~/.cache/dein')
     call dein#begin('~/.cache/dein')
 
     " Plugins
+    call dein#add('ackyshake/Spacegray.vim')
     call dein#add('andymass/vim-matchup')
     call dein#add('antoinemadec/coc-fzf')
-    call dein#add('danilo-augusto/vim-afterglow')
     call dein#add('editorconfig/editorconfig-vim')
     call dein#add('farmergreg/vim-lastplace')
     call dein#add('honza/vim-snippets')
@@ -40,6 +40,7 @@ if dein#load_state('~/.cache/dein')
     call dein#add('tpope/vim-rhubarb')
     call dein#add('tpope/vim-surround')
     call dein#add('vim-airline/vim-airline')
+    call dein#add('vim-airline/vim-airline-themes')
     call dein#add('wsdjeg/dein-ui.vim')
 
     call dein#end()
@@ -166,8 +167,10 @@ let g:airline_right_alt_sep = ''
 " Theme
 set termguicolors
 set background=dark
-let g:afterglow_italic_comments = 1
-colorscheme afterglow
+let g:airline_theme = 'distinguished'
+let g:spacegray_use_italics = 1
+let g:spacegray_low_contrast = 1
+colorscheme spacegray
 hi link gitmessengerPopupNormal CursorLine
 hi link gitmessengerHeader Statement
 hi link gitmessengerHash Special
