@@ -35,7 +35,7 @@ stow
 tree
 ttf-lato
 udiskie
-unclutter
+unclutter-xfixes-git
 unzip
 vim-dein
 vimix-cursors

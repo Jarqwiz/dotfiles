@@ -27,7 +27,7 @@ exec --no-startup-id picom
 exec --no-startup-id dunst
 exec --no-startup-id blueman-applet
 exec --no-startup-id redshift-gtk -P
-exec --no-startup-id unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling
+exec --no-startup-id unclutter --timeout 3 --jitter 2 --exclude-root --ignore-scrolling --start-hidden
 exec --no-startup-id udiskie -ansF
 exec --no-startup-id xidlehook --not-when-audio --not-when-fullscreen --timer 300 'betterlockscreen -l dimblur' ''
 
